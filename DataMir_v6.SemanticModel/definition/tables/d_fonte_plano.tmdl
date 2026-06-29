@@ -1,0 +1,34 @@
+table d_fonte_plano
+	lineageTag: bb642387-8833-41dc-89d0-30aee9a4e5df
+
+	column fonte_recursos_detalhada
+		dataType: string
+		lineageTag: b42a7a98-09da-43df-9782-aecae4f76030
+		summarizeBy: none
+		sourceColumn: fonte_recursos_detalhada
+
+		annotation SummarizationSetBy = Automatic
+
+	column fonte_recursos_detalhada_descricao
+		dataType: string
+		lineageTag: dbebedd5-567f-4eeb-bf5d-44da11b4b413
+		summarizeBy: none
+		sourceColumn: fonte_recursos_detalhada_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_fonte_plano = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\planoDeAcao\d_fonte_plano.csv"),[Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Column1", type text}, {"Column2", type text}}),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(#"Tipo Alterado", [PromoteAllScalars=true]),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"fonte_recursos_detalhada", type text}, {"fonte_recursos_detalhada_descricao", type text}})
+				in
+				    #"Tipo Alterado1"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

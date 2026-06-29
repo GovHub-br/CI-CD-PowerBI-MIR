@@ -1,0 +1,204 @@
+table ted_resumo_orcamentario_ted
+	lineageTag: 3407b664-a715-4b0f-925f-03bbdd8e6bc4
+
+	column plano_acao
+		dataType: int64
+		formatString: 0
+		lineageTag: a2d3287c-3a5e-4f64-b7a2-b107ba31a9ce
+		summarizeBy: none
+		sourceColumn: plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_transf
+		dataType: int64
+		formatString: 0
+		lineageTag: 515d112a-3a1b-432e-b35f-2180cf0bbf24
+		summarizeBy: sum
+		sourceColumn: num_transf
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_descentralizada
+		dataType: string
+		lineageTag: 5923977d-4c57-41c5-af93-e929d236ae4a
+		summarizeBy: none
+		sourceColumn: sigla_unidade_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_firmado
+		dataType: int64
+		formatString: 0
+		lineageTag: 50177643-5135-45e9-a1e2-30a0f34c7658
+		summarizeBy: sum
+		sourceColumn: valor_firmado
+
+		annotation SummarizationSetBy = Automatic
+
+	column orcamento_recebido
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f2bf5bc-98ef-46f9-a27b-c859e47ff054
+		summarizeBy: sum
+		sourceColumn: orcamento_recebido
+
+		annotation SummarizationSetBy = Automatic
+
+	column orcamento_devolvido
+		dataType: int64
+		formatString: 0
+		lineageTag: 20034f5a-a3d5-482f-88e5-f5a55b2d946b
+		summarizeBy: sum
+		sourceColumn: orcamento_devolvido
+
+		annotation SummarizationSetBy = Automatic
+
+	column empenhado
+		dataType: int64
+		formatString: 0
+		lineageTag: 9f4aa1cc-7324-4fe1-9fe3-0ad3d7366fa0
+		summarizeBy: sum
+		sourceColumn: empenhado
+
+		annotation SummarizationSetBy = Automatic
+
+	column empenho_anulado
+		dataType: int64
+		formatString: 0
+		lineageTag: b1104604-6124-479a-8611-505fa7ebcf34
+		summarizeBy: sum
+		sourceColumn: empenho_anulado
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_pagas_exercicio
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bf3318e-62c7-4316-9cf2-bde8ed244c6b
+		summarizeBy: sum
+		sourceColumn: despesas_pagas_exercicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_pagas_rap
+		dataType: int64
+		formatString: 0
+		lineageTag: 6df8db1a-3e52-48fa-86a7-7b6ab522b50c
+		summarizeBy: sum
+		sourceColumn: despesas_pagas_rap
+
+		annotation SummarizationSetBy = Automatic
+
+	column restos_a_pagar
+		dataType: int64
+		formatString: 0
+		lineageTag: cfa32a90-00d6-4d5d-a8e1-cce8af19d490
+		summarizeBy: sum
+		sourceColumn: restos_a_pagar
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_liquidada
+		dataType: int64
+		formatString: 0
+		lineageTag: 6684edae-1e7a-4c96-8fe7-f6f55b25c223
+		summarizeBy: sum
+		sourceColumn: despesas_liquidada
+
+		annotation SummarizationSetBy = Automatic
+
+	column financeiro_recebido
+		dataType: int64
+		formatString: 0
+		lineageTag: da9e73cc-3fb2-4556-90ce-ca3743fdf890
+		summarizeBy: sum
+		sourceColumn: financeiro_recebido
+
+		annotation SummarizationSetBy = Automatic
+
+	column financeiro_devolvido
+		dataType: int64
+		formatString: 0
+		lineageTag: 30aacb3b-d796-417e-bda0-d659efffc2d5
+		summarizeBy: sum
+		sourceColumn: financeiro_devolvido
+
+		annotation SummarizationSetBy = Automatic
+
+	column financeiro_cancelado
+		dataType: int64
+		formatString: 0
+		lineageTag: ad10d9aa-97b6-4130-82d4-08718425228b
+		summarizeBy: sum
+		sourceColumn: financeiro_cancelado
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ingest
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ceb1fa54-7feb-4426-8eb7-ec6988c5917a
+		summarizeBy: none
+		sourceColumn: dt_ingest
+
+		variation Variation
+			isDefault
+			relationship: d5971458-8afb-4018-a4d9-258aeffc456a
+			defaultHierarchy: LocalDateTable_f8d7f720-7c5c-4687-a009-72ddbf51cf95.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_responsavel_acompanhamento
+		dataType: string
+		lineageTag: 79e95082-2bcb-4713-8569-f578569e514a
+		summarizeBy: none
+		sourceColumn: sigla_unidade_responsavel_acompanhamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_nome_institucional_programa
+		dataType: string
+		lineageTag: 4119ad15-0761-48c1-ba49-00f0af06b930
+		summarizeBy: none
+		sourceColumn: tx_nome_institucional_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_objetivo_programa
+		dataType: string
+		lineageTag: 0966904d-bb6f-44a8-9f60-3b8c9ac8f1f9
+		summarizeBy: none
+		sourceColumn: tx_objetivo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa_governo
+		dataType: int64
+		formatString: 0
+		lineageTag: d0b27d0d-0419-43aa-997e-1960a5aa868a
+		summarizeBy: sum
+		sourceColumn: programa_governo
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa_governo_descricao
+		dataType: string
+		lineageTag: b4516ba9-970f-448b-a292-6eff4c56d2d2
+		summarizeBy: none
+		sourceColumn: programa_governo_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ted_resumo_orcamentario_ted = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\teds\ted_resumo_orcamentario_ted.csv"),[Delimiter=",", Columns=21, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"plano_acao", Int64.Type}, {"num_transf", Int64.Type}, {"sigla_unidade_descentralizada", type text}, {"valor_firmado", Int64.Type}, {"orcamento_recebido", Int64.Type}, {"orcamento_devolvido", Int64.Type}, {"empenhado", Int64.Type}, {"empenho_anulado", Int64.Type}, {"despesas_pagas_exercicio", Int64.Type}, {"despesas_pagas_rap", Int64.Type}, {"restos_a_pagar", Int64.Type}, {"despesas_liquidada", Int64.Type}, {"financeiro_recebido", Int64.Type}, {"financeiro_devolvido", Int64.Type}, {"financeiro_cancelado", Int64.Type}, {"dt_ingest", type datetimezone}, {"sigla_unidade_responsavel_acompanhamento", type text}, {"tx_nome_institucional_programa", type text}, {"tx_objetivo_programa", type text}, {"programa_governo", Int64.Type}, {"programa_governo_descricao", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

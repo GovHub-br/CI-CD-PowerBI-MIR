@@ -1,0 +1,157 @@
+table f_emendas_convenio
+	lineageTag: aef09e4e-5391-4f4e-b0cd-a840c0af1636
+
+	column id_autor
+		dataType: int64
+		formatString: 0
+		lineageTag: c6796f2d-d48e-42e2-bbd2-87f447f8c6b0
+		summarizeBy: none
+		sourceColumn: id_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: 69f2bef9-e43f-4062-8830-fa8f32b9e6a5
+		summarizeBy: none
+		sourceColumn: codigo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_localizacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 89bf3bff-c383-401b-aac2-83259feb1c6a
+		summarizeBy: none
+		sourceColumn: id_localizacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_empenhadas
+		dataType: int64
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: d607b90b-df82-437c-a8a2-483be816d191
+		summarizeBy: sum
+		sourceColumn: despesas_empenhadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column despesas_liquidadas
+		dataType: int64
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c1a500f5-08a6-400d-8fe5-e19859659805
+		summarizeBy: sum
+		sourceColumn: despesas_liquidadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column despesas_pagas
+		dataType: int64
+		formatString: 0
+		lineageTag: 362b315e-1f07-4084-9857-d7151db965b4
+		summarizeBy: sum
+		sourceColumn: despesas_pagas
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_global_conv
+		dataType: int64
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 363c5e63-c1f2-44be-a796-44863500f89d
+		summarizeBy: sum
+		sourceColumn: vl_global_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column vl_repasse_conv
+		dataType: int64
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 2a42ba9e-ec4d-459d-ae33-c3d987c7d48c
+		summarizeBy: sum
+		sourceColumn: vl_repasse_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column vl_contrapartida_conv
+		dataType: int64
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 8be62163-beb3-4e06-a495-8466c4eae6a9
+		summarizeBy: sum
+		sourceColumn: vl_contrapartida_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column nr_convenio
+		dataType: int64
+		formatString: 0
+		lineageTag: 3cfe7dae-6ed6-422c-82ad-27d668865f69
+		summarizeBy: sum
+		sourceColumn: nr_convenio
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_proposta
+		dataType: int64
+		formatString: 0
+		lineageTag: 463dea76-d4f0-4713-ab9d-8bf552f6c129
+		summarizeBy: sum
+		sourceColumn: id_proposta
+
+		annotation SummarizationSetBy = Automatic
+
+	column sit_convenio
+		dataType: string
+		lineageTag: fb32170d-e116-4e9c-8bd7-0c526bf939a7
+		summarizeBy: none
+		sourceColumn: sit_convenio
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_mes
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9951162e-d3e3-46ea-af26-15a9105b6d89
+		summarizeBy: none
+		sourceColumn: emissao_mes
+
+		variation Variation
+			isDefault
+			relationship: 2e17c0cd-5a92-4e03-8892-1ab310dc6d2f
+			defaultHierarchy: LocalDateTable_9c03326d-aa68-4303-a887-175af6fb2d16.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column id_emenda
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b32c186-31d2-452b-a5f9-09ca86b31058
+		summarizeBy: sum
+		sourceColumn: id_emenda
+
+		annotation SummarizationSetBy = Automatic
+
+	partition f_emendas_convenio = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\Convenios\f_emendas_convenio.csv"),[Delimiter=",", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id_autor", Int64.Type}, {"codigo_programa", Int64.Type}, {"id_localizacao", Int64.Type}, {"despesas_empenhadas", Int64.Type}, {"despesas_liquidadas", Int64.Type}, {"despesas_pagas", Int64.Type}, {"vl_global_conv", Int64.Type}, {"vl_repasse_conv", Int64.Type}, {"vl_contrapartida_conv", Int64.Type}, {"nr_convenio", Int64.Type}, {"id_proposta", Int64.Type}, {"sit_convenio", type text}, {"emissao_mes", type date}, {"id_emenda", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

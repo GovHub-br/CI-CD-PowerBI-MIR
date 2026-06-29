@@ -1,0 +1,32 @@
+table d_programa_convenio
+	lineageTag: e2bbbd7f-8c2c-43c0-85cd-fe595970ac53
+
+	column codigo_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: d05612c5-2a40-43b3-a2cc-269488b4efd1
+		summarizeBy: none
+		sourceColumn: codigo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa
+		dataType: string
+		lineageTag: f155b54d-814d-442c-9a58-d545b11fb128
+		summarizeBy: none
+		sourceColumn: programa
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_programa_convenio = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\Convenios\d_programa_convenio.csv"),[Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"codigo_programa", Int64.Type}, {"programa", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

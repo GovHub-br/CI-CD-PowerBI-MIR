@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "DataMir_v6"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "19a1edc5-fbe6-4e8b-bbb8-f34d6adf0c4c"
+  }
+}

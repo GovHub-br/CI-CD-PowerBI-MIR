@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "19f7d22ce8a58a174ec3",
+  "position": {
+    "x": 186.66666666666666,
+    "y": 488.88888888888886,
+    "z": 5000,
+    "height": 23.333333333333332,
+    "width": 268.88888888888886,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'O Painel de Emendas consolida informações sobre as emendas parlamentares destinadas às ações do Ministério da Igualdade Racial. Os dados são provenientes do Sistema Integrado de Administração Financeira do Governo Federal (SIAFI), abrangendo a série histórica de 2023 até a atualização mais recente da base de dados. O painel apresenta informações sobre autor da emenda, partido político, unidade da federação (UF), programa e ação orçamentária, grupo e natureza da despesa, favorecido, bem como os valores empenhados, liquidados e pagos. Também são disponibilizadas informações que permitem identificar a vinculação das emendas aos instrumentos de execução, como convênios e Termos de Execução Descentralizada (TEDs).'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "howCreated": "InsertVisualButton"
+}

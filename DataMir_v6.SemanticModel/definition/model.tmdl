@@ -1,0 +1,52 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+/// Erros nas consultas que foram carregadas em 19/06/2026 10:18:19.
+queryGroup 'Erros na Consulta - 19/06/2026 10:18:19'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["f_emendas_partidos","d_parlamentar_partidos","d_programa_partidos","d_localizacao_partidos","f_empenhos_plano","Erros em f_empenhos_plano","d_natureza_plano","d_fonte_plano","d_favorecido_plano","_Medidas","f_emendas_convenio","d_programa_convenio","d_parlamentar_convenio","d_localizacao_convenio","planos_acao_ted","ted_resumo_orcamentario_ted","programas_ted","ted_empenhos_plano_acao_ted"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table f_emendas_partidos
+ref table DateTableTemplate_338ce01f-264b-4f61-a922-569dffaa5ae2
+ref table LocalDateTable_6e747991-4407-4c7e-827a-3739090dbd07
+ref table d_parlamentar_partidos
+ref table d_programa_partidos
+ref table d_localizacao_partidos
+ref table f_empenhos_plano
+ref table d_natureza_plano
+ref table d_fonte_plano
+ref table d_favorecido_plano
+ref table _Medidas
+ref table dCalendario
+ref table LocalDateTable_f0f08253-db89-49e6-bf8a-974792581518
+ref table f_emendas_convenio
+ref table LocalDateTable_9c03326d-aa68-4303-a887-175af6fb2d16
+ref table d_programa_convenio
+ref table d_parlamentar_convenio
+ref table d_localizacao_convenio
+ref table planos_acao_ted
+ref table LocalDateTable_0e788031-b380-4619-92fa-4bb4e4251ccc
+ref table LocalDateTable_1500fc70-3a5b-41d1-b939-bbe5c0a91b08
+ref table LocalDateTable_3bbf6993-9e79-4cae-ab13-51819acb13fe
+ref table ted_resumo_orcamentario_ted
+ref table LocalDateTable_f8d7f720-7c5c-4687-a009-72ddbf51cf95
+ref table programas_ted
+ref table LocalDateTable_ec5122e4-532d-4f11-a623-e085e2cd047e
+ref table LocalDateTable_c3a22074-f775-4bb0-9a01-1d3da90526b8
+ref table LocalDateTable_a63a84ba-a654-4078-b27b-d50fb4eb2cb1
+ref table ted_empenhos_plano_acao_ted
+ref table LocalDateTable_f1b05c6a-f2ba-4eec-bf7c-8d772cae4ad1
+
+ref cultureInfo pt-BR
+

@@ -1,0 +1,288 @@
+table _Medidas
+	lineageTag: d8e7067d-1c26-476e-8ec1-6053faf07658
+
+	measure 'Total Empenhado Emendas' = SUM(f_emendas_partidos[despesas_empenhadas])
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
+		lineageTag: 9c5f12dd-1a11-40be-b975-8f83f15845d7
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Liquidado Emendas' = SUM(f_emendas_partidos[despesas_liquidadas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 39782975-22e3-4ca6-9909-3e8c95f21e71
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Pago Emendas' = SUM(f_emendas_partidos[despesas_pagas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 7f655956-48af-4a6d-abe8-4b55edd4270e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Empenhado Planos' = SUM(f_empenhos_plano[despesas_empenhadas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 98a186db-43eb-4aa5-bae2-e3910e6a4e06
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Pago Planos' = SUM(f_empenhos_plano[despesas_pagas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 1ef6327d-63ba-4e69-88cb-a04561ef965e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Liquidado Planos' = SUM(f_empenhos_plano[despesas_liquidadas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c722217c-0393-44d6-b202-9dde2213f94a
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total RP Inscritos' = SUM(f_empenhos_plano[restos_a_pagar_inscritos])
+		formatString: 0
+		lineageTag: 2576246d-db36-4282-8d3c-a292306423fc
+
+	measure 'Total RP Pagos' = SUM(f_empenhos_plano[restos_a_pagar_pagos])
+		formatString: 0
+		lineageTag: c56a7521-9a98-4f74-a823-a9dcf1cd7253
+
+	measure '% Pago Planos' = DIVIDE([Total Pago Planos], [Total Empenhado Planos], 0)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7db5eb1e-b9ac-41e0-948e-d2297422a58c
+
+	measure 'Valor Global' = SUM(f_emendas_convenio[vl_global_conv])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 36491b13-4305-4120-9188-17133976a2b3
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Vl_Repasse = SUM(f_emendas_convenio[vl_repasse_conv])
+		formatString: 0
+		lineageTag: e4f7cff1-73ea-40b0-93df-9ebe60649a04
+
+	measure Total_Empenhado = SUM(f_emendas_convenio[despesas_empenhadas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: fac31b4e-c9be-43c7-8511-2eb3908b7586
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Total_Pago = SUM(f_emendas_convenio[despesas_pagas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 792d62a8-126e-466f-a6fe-99f9ea8c9ee5
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Qtd_Convenios = DISTINCTCOUNT(f_emendas_convenio[nr_convenio])
+		formatString: 0
+		lineageTag: 055cfa82-76cb-47b6-a6ec-7a520b8d6bc7
+
+	measure 'Total Contrapartida' = SUM(f_emendas_convenio[vl_contrapartida_conv])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: d18b7559-aff8-4a1c-9954-7356714a349f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Repasse' = SUM(f_emendas_convenio[vl_repasse_conv])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: d5248654-3497-4c31-a2df-8c362cb2bc6d
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Contrapartida' = DIVIDE([Total Contrapartida], [Valor Global], 0)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 898ab56c-aedc-49c9-a2f6-df89fc0ab462
+
+	measure 'Qtd TEDs' =
+			
+			DISTINCTCOUNT(planos_acao_ted[id_plano_acao])
+		formatString: 0
+		lineageTag: de25dc49-597a-4ac0-82aa-679863a8209a
+
+	measure 'Valor Firmado TED' =
+			
+			SUM(ted_resumo_orcamentario_ted[valor_firmado])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 2ff5d803-48ee-4605-9068-79b09510d24d
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Empenhado TED' =
+			
+			SUM(ted_resumo_orcamentario_ted[empenhado])
+		formatString: 0
+		lineageTag: 1cfb3e46-1921-4b5c-bfec-352df5a11959
+
+	measure 'Pago TED' =
+			
+			SUM(ted_resumo_orcamentario_ted[despesas_pagas_exercicio])
+			+
+			SUM(ted_resumo_orcamentario_ted[despesas_pagas_rap])
+		formatString: 0
+		lineageTag: da867cb2-8f77-4971-9dd6-bb4a3f4edbac
+
+	measure 'Qtd Planos Empenhos' =
+			
+			DISTINCTCOUNT(
+			    ted_empenhos_plano_acao_ted[plano_acao]
+			)
+		formatString: 0
+		lineageTag: b0e46463-1283-4de6-859b-b0bdfebcc933
+
+	measure 'Qtd Planos' =
+			
+			DISTINCTCOUNT(planos_acao_ted[id_plano_acao])
+		formatString: 0
+		lineageTag: a2b0ef7e-2437-4d10-8749-57e5d593126e
+
+	measure 'Qtd Planos Resumo' =
+			
+			DISTINCTCOUNT(ted_resumo_orcamentario_ted[plano_acao])
+		formatString: 0
+		lineageTag: 8aab58e9-979d-4316-b68a-4c792e45a367
+
+	measure 'Qtd Empenhos' =
+			
+			COUNTROWS(
+			    ted_empenhos_plano_acao_ted
+			)
+		formatString: 0
+		lineageTag: 40057b29-f563-449c-9dba-739101919bc5
+
+	measure 'Qtd TEDs com Empenho' =
+			
+			DISTINCTCOUNT(ted_empenhos_plano_acao_ted[plano_acao])
+		formatString: 0
+		lineageTag: 09421454-ae1e-497d-a20d-fd60340253d0
+
+	measure 'Qtd Registros de Empenho' =
+			
+			COUNTROWS(ted_empenhos_plano_acao_ted)
+		formatString: 0
+		lineageTag: 5405d5eb-bb86-4738-b2c7-d5e54223e97c
+
+	measure '% TEDs com Empenho' =
+			
+			DIVIDE(
+			    [Qtd TEDs com Empenho],
+			    [Qtd TEDs]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: e60f60a4-36c4-4427-8b83-e98d04149662
+
+	measure 'Valor Empenhado' =
+			
+			SUM(ted_resumo_orcamentario_ted[empenhado])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5fc3a037-42b1-4737-a1b0-bb06a367591f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Pago Ted' =
+			
+			SUM(ted_resumo_orcamentario_ted[despesas_pagas_exercicio]) +
+			SUM(ted_resumo_orcamentario_ted[despesas_pagas_rap])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c07db0a3-f6db-48d2-b659-b54e964bd32f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Percentual Execucao' =
+			
+			DIVIDE(
+			    SUM(ted_resumo_orcamentario_ted[empenhado]),
+			    SUM(ted_resumo_orcamentario_ted[valor_firmado]),
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 380fe09b-8cd4-447d-a908-891ecece2ec4
+
+	measure 'Orçamento Recebido' =
+			
+			SUM(ted_resumo_orcamentario_ted[orcamento_recebido])
+		formatString: 0
+		lineageTag: 30b098d4-9521-4dc1-8d8e-656925c0a492
+
+	measure Pago =
+			
+			SUM(ted_resumo_orcamentario_ted[despesas_pagas_exercicio])
+			+
+			SUM(ted_resumo_orcamentario_ted[despesas_pagas_rap])
+		formatString: 0
+		lineageTag: a9a8e257-48b6-492c-8393-33e0a085a4e3
+
+	measure Liquidado =
+			
+			SUM(ted_resumo_orcamentario_ted[despesas_liquidada])
+		formatString: 0
+		lineageTag: 0bd7e898-afa9-4940-afe5-19a65fd8ebec
+
+	measure Distibuicao_recurso = SUM(ted_empenhos_plano_acao_ted[despesas_empenhadas])
+		formatString: 0
+		lineageTag: 851e35a5-d4a1-4c74-821e-aa32023446cc
+
+	measure 'Planos Aprovados TED' =
+			
+			CALCULATE(
+			    COUNT(planos_acao_ted[id_plano_acao]),
+			    planos_acao_ted[tx_situacao_plano_acao] = "APROVADO"
+			)
+		formatString: 0
+		lineageTag: 838a2d62-8200-4db8-a92f-cccee3ec9c80
+
+	measure 'TEDs Sem Empenho' =
+			
+			[Qtd TEDs] - [Qtd TEDs com Empenho]
+		formatString: 0
+		lineageTag: e8d3e5e3-0f9c-430b-882a-d0ed18b69ac0
+
+	measure 'Percentual Pago TED' =
+			
+			DIVIDE(
+			    [Valor Pago TED],
+			    [Valor Firmado TED]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: a7274e94-1010-47aa-9751-ad95db91857c
+
+	measure 'Saude TED' =
+			
+			SWITCH(
+			    TRUE(),
+			    [Percentual Execucao] >= 0.80, "🟢 Excelente",
+			    [Percentual Execucao] >= 0.50, "🟡 Atenção",
+			    [Percentual Execucao] > 0, "🟠 Baixa Execução",
+			    "🔴 Sem Execução"
+			)
+		lineageTag: dec4f6e5-013f-4680-b82d-a36328b2a3a6
+
+	measure 'Diferença Empenhado x Firmado' =
+			
+			[Valor Empenhado] - [Valor Firmado TED]
+		formatString: 0
+		lineageTag: bb31ef0b-1b82-426e-93bd-b3e7852a7a68
+
+	measure 'Status Execução' =
+			
+			SWITCH(
+			    TRUE(),
+			    [Percentual Execucao] > 1, "Acima de 100%",
+			    [Percentual Execucao] >= 0.8, "Alta execução",
+			    [Percentual Execucao] >= 0.5, "Média execução",
+			    [Percentual Execucao] > 0, "Baixa execução",
+			    "Sem execução"
+			)
+		lineageTag: 9ce8e2f3-f16f-438d-95c3-e61734ea7563
+
+	partition _Medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

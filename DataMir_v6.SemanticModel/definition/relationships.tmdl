@@ -1,0 +1,112 @@
+relationship ffa48880-e4ae-4c5a-ae94-03ee6e3be352
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_emendas_partidos.emissao_dia
+	toColumn: LocalDateTable_6e747991-4407-4c7e-827a-3739090dbd07.Date
+
+relationship AutoDetected_ee9d37d3-7de0-4882-b0ad-02f116fa45bc
+	fromColumn: f_emendas_partidos.id_autor
+	toColumn: d_parlamentar_partidos.id_autor
+
+relationship AutoDetected_46cff8a3-54ab-4d99-9c24-8e61e430af58
+	fromColumn: f_emendas_partidos.codigo_programa
+	toColumn: d_programa_partidos.codigo_programa
+
+relationship AutoDetected_f0c589bf-1b21-4d11-b7ee-a5b24205b8a0
+	fromColumn: f_emendas_partidos.id_localizacao
+	toColumn: d_localizacao_partidos.id_localizacao
+
+relationship AutoDetected_a3a4dc23-985e-4e10-8753-0ee0cf4e81e4
+	fromColumn: f_empenhos_plano.natureza_despesa
+	toColumn: d_natureza_plano.natureza_despesa
+
+relationship AutoDetected_fc77570b-4a79-4ed6-9357-4fbc78724bd3
+	fromColumn: f_empenhos_plano.ne_ccor_favorecido
+	toColumn: d_favorecido_plano.ne_ccor_favorecido
+
+relationship AutoDetected_2068a566-5fb5-4120-8027-41fc5e6f69e6
+	fromColumn: f_empenhos_plano.fonte_recursos_detalhada
+	toColumn: d_fonte_plano.fonte_recursos_detalhada
+
+relationship a5f68436-cbac-4cbf-8393-2380a5278490
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dCalendario.Date
+	toColumn: LocalDateTable_f0f08253-db89-49e6-bf8a-974792581518.Date
+
+relationship 8b3626b8-ca65-d178-fb69-a8c65dec4b5e
+	fromColumn: f_emendas_partidos.emissao_mes
+	toColumn: dCalendario.Date
+
+relationship 3a33f81a-1052-68d2-c7a9-96af1cbebb0a
+	fromColumn: f_empenhos_plano.emissao_mes
+	toColumn: dCalendario.Date
+
+relationship 2e17c0cd-5a92-4e03-8892-1ab310dc6d2f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: f_emendas_convenio.emissao_mes
+	toColumn: LocalDateTable_9c03326d-aa68-4303-a887-175af6fb2d16.Date
+
+relationship AutoDetected_1fce4294-fe24-452a-82bf-c422d14eddba
+	fromColumn: f_emendas_convenio.codigo_programa
+	toColumn: d_programa_convenio.codigo_programa
+
+relationship AutoDetected_69439554-d06c-46ae-b900-b04b9ff20cd1
+	fromColumn: f_emendas_convenio.id_autor
+	toColumn: d_parlamentar_convenio.id_autor
+
+relationship be8f8af7-7ad7-3a79-50ab-c8fc7811aa65
+	fromColumn: f_emendas_convenio.id_localizacao
+	toColumn: d_localizacao_convenio.id_localizacao
+
+relationship 4539a950-c018-4712-93e9-dde20425bc3c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted.dt_inicio_vigencia
+	toColumn: LocalDateTable_0e788031-b380-4619-92fa-4bb4e4251ccc.Date
+
+relationship 2d7df4bb-b1d8-463b-80fc-d52baee41381
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted.dt_fim_vigencia
+	toColumn: LocalDateTable_1500fc70-3a5b-41d1-b939-bbe5c0a91b08.Date
+
+relationship bd3a2da7-b424-492a-a628-47c70d228bb6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted.dt_ingest
+	toColumn: LocalDateTable_3bbf6993-9e79-4cae-ab13-51819acb13fe.Date
+
+relationship d5971458-8afb-4018-a4d9-258aeffc456a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ted_resumo_orcamentario_ted.dt_ingest
+	toColumn: LocalDateTable_f8d7f720-7c5c-4687-a009-72ddbf51cf95.Date
+
+relationship AutoDetected_598b284e-07e9-4872-ac64-c51d754ed4bf
+	fromColumn: ted_resumo_orcamentario_ted.plano_acao
+	toColumn: planos_acao_ted.id_plano_acao
+
+relationship 0635ce9a-458b-4241-84e3-0884520f09b5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted.dt_recebimento_plano_beneficiario_inicio
+	toColumn: LocalDateTable_ec5122e4-532d-4f11-a623-e085e2cd047e.Date
+
+relationship 5a7eed68-4899-4b7f-becd-70eb8ada5fb1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted.dt_recebimento_plano_beneficiario_fim
+	toColumn: LocalDateTable_c3a22074-f775-4bb0-9a01-1d3da90526b8.Date
+
+relationship 61b2ba19-35c6-4853-a94d-1fd46f338792
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted.dt_ingest
+	toColumn: LocalDateTable_a63a84ba-a654-4078-b27b-d50fb4eb2cb1.Date
+
+relationship 60cf414d-b759-41e7-84a4-6d0ce13f2f45
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ted_empenhos_plano_acao_ted.dt_ingest
+	toColumn: LocalDateTable_f1b05c6a-f2ba-4eec-bf7c-8d772cae4ad1.Date
+
+relationship AutoDetected_d978e344-8ad4-4f77-82cf-1498d6669188
+	fromColumn: ted_empenhos_plano_acao_ted.plano_acao
+	toColumn: planos_acao_ted.id_plano_acao
+
+relationship 7114c349-30fe-ae89-8fff-c695fd8d3dc6
+	crossFilteringBehavior: bothDirections
+	fromColumn: planos_acao_ted.id_programa
+	toColumn: programas_ted.id_programa
+

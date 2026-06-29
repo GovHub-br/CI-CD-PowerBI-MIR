@@ -1,0 +1,848 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "limpaFiltrosConvenios",
+  "name": "4fb2f6d369cb5e5db485",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "b8ba48d69a8e6b0bceae",
+    "sections": {
+      "b8ba48d69a8e6b0bceae": {
+        "visualContainers": {
+          "24cfa901bc1666575345": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c42d753d8cfeb61d1413",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Global"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Global"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "bdb78eedd2181ba4d21d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bd2f35f759b08027e669",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Empenhado"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Empenhado"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "122375cd8b44a2e62391": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ce65caedd2afa78123ba",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Pago"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Pago"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "887a69831ab014ac35d7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "75ce30d16f11d4e55c9a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Qtd_Convenios"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Qtd_Convenios"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "0a9e0a1c739be6b442d8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c0d6166e0d64edf964a3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "3e682fa0a00cc95a47d0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "7914e5983a5f93f819e8",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_emendas_convenio"
+                        }
+                      },
+                      "Property": "sit_convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_emendas_convenio"
+                        }
+                      },
+                      "Property": "sit_convenio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "217b5c88b5153617e15e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "45a6d99aff9e7d821ee6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_localizacao_convenio"
+                        }
+                      },
+                      "Property": "uf_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_localizacao_convenio"
+                        }
+                      },
+                      "Property": "uf_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "05550e2f41709842266b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "02e22b92e5f4cc1532ca",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_emendas_convenio"
+                        }
+                      },
+                      "Property": "sit_convenio"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b9bc106f0a1b058aab18",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Qtd_Convenios"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pieChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Qtd_Convenios"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_emendas_convenio"
+                        }
+                      },
+                      "Property": "sit_convenio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1e83da406edb990b7293": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9c8df324d4cdf56cccc6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_programa_convenio"
+                        }
+                      },
+                      "Property": "programa"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "15b3b3d01e2e8e4a0418",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Empenhado"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Empenhado"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_programa_convenio"
+                        }
+                      },
+                      "Property": "programa"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "1158c9127096b8ea0d2c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "52a2c960965b95929e92",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d5ea157fd93826a3b20a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Empenhado"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Empenhado"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "65d1d3e32e2cae3d1412": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "70278528388dbe96d93e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "autor"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "de5586c79c0c419354b0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "url_foto_autor"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "af3e72695ad483969f86",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "url_foto_partido"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9f986246cb3ee25a107e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_parlamentar_convenio"
+                        }
+                      },
+                      "Property": "uf_autor"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e7449f2b567dba6ed296",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "f_emendas_convenio"
+                        }
+                      },
+                      "Property": "nr_convenio"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "dd8dad181204f71a7e7e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Global"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "78d34dd271db337a8e2d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Pago"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Pago"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "28c60da05d6e25a2e92e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8f02f97eda19ed290328",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_localizacao_convenio"
+                        }
+                      },
+                      "Property": "uf_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f5c06d7cd862b8d98256",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Global"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ce5244950b15619d6a50",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Pago"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "filledMap",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "d_localizacao_convenio"
+                        }
+                      },
+                      "Property": "uf_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e502ee1a707c56a0eb49": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "764e4171ec96863149b9",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Global"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c956166bad91bbb84516",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Empenhado"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "181f647564d1c498dfd0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Total_Pago"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "funnel",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Medidas"
+                        }
+                      },
+                      "Property": "Valor Global"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6c06e44674d46e620d4e": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "78da41808e08398024b6": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

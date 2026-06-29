@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "f5c0c16016323c6d75e0",
+  "position": {
+    "x": 588.88888888888891,
+    "y": 488.88888888888886,
+    "z": 4000,
+    "height": 23.333333333333332,
+    "width": 242.22222222222223,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'O Painel de TEDs reúne informações sobre os Termos de Execução Descentralizada celebrados pelo Ministério da Igualdade Racial. Os dados são obtidos a partir do TransfereGov e do SIAFI, abrangendo a série histórica de 2023 até a atualização mais recente da base de dados. O painel integra informações sobre programas, planos de ação, unidades descentralizadas e executoras, objeto, justificativa, vigência, situação do instrumento, valores pactuados, créditos orçamentários descentralizados, empenhos, liquidações, pagamentos, restos a pagar e programações financeiras. O painel também permite identificar os TEDs financiados por emendas parlamentares, possibilitando o acompanhamento da origem dos recursos e de sua execução por instrumento, unidade executora e programa governamental.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "howCreated": "InsertVisualButton"
+}

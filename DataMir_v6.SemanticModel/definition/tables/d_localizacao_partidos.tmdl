@@ -1,0 +1,71 @@
+table d_localizacao_partidos
+	lineageTag: 08d1dc3b-0299-48bd-9647-380a8e35259b
+
+	column uf
+		dataType: string
+		lineageTag: 2dc5b7de-c3f0-4802-bf9d-2ad532f45dd1
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf_descricao
+		dataType: string
+		lineageTag: afb984e6-55c7-417b-8887-af70f4a640d3
+		summarizeBy: none
+		sourceColumn: uf_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column municipio
+		dataType: string
+		lineageTag: ccc74835-08bc-443a-b476-a340cff9a68c
+		summarizeBy: none
+		sourceColumn: municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao_pt
+		dataType: string
+		lineageTag: 4fb2ad04-d808-4e9c-93e3-a93483b8a66a
+		summarizeBy: none
+		sourceColumn: regiao_pt
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_localizacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 24612677-ff33-41a0-90cf-a0c30981ea12
+		summarizeBy: none
+		sourceColumn: id_localizacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column Localizacao_Mapa = ```
+			
+			IF (
+			    d_localizacao_partidos[uf] = "-8", 
+			    BLANK(), 
+			    d_localizacao_partidos[uf_descricao] & ", Brasil"
+			)
+			```
+		lineageTag: 16ea3008-2520-4f1a-8a0a-059a08aa2740
+		dataCategory: StateOrProvince
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_localizacao_partidos = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\Emendas_partidos\d_localizacao_partidos.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"uf", type text}, {"uf_descricao", type text}, {"municipio", type text}, {"regiao_pt", type text}, {"id_localizacao", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

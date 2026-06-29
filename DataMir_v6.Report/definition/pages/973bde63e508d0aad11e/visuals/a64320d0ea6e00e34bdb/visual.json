@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "a64320d0ea6e00e34bdb",
+  "position": {
+    "x": 961.11111111111109,
+    "y": 488.88888888888886,
+    "z": 3000,
+    "height": 23.333333333333332,
+    "width": 277.77777777777777,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'PageNavigation'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'O Painel de Convênios apresenta informações sobre os convênios e demais instrumentos de transferência celebrados pelo Ministério da Igualdade Racial. Os dados são provenientes do SICONV/TransfereGov e do SIAFI, abrangendo a série histórica de 2023 até a atualização mais recente da base de dados. O painel disponibiliza informações sobre número do convênio, proposta e processo administrativo, situação e subsituação do instrumento, vigência, datas de assinatura e publicação, unidade gestora responsável, valores globais, repasses, contrapartidas, desembolsos, saldos remanescentes, rendimentos de aplicação, quantidade de termos aditivos e prorrogações, bem como informações sobre os planos de ação associados. Também permite identificar a vinculação dos convênios às emendas parlamentares, incluindo informações sobre o autor da emenda, partido político, unidade da federação e a execução orçamentária e financeira dos recursos transferidos.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "howCreated": "InsertVisualButton"
+}

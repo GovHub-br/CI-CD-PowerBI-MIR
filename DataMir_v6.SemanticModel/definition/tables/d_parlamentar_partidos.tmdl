@@ -1,0 +1,82 @@
+table d_parlamentar_partidos
+	lineageTag: dbf32bf5-c90a-4b92-a740-bd64033a0739
+
+	column id_autor
+		dataType: int64
+		formatString: 0
+		lineageTag: 247d5c53-c73f-45ed-a500-895e02e265be
+		summarizeBy: none
+		sourceColumn: id_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column autor
+		dataType: string
+		lineageTag: e1795e9e-1ba7-480e-859f-dd9b843935b4
+		summarizeBy: none
+		sourceColumn: autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column cargo_autor
+		dataType: string
+		lineageTag: 3333423d-a24f-48ad-bb13-85ac6d8f287a
+		summarizeBy: none
+		sourceColumn: cargo_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column partido
+		dataType: string
+		lineageTag: 8c5fcd3a-f24e-44e2-9adc-75e9da2b185e
+		summarizeBy: none
+		sourceColumn: partido
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf_autor
+		dataType: string
+		lineageTag: dcd3b8bc-d22e-474a-adae-5267358d39c7
+		summarizeBy: none
+		sourceColumn: uf_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column url_foto_autor
+		dataType: string
+		lineageTag: 18fe57d0-beed-4f2f-899b-4013f51d9f96
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: url_foto_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_autor
+		dataType: string
+		lineageTag: f8024da7-0639-4d27-9326-62e731c3094c
+		summarizeBy: none
+		sourceColumn: email_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column url_foto_partido
+		dataType: string
+		lineageTag: 8427803b-d6bc-42fe-a8eb-2a2c1165a700
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: url_foto_partido
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_parlamentar_partidos = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\Emendas_partidos\d_parlamentar_partidos.csv"),[Delimiter=",", Columns=8, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id_autor", Int64.Type}, {"autor", type text}, {"cargo_autor", type text}, {"partido", type text}, {"uf_autor", type text}, {"url_foto_autor", type text}, {"email_autor", type text}, {"url_foto_partido", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

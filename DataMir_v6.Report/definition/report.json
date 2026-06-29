@@ -1,0 +1,135 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU05",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Custom2239600816590156.json",
+      "reportVersionAtImport": {
+        "visual": "2.10.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU05",
+          "path": "BaseThemes/CY26SU05.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "BG_gr_ficos_convenios5139224148165975.png",
+          "path": "BG_gr_ficos_convenios5139224148165975.png",
+          "type": "Image"
+        },
+        {
+          "name": "BG_gr_ficos_Detalhamento_TEDs29048045679563794.png",
+          "path": "BG_gr_ficos_Detalhamento_TEDs29048045679563794.png",
+          "type": "Image"
+        },
+        {
+          "name": "BG_gr_ficos_emendas_136986721546094736.png",
+          "path": "BG_gr_ficos_emendas_136986721546094736.png",
+          "type": "Image"
+        },
+        {
+          "name": "BG_gr_ficos_Empenhos6240262950630034.png",
+          "path": "BG_gr_ficos_Empenhos6240262950630034.png",
+          "type": "Image"
+        },
+        {
+          "name": "BG_gr_ficos_Infos_add5943848021461463.png",
+          "path": "BG_gr_ficos_Infos_add5943848021461463.png",
+          "type": "Image"
+        },
+        {
+          "name": "BG_gr_ficos_TEDs5101606347713988.png",
+          "path": "BG_gr_ficos_TEDs5101606347713988.png",
+          "type": "Image"
+        },
+        {
+          "name": "Custom2239600816590156.json",
+          "path": "Custom2239600816590156.json",
+          "type": "CustomTheme"
+        },
+        {
+          "name": "escolhaBase9284149373700974.jpeg",
+          "path": "escolhaBase9284149373700974.jpeg",
+          "type": "Image"
+        },
+        {
+          "name": "filtro-limpo15097551759962036.png",
+          "path": "filtro-limpo15097551759962036.png",
+          "type": "Image"
+        },
+        {
+          "name": "filtro-limpo7046690085271367.png",
+          "path": "filtro-limpo7046690085271367.png",
+          "type": "Image"
+        },
+        {
+          "name": "Home7579719803963713.png",
+          "path": "Home7579719803963713.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true,
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
+  }
+}

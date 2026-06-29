@@ -1,0 +1,89 @@
+table dCalendario
+	lineageTag: 3ec6fd40-f648-47ad-82aa-b88d106a2e85
+
+	column Date
+		formatString: General Date
+		lineageTag: 95d69aaa-2c83-454d-8c43-b3a109a843da
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: a5f68436-cbac-4cbf-8393-2380a5278490
+			defaultHierarchy: LocalDateTable_f0f08253-db89-49e6-bf8a-974792581518.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: 87210d74-5e23-4917-b226-1d0ba24d1c71
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nome do Mês'
+		lineageTag: 5b36944e-03a6-4c44-81ce-c26c8465a007
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Nome do Mês]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mês Inteiro'
+		formatString: 0
+		lineageTag: 37e82901-fc23-42a3-ae39-d0aa33252e61
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Mês Inteiro]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ano Mês'
+		lineageTag: e4f877b5-1a30-4bf5-b5e1-091e69dc7a0d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ano Mês]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: 0ea37f2d-3b99-4632-867b-427759e51a4a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dia da Semana'
+		lineageTag: 30727e5d-e8cd-4c7a-80c8-f9b62d141176
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Dia da Semana]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendario = calculated
+		mode: import
+		source =
+				
+				VAR DataMinima = DATEVALUE(MIN(f_emendas_partidos[emissao_mes]))
+				VAR DataMaxima = DATEVALUE(MAX(f_emendas_partidos[emissao_mes]))
+				VAR AnoMinimo = YEAR(DataMinima)
+				VAR AnoMaximo = YEAR(DataMaxima)
+				
+				RETURN
+				ADDCOLUMNS (
+				    CALENDAR ( DATE ( AnoMinimo, 1, 1 ), DATE ( AnoMaximo, 12, 31 ) ),
+				    "Ano", YEAR ( [Date] ),
+				    "Nome do Mês", FORMAT ( [Date], "MMMM" ),
+				    "Mês Inteiro", MONTH ( [Date] ),
+				    "Ano Mês", FORMAT ( [Date], "YYYY-MM" ),
+				    "Trimestre", "T" & FORMAT ( [Date], "Q" ),
+				    "Dia da Semana", FORMAT ( [Date], "DDDD" )
+				)
+
+	annotation PBI_Id = 72cf96895df941fd9308e98cded2659e
+

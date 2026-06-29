@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "DataMir_v6"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7835ed1b-5eb0-424d-ad14-c91cb22e91ab"
+  }
+}

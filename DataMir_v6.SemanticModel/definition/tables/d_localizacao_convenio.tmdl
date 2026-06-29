@@ -1,0 +1,57 @@
+table d_localizacao_convenio
+	lineageTag: 0fbe22de-3571-4fde-8ff1-511f77086abe
+
+	column uf
+		dataType: string
+		lineageTag: b703a78c-2fb5-497b-b725-63bbff2f0168
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf_descricao
+		dataType: string
+		lineageTag: 97bff3e5-7130-494c-a505-d1028db629c4
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: uf_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column municipio
+		dataType: string
+		lineageTag: 1fba9634-5d98-4feb-be55-ea5c8aaa4ab9
+		summarizeBy: none
+		sourceColumn: municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao_pt
+		dataType: string
+		lineageTag: 9c8c4939-27c2-48b6-993a-8ff90fb4ad7e
+		summarizeBy: none
+		sourceColumn: regiao_pt
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_localizacao
+		dataType: int64
+		formatString: 0
+		lineageTag: 45ecba0c-f142-4d8a-904c-a9a782e49b84
+		summarizeBy: none
+		sourceColumn: id_localizacao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_localizacao_convenio = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\Convenios\d_localizacao_convenio.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"uf", type text}, {"uf_descricao", type text}, {"municipio", type text}, {"regiao_pt", type text}, {"id_localizacao", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,32 @@
+table d_natureza_plano
+	lineageTag: 8dc34d9b-90fa-491d-a251-e9827dc2e625
+
+	column natureza_despesa
+		dataType: int64
+		formatString: 0
+		lineageTag: fcb27a44-748c-4d4a-9eae-0a7237888b2a
+		summarizeBy: none
+		sourceColumn: natureza_despesa
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_despesa_descricao
+		dataType: string
+		lineageTag: ede48270-df10-4ece-925e-5c513c884dca
+		summarizeBy: none
+		sourceColumn: natureza_despesa_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_natureza_plano = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\planoDeAcao\d_natureza_plano.csv"),[Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"natureza_despesa", Int64.Type}, {"natureza_despesa_descricao", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

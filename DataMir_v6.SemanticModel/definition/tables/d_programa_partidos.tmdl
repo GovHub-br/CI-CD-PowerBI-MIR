@@ -1,0 +1,32 @@
+table d_programa_partidos
+	lineageTag: ca074856-b1fe-4193-92ad-10234e8ee991
+
+	column codigo_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: b8ad60ad-b483-43d7-bfd9-05ad1070139f
+		summarizeBy: none
+		sourceColumn: codigo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa
+		dataType: string
+		lineageTag: d6d21e8f-8027-413a-be3b-6521b5a391b4
+		summarizeBy: none
+		sourceColumn: programa
+
+		annotation SummarizationSetBy = Automatic
+
+	partition d_programa_partidos = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\Emendas_partidos\d_programa_partidos.csv"),[Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"codigo_programa", Int64.Type}, {"programa", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

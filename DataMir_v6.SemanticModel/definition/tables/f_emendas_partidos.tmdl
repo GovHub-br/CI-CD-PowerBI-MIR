@@ -1,0 +1,125 @@
+table f_emendas_partidos
+	lineageTag: e2612c99-bfcb-4a65-b3b2-e6b6e197d2ce
+
+	column id_autor
+		dataType: int64
+		formatString: 0
+		lineageTag: bb6692cc-b250-4e1d-b9e7-aa8fbccf7aa2
+		summarizeBy: none
+		sourceColumn: id_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: abfb2b98-ffe8-4fcd-85c8-933a55838f57
+		summarizeBy: none
+		sourceColumn: codigo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_localizacao
+		dataType: int64
+		formatString: 0
+		lineageTag: d56ea234-9d7f-45d1-ab99-3c8f0c2f8741
+		summarizeBy: none
+		sourceColumn: id_localizacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_empenhadas
+		dataType: int64
+		formatString: 0
+		lineageTag: e5c0aa19-134d-4dda-bba3-029174f56f06
+		summarizeBy: sum
+		sourceColumn: despesas_empenhadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	column despesas_liquidadas
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a39fbbe-54dd-428e-be02-233e77da7dc8
+		summarizeBy: sum
+		sourceColumn: despesas_liquidadas
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_pagas
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b121b56-782c-4bfb-8b61-ebfe4f195d63
+		summarizeBy: sum
+		sourceColumn: despesas_pagas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	column emissao_mes
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b3ac95f6-0d6b-4e53-919e-b6514bb37351
+		summarizeBy: none
+		sourceColumn: emissao_mes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column emissao_dia
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9d3d0754-3396-4906-8683-ebcc9fb4d9be
+		summarizeBy: none
+		sourceColumn: emissao_dia
+
+		variation Variation
+			isDefault
+			relationship: ffa48880-e4ae-4c5a-ae94-03ee6e3be352
+			defaultHierarchy: LocalDateTable_6e747991-4407-4c7e-827a-3739090dbd07.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column codigo_acao_ajustada
+		dataType: string
+		lineageTag: 58c7d3d7-fb9b-4a16-8e1f-5f8f376a51c6
+		summarizeBy: none
+		sourceColumn: codigo_acao_ajustada
+
+		annotation SummarizationSetBy = Automatic
+
+	column acao_ajustada
+		dataType: string
+		lineageTag: 68f6afac-5cfb-4b54-bee2-bbbe9536939b
+		summarizeBy: none
+		sourceColumn: acao_ajustada
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_emenda
+		dataType: int64
+		formatString: 0
+		lineageTag: 89c7d4bc-e1ba-4a99-8d4f-e0605858c4e6
+		summarizeBy: sum
+		sourceColumn: id_emenda
+
+		annotation SummarizationSetBy = Automatic
+
+	partition f_emendas_partidos = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\00878168141\Documents\projeto MIR\BancoDadosSistema\Emendas_partidos\f_emendas_partidos.csv"),[Delimiter=",", Columns=11, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id_autor", Int64.Type}, {"codigo_programa", Int64.Type}, {"id_localizacao", Int64.Type}, {"despesas_empenhadas", Int64.Type}, {"despesas_liquidadas", Int64.Type}, {"despesas_pagas", Int64.Type}, {"emissao_mes", type date}, {"emissao_dia", type date}, {"codigo_acao_ajustada", type text}, {"acao_ajustada", type text}, {"id_emenda", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
