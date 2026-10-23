@@ -1,0 +1,343 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "6448b5362231fa430c29",
+  "position": {
+    "x": 467.14285714285717,
+    "y": 574.28571428571433,
+    "z": 8000,
+    "height": 405.71428571428572,
+    "width": 1405.7142857142858,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "ne_ccor_ano_emissao"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.ne_ccor_ano_emissao",
+              "nativeQueryRef": "Ano",
+              "displayName": "Ano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "num_transf"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.num_transf",
+              "nativeQueryRef": "N. TED1",
+              "displayName": "N. TED"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "nc"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.nc",
+              "nativeQueryRef": "NC",
+              "displayName": "NC"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "natureza_despesa_descricao"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.natureza_despesa_descricao",
+              "nativeQueryRef": "Natureza Despesa",
+              "displayName": "Natureza Despesa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "fonte_recursos_detalhada_descricao"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.fonte_recursos_detalhada_descricao",
+              "nativeQueryRef": "Fonte Recurso",
+              "displayName": "Fonte Recurso"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "ne_ccor_favorecido_descricao"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.ne_ccor_favorecido_descricao",
+              "nativeQueryRef": "Favorecido(a)",
+              "displayName": "Favorecido(a)"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "ne_ccor_descricao"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.ne_ccor_descricao",
+              "nativeQueryRef": "Descrição",
+              "displayName": "Descrição"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_empenhos_plano_acao"
+                        }
+                      },
+                      "Property": "despesas_empenhadas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_empenhos_plano_acao.despesas_empenhadas)",
+              "nativeQueryRef": "Empenhado",
+              "displayName": "Empenhado"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_empenhos_plano_acao"
+                        }
+                      },
+                      "Property": "despesas_liquidadas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_empenhos_plano_acao.despesas_liquidadas)",
+              "nativeQueryRef": "Liquidado",
+              "displayName": "Liquidado"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_empenhos_plano_acao"
+                        }
+                      },
+                      "Property": "despesas_pagas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_empenhos_plano_acao.despesas_pagas)",
+              "nativeQueryRef": "Pago",
+              "displayName": "Pago"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "restos_a_pagar_inscritos"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.restos_a_pagar_inscritos",
+              "nativeQueryRef": "RAP Inscritos",
+              "displayName": "RAP Inscritos"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_empenhos_plano_acao"
+                    }
+                  },
+                  "Property": "restos_a_pagar_pagos"
+                }
+              },
+              "queryRef": "ted_empenhos_plano_acao.restos_a_pagar_pagos",
+              "nativeQueryRef": "RAP Pagos1",
+              "displayName": "RAP Pagos"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

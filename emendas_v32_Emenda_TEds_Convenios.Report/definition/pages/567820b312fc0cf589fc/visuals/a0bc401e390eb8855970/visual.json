@@ -1,0 +1,406 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "a0bc401e390eb8855970",
+  "position": {
+    "x": 435,
+    "y": 265,
+    "z": 7000,
+    "height": 713.75,
+    "width": 1435,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "ne_ccor_ano_emissao"
+                }
+              },
+              "queryRef": "emendas_execucao.ne_ccor_ano_emissao",
+              "nativeQueryRef": "Ano1",
+              "displayName": "Ano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "numero_instrumento"
+                }
+              },
+              "queryRef": "emendas_execucao.numero_instrumento",
+              "nativeQueryRef": "N. Instrumento1",
+              "displayName": "N. Instrumento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "tipo_instrumento"
+                }
+              },
+              "queryRef": "emendas_execucao.tipo_instrumento",
+              "nativeQueryRef": "Instrumento1",
+              "displayName": "Instrumento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "modalidade"
+                }
+              },
+              "queryRef": "emendas_execucao.modalidade",
+              "nativeQueryRef": "Modalidade1",
+              "displayName": "Modalidade"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "autor"
+                }
+              },
+              "queryRef": "emendas_execucao.autor",
+              "nativeQueryRef": "Autor1",
+              "displayName": "Autor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "uf_autor"
+                }
+              },
+              "queryRef": "emendas_execucao.uf_autor",
+              "nativeQueryRef": "UF1",
+              "displayName": "UF"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "partido"
+                }
+              },
+              "queryRef": "emendas_execucao.partido",
+              "nativeQueryRef": "Partido1",
+              "displayName": "Partido"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_execucao"
+                        }
+                      },
+                      "Property": "dotacao_inicial"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_execucao.dotacao_inicial)",
+              "nativeQueryRef": "Dotação Inicial1",
+              "displayName": "Dotação Inicial"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_execucao"
+                        }
+                      },
+                      "Property": "despesas_empenhadas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_execucao.despesas_empenhadas)",
+              "nativeQueryRef": "Empenhado1",
+              "displayName": "Empenhado"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_execucao"
+                        }
+                      },
+                      "Property": "despesas_pagas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_execucao.despesas_pagas)",
+              "nativeQueryRef": "Pago1",
+              "displayName": "Pago"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "programa"
+                }
+              },
+              "queryRef": "emendas_execucao.programa",
+              "nativeQueryRef": "Programa",
+              "displayName": "Programa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "acao_ajustada"
+                }
+              },
+              "queryRef": "emendas_execucao.acao_ajustada",
+              "nativeQueryRef": "Ação Orçamentária1",
+              "displayName": "Ação Orçamentária"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "ne_ccor_favorecido"
+                }
+              },
+              "queryRef": "emendas_execucao.ne_ccor_favorecido",
+              "nativeQueryRef": "Ident. Favorecido1",
+              "displayName": "Ident. Favorecido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "ne_ccor_favorecido_descricao"
+                }
+              },
+              "queryRef": "emendas_execucao.ne_ccor_favorecido_descricao",
+              "nativeQueryRef": "Favorecido1",
+              "displayName": "Favorecido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_execucao"
+                    }
+                  },
+                  "Property": "ne_ccor_descricao"
+                }
+              },
+              "queryRef": "emendas_execucao.ne_ccor_descricao",
+              "nativeQueryRef": "Descrição",
+              "displayName": "Descrição"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_execucao"
+                        }
+                      },
+                      "Property": "restos_a_pagar_inscritos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_execucao.restos_a_pagar_inscritos)",
+              "nativeQueryRef": "RAP Inscritos1",
+              "displayName": "RAP Inscritos"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_execucao"
+                        }
+                      },
+                      "Property": "restos_a_pagar_pagos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_execucao.restos_a_pagar_pagos)",
+              "nativeQueryRef": "RAP Pagos1",
+              "displayName": "RAP Pagos"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "emendas_execucao"
+                  }
+                },
+                "Property": "ne_ccor_ano_emissao"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

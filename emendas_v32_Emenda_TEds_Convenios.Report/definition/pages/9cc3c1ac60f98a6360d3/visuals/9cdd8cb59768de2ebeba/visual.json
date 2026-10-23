@@ -1,0 +1,459 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "9cdd8cb59768de2ebeba",
+  "position": {
+    "x": 1123.75,
+    "y": 282.5,
+    "z": 8000,
+    "height": 692.5,
+    "width": 747.5,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "url_foto_autor"
+                }
+              },
+              "queryRef": "Emenda_Convenio.url_foto_autor",
+              "nativeQueryRef": "Foto",
+              "displayName": "Foto"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "autor"
+                }
+              },
+              "queryRef": "Emenda_Convenio.autor",
+              "nativeQueryRef": "Autor",
+              "displayName": "Autor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "partido"
+                }
+              },
+              "queryRef": "Emenda_Convenio.partido",
+              "nativeQueryRef": "Partido",
+              "displayName": "Partido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "uf_autor"
+                }
+              },
+              "queryRef": "Emenda_Convenio.uf_autor",
+              "nativeQueryRef": "UF do Autor",
+              "displayName": "UF do Autor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "ano"
+                }
+              },
+              "queryRef": "Sum(Emenda_Convenio.ano)",
+              "nativeQueryRef": "Ano",
+              "displayName": "Ano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "numero_transferencia"
+                }
+              },
+              "queryRef": "Sum(Emenda_Convenio.numero_transferencia)",
+              "nativeQueryRef": "N. Transferência",
+              "displayName": "N. Transferência"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "modalidade"
+                }
+              },
+              "queryRef": "Emenda_Convenio.modalidade",
+              "nativeQueryRef": "Modalidade",
+              "displayName": "Modalidade"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "localizador_gasto_descricao"
+                }
+              },
+              "queryRef": "Emenda_Convenio.localizador_gasto_descricao",
+              "nativeQueryRef": "Descrição Empenho",
+              "displayName": "Descrição Empenho"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "ne_ccor_favorecido_descricao"
+                }
+              },
+              "queryRef": "Emenda_Convenio.ne_ccor_favorecido_descricao",
+              "nativeQueryRef": "Favorecido",
+              "displayName": "Favorecido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Emenda_Convenio"
+                    }
+                  },
+                  "Property": "ne_ccor_descricao"
+                }
+              },
+              "queryRef": "Emenda_Convenio.ne_ccor_descricao",
+              "nativeQueryRef": "Descrição",
+              "displayName": "Descrição"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Total Empenhado Convenio"
+                }
+              },
+              "queryRef": "_medidas.Total Empenhado Convenio",
+              "nativeQueryRef": "Empenhado",
+              "displayName": "Empenhado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Total Pago Convenio"
+                }
+              },
+              "queryRef": "_medidas.Total Pago Convenio",
+              "nativeQueryRef": "Pago",
+              "displayName": "Pago"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "restos_a_pagar_inscritos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Emenda_Convenio.restos_a_pagar_inscritos)",
+              "nativeQueryRef": "RAP Inscrito",
+              "displayName": "RAP Inscrito"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "restos_a_pagar_pagos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Emenda_Convenio.restos_a_pagar_pagos)",
+              "nativeQueryRef": "RAP Pago",
+              "displayName": "RAP Pago"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Emenda_Convenio"
+                  }
+                },
+                "Property": "ano"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110.57029418370249D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Emenda_Convenio.autor"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "59.20636625744834D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Emenda_Convenio.partido"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "118.7138796517686D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_medidas.Total Pago Convenio"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "272.00722939153684D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Emenda_Convenio.localizador_gasto_descricao"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "270.41494705982325D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Emenda_Convenio.modalidade"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "311.79976837304224D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Emenda_Convenio.ne_ccor_favorecido_descricao"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "427.4478476954181D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Emenda_Convenio.ne_ccor_descricao"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f7d3a22de8ca067f5e97",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Emenda_Convenio"
+              }
+            },
+            "Property": "url_foto_autor"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "e",
+              "Entity": "Emenda_Convenio",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "e"
+                              }
+                            },
+                            "Property": "url_foto_autor"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

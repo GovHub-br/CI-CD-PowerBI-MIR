@@ -1,0 +1,226 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "1c65521073a0ac56eca3",
+  "position": {
+    "x": 747.59187176265061,
+    "y": 169.47926563888805,
+    "z": 10000,
+    "height": 448.57142857142861,
+    "width": 1122.8571428571429,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "aa_ano_programa"
+                }
+              },
+              "queryRef": "programas_ted (2).aa_ano_programa",
+              "nativeQueryRef": "Ano1",
+              "displayName": "Ano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "tx_nome_programa"
+                }
+              },
+              "queryRef": "programas_ted (2).tx_nome_programa",
+              "nativeQueryRef": "Nome1",
+              "displayName": "Nome"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "tx_nome_institucional_programa"
+                }
+              },
+              "queryRef": "programas_ted (2).tx_nome_institucional_programa",
+              "nativeQueryRef": "Nome Inst. Programa1",
+              "displayName": "Nome Inst. Programa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "tx_descricao_programa"
+                }
+              },
+              "queryRef": "programas_ted (2).tx_descricao_programa",
+              "nativeQueryRef": "Descrição Programa1",
+              "displayName": "Descrição Programa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "tx_objetivo_programa"
+                }
+              },
+              "queryRef": "programas_ted (2).tx_objetivo_programa",
+              "nativeQueryRef": "Objetivo1",
+              "displayName": "Objetivo"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "sigla_unidade_descentralizadora"
+                }
+              },
+              "queryRef": "programas_ted (2).sigla_unidade_descentralizadora",
+              "nativeQueryRef": "Un. Descentralizadora1",
+              "displayName": "Un. Descentralizadora"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "sigla_unidade_responsavel_acompanhamento"
+                }
+              },
+              "queryRef": "programas_ted (2).sigla_unidade_responsavel_acompanhamento",
+              "nativeQueryRef": "Sigla Un. Acompanhamento1",
+              "displayName": "Sigla Un. Acompanhamento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "programas_ted (2)"
+                    }
+                  },
+                  "Property": "tx_situacao_programa"
+                }
+              },
+              "queryRef": "programas_ted (2).tx_situacao_programa",
+              "nativeQueryRef": "Situação Programa1",
+              "displayName": "Situação Programa"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "programas_ted (2)"
+                  }
+                },
+                "Property": "tx_nome_programa"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "358.20271831324527D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "programas_ted (2).tx_nome_programa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "273.4346379485079D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "programas_ted (2).tx_nome_institucional_programa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "887.3262694947052D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "programas_ted (2).tx_descricao_programa"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "783.7556100403964D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "programas_ted (2).tx_objetivo_programa"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

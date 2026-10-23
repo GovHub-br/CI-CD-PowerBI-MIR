@@ -1,0 +1,276 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "984bc36f0a835aac8edd",
+  "position": {
+    "x": 664.28571428571433,
+    "y": 281.42857142857144,
+    "z": 6000,
+    "height": 692.85714285714289,
+    "width": 1208.5714285714287,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "nr_convenio"
+                }
+              },
+              "queryRef": "emendas_convenio (2).nr_convenio",
+              "nativeQueryRef": "N. Convênio1",
+              "displayName": "N. Convênio"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "autor"
+                }
+              },
+              "queryRef": "emendas_convenio (2).autor",
+              "nativeQueryRef": "Autor1",
+              "displayName": "Autor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "partido"
+                }
+              },
+              "queryRef": "emendas_convenio (2).partido",
+              "nativeQueryRef": "Partido1",
+              "displayName": "Partido"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_convenio (2)"
+                        }
+                      },
+                      "Property": "despesas_empenhadas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_convenio (2).despesas_empenhadas)",
+              "nativeQueryRef": "Empenhado",
+              "displayName": "Empenhado"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "modalidade"
+                }
+              },
+              "queryRef": "emendas_convenio (2).modalidade",
+              "nativeQueryRef": "Modalidade1",
+              "displayName": "Modalidade"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "ne_ccor_favorecido_descricao"
+                }
+              },
+              "queryRef": "emendas_convenio (2).ne_ccor_favorecido_descricao",
+              "nativeQueryRef": "Favorecido1",
+              "displayName": "Favorecido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "regiao_pt"
+                }
+              },
+              "queryRef": "emendas_convenio (2).regiao_pt",
+              "nativeQueryRef": "Região1",
+              "displayName": "Região"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "dia_inic_vigenc_conv"
+                }
+              },
+              "queryRef": "emendas_convenio (2).dia_inic_vigenc_conv",
+              "nativeQueryRef": "Inicio Vigência",
+              "displayName": "Inicio Vigência"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "natureza_despesa_descricao"
+                }
+              },
+              "queryRef": "emendas_convenio (2).natureza_despesa_descricao",
+              "nativeQueryRef": "Natureza Despesa1",
+              "displayName": "Natureza Despesa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "sit_convenio"
+                }
+              },
+              "queryRef": "emendas_convenio (2).sit_convenio",
+              "nativeQueryRef": "Situação1",
+              "displayName": "Situação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "emendas_convenio (2)"
+                    }
+                  },
+                  "Property": "dia_fim_vigenc_conv"
+                }
+              },
+              "queryRef": "emendas_convenio (2).dia_fim_vigenc_conv",
+              "nativeQueryRef": "Fim Vigência",
+              "displayName": "Fim Vigência"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_convenio (2)"
+                        }
+                      },
+                      "Property": "despesas_pagas"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_convenio (2).despesas_pagas)",
+              "nativeQueryRef": "Pago1",
+              "displayName": "Pago"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_convenio (2)"
+                        }
+                      },
+                      "Property": "restos_a_pagar_inscritos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_convenio (2).restos_a_pagar_inscritos)",
+              "nativeQueryRef": "RAP Inscrito",
+              "displayName": "RAP Inscrito"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_convenio (2)"
+                        }
+                      },
+                      "Property": "restos_a_pagar_pagos"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(emendas_convenio (2).restos_a_pagar_pagos)",
+              "nativeQueryRef": "RAP Pago",
+              "displayName": "RAP Pago"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,77 @@
+table dCalendario
+	lineageTag: dd28d8b2-ef9c-4c79-a279-ba9602457976
+
+	column Date
+		formatString: General Date
+		lineageTag: f39f8896-917d-4792-95d2-79eb60d7f091
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 6653ca4d-1f5b-4d97-a8d1-44dbc4fc400e
+			defaultHierarchy: LocalDateTable_5e42ec21-d5ca-4892-8336-b302e09d5309.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano
+		formatString: 0
+		lineageTag: ddd2ee17-9329-4e9e-8510-f092d7231ee7
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ano]
+
+		annotation SummarizationSetBy = Automatic
+
+	column MesNum
+		formatString: 0
+		lineageTag: 609f646c-3a2c-43a3-8e3b-2f27be8016fb
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [MesNum]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NomeMes
+		lineageTag: 9cd5fc29-7f62-47d6-861c-3695aa6e09c7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [NomeMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trimestre
+		lineageTag: f83d4edd-b0e3-4244-87f4-ee56859fc568
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Trimestre]
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnoMes
+		lineageTag: 0b4f22cb-a96f-4fb0-9d41-b23b252bed6c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [AnoMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dCalendario = calculated
+		mode: import
+		source =
+				
+				VAR DataMinima = MIN(emenda_convenio[emissao_dia])
+				VAR DataMaxima = MAX(emenda_convenio[emissao_dia])
+				RETURN
+				ADDCOLUMNS (
+				    CALENDAR (DataMinima, DataMaxima),
+				    "Ano", YEAR([Date]),
+				    "MesNum", MONTH([Date]),
+				    "NomeMes", FORMAT([Date], "MMMM"),
+				    "Trimestre", "T" & FORMAT([Date], "Q"),
+				    "AnoMes", FORMAT([Date], "YYYY-MM")
+				)
+
+	annotation PBI_Id = b98dee6ebcda4e609abaf019207b2721
+

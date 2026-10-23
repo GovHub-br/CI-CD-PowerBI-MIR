@@ -1,0 +1,361 @@
+relationship 2013ec75-01f0-48fb-8021-43c95d0e0734
+	joinOnDateBehavior: datePartOnly
+	fromColumn: emendas_partidos.emissao_mes
+	toColumn: LocalDateTable_8fd6022a-1c7d-48bc-b7ef-0a7e871326ff.Date
+
+relationship f228748e-7368-4a59-9a32-f58ae9961627
+	joinOnDateBehavior: datePartOnly
+	fromColumn: emendas_partidos.emissao_dia
+	toColumn: LocalDateTable_fe4f3b28-dc1b-49e5-aeef-667ae343fcc8.Date
+
+relationship b495eb33-3c84-4555-aa50-3fcb8932484d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: emendas_partidos.dt_ingest
+	toColumn: LocalDateTable_e61aba57-ed9a-4624-9ba7-f9e30eb3ec13.Date
+
+relationship c0225511-269f-4152-95f2-aa19d787c529
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.emissao_mes
+	toColumn: LocalDateTable_3e10c903-8ad4-400c-8667-d8df4471d6c3.Date
+
+relationship 58ae1fb2-423a-46ec-9ac0-99d64f9f83eb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.dt_ingest
+	toColumn: LocalDateTable_70d009b5-baa2-4b23-b425-ea834f000837.Date
+
+relationship 7d22556b-7811-477f-91b2-8f6b338960b9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.dia_assin_conv
+	toColumn: LocalDateTable_5f3f1e27-588a-415b-82ca-c9f65b746b90.Date
+
+relationship 2b3097cc-642a-4f2f-bf3d-c54ba95393a2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.dia_publ_conv
+	toColumn: LocalDateTable_1feec611-6349-49c3-a868-4c86c83c80e0.Date
+
+relationship 101d5a68-5420-492c-af78-0221680ec8a6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.dia_inic_vigenc_conv
+	toColumn: LocalDateTable_919e98fc-5dc4-4b43-a0b4-09a0a6ce7848.Date
+
+relationship ad281971-469b-495d-b77d-8f5b47a1b293
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.dia_fim_vigenc_conv
+	toColumn: LocalDateTable_ef598de5-d1f0-45b9-8112-e727b7efa477.Date
+
+relationship fa3f5a60-adf0-40e5-99ca-86d078f2f72d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.dia_fim_vigenc_original_conv
+	toColumn: LocalDateTable_6d6fe3c7-2962-4d0d-976b-0f9853c57492.Date
+
+relationship f9b14e7f-3b3c-42a7-b846-02fc2aaabf50
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Emenda_Convenio.dia_limite_prest_contas
+	toColumn: LocalDateTable_c42533be-936e-483b-8c7e-e45f439a21cd.Date
+
+relationship 6653ca4d-1f5b-4d97-a8d1-44dbc4fc400e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dCalendario.Date
+	toColumn: LocalDateTable_5e42ec21-d5ca-4892-8336-b302e09d5309.Date
+
+relationship 60fecf73-53ac-cf0a-dd27-4d3c4535e887
+	fromColumn: Emenda_Convenio.emissao_dia
+	toColumn: dCalendario.Date
+
+relationship AutoDetected_6757be33-1ccb-413c-bf3e-d3299e490224
+	fromColumn: nc_plano_acao_ted.id_plano_acao
+	toColumn: planos_acao_ted.id_plano_acao
+
+relationship b40aa7ce-2f52-411c-8cef-ab4c0253fdd5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_ted.emissao_mes
+	toColumn: LocalDateTable_cea201d6-7672-47b5-8107-e84f8b366f29.Date
+
+relationship ec878216-e005-4ac2-9b62-d0a342fadc17
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_ted.emissao_dia
+	toColumn: LocalDateTable_a526be22-0876-467a-8087-98e1c801bcb0.Date
+
+relationship ac10a370-a9a8-401d-b5a2-4453135b421c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_ted.dh_recebimento_programacao
+	toColumn: LocalDateTable_91fbdff2-7b73-4691-82a3-0459ed28c200.Date
+
+relationship 75e98608-b039-4094-bf82-6e34840defe2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_ted.dt_inicio_vigencia
+	toColumn: LocalDateTable_8f7890e4-91df-47df-bca9-e4410110df8b.Date
+
+relationship 26b6d297-2211-4d6e-9a04-956721cc873d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_ted.dt_fim_vigencia
+	toColumn: LocalDateTable_5bfd0216-5d0c-473b-880b-e89fe4f11e43.Date
+
+relationship 2f3f1ab9-aff7-4ce4-8742-c01fa61f51d3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_ted.dt_ingest
+	toColumn: LocalDateTable_ca3c3475-d20b-4a22-84d7-0389bed4b5ad.Date
+
+relationship AutoDetected_c4c2b9a7-dbd1-474c-8753-7c40fa8ce4f6
+	fromColumn: pf_unificado_planos_acao_ted.id_plano_acao
+	toColumn: planos_acao_ted.id_plano_acao
+
+relationship 0343957a-1c10-4389-bf47-716e0c2a3d2d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted.dt_recebimento_plano_beneficiario_inicio
+	toColumn: LocalDateTable_e2d246db-54a1-4547-b2b5-6471a8de08f1.Date
+
+relationship 3b41aead-9ff7-460e-862b-0c41bfda23fb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted.dt_recebimento_plano_beneficiario_fim
+	toColumn: LocalDateTable_3e2e4feb-4943-407d-85d3-90fb8f6d53f3.Date
+
+relationship 82e9de94-0787-45d7-a392-24cdbb4f77ef
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted.dt_ingest
+	toColumn: LocalDateTable_d3d80d70-fdea-443e-8acf-2b36b1f7bb82.Date
+
+relationship AutoDetected_1732c198-caf7-4fdc-996c-261ba2fc07e4
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: planos_acao_ted.id_programa
+	toColumn: programas_ted.id_programa
+
+relationship AutoDetected_6947c47a-2161-43b5-8d71-2c8c6516454f
+	isActive: false
+	fromColumn: pf_unificado_planos_acao_ted.id_programa
+	toColumn: programas_ted.id_programa
+
+relationship AutoDetected_f8f52806-d2df-43bd-86ce-2b536bdc0c31
+	fromColumn: ted_empenhos_plano_acao_ted.plano_acao
+	toColumn: planos_acao_ted.id_plano_acao
+
+relationship AutoDetected_5e42fba2-c293-4961-b4e4-88d532d2af05
+	fromColumn: ted_resumo_orcamentario_ted.plano_acao
+	toColumn: planos_acao_ted.id_plano_acao
+
+relationship AutoDetected_1b6de4f6-b23d-45e3-b621-0535a69e426c
+	fromColumn: Emenda_Convenio.nr_convenio
+	toColumn: gold_convenios.nr_convenio
+
+relationship c9b3eb35-a16b-4e32-ace0-54553f5c9767
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted.dt_inicio_vigencia
+	toColumn: LocalDateTable_8af829ae-5279-4263-90b8-c4672549d5dd.Date
+
+relationship efb2fe5f-1dc6-454e-92f6-0a96fcd2d7da
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted.dt_fim_vigencia
+	toColumn: LocalDateTable_ff827c63-6ed4-4a38-96b6-c9ca7897b389.Date
+
+relationship 4e2d1259-1c30-4fe4-8fe4-ee4b3b4d610e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: gold_convenios.data_assinatura
+	toColumn: LocalDateTable_ce753fab-ca7d-4f83-a65e-c5f00ff32fed.Date
+
+relationship cb1514ed-8a8a-4103-a419-0a46d031e6a8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: gold_convenios.inicio_vigencia
+	toColumn: LocalDateTable_f6c6e399-f797-4b61-95c5-0fa06461903c.Date
+
+relationship af6d5635-e813-4cc5-b336-24091dcfd295
+	joinOnDateBehavior: datePartOnly
+	fromColumn: gold_convenios.fim_vigencia
+	toColumn: LocalDateTable_bc470a89-ad2e-4bb5-874c-734a21d06d91.Date
+
+relationship d4a624fc-e96c-4e9b-a733-7f9b61663b57
+	joinOnDateBehavior: datePartOnly
+	fromColumn: gold_convenios.data_ultimo_pagamento
+	toColumn: LocalDateTable_14fe42f9-a60d-4e34-95ac-a529fd94cbb9.Date
+
+relationship 55cab374-d671-49b5-a771-eba3c2245a03
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted_atualizada.dt_inicio_vigencia
+	toColumn: LocalDateTable_8b44017d-5738-4821-b9c3-7ef010e50868.Date
+
+relationship e07c1cd5-7226-44f6-9920-5615ed38a172
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted_atualizada.dt_fim_vigencia
+	toColumn: LocalDateTable_afa48a16-b07e-4272-88de-cd630c290a94.Date
+
+relationship b86c2391-f023-4068-9dd0-438bd4be453d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: planos_acao_ted_atualizada.dt_ingest
+	toColumn: LocalDateTable_17f2f81d-adec-4c34-b130-4bbae1600dcb.Date
+
+relationship 64b3fab7-4199-430f-b568-05de73db7435
+	joinOnDateBehavior: datePartOnly
+	fromColumn: nc_plano_acao_atualizada.dt_ingest
+	toColumn: LocalDateTable_13621b2c-1d98-4efe-8dec-60d86e0be6c3.Date
+
+relationship AutoDetected_8adda3cb-7e9a-445d-87f0-cad2f0b3694b
+	fromColumn: nc_plano_acao_atualizada.id_plano_acao
+	toColumn: planos_acao_ted_atualizada.id_plano_acao
+
+relationship 4df3ab1c-41d5-4a4e-902e-a9ca576af968
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_atualizada.emissao_mes
+	toColumn: LocalDateTable_969368b3-d93b-4669-a1c5-963db020e93d.Date
+
+relationship 737923ac-0999-4c03-aa70-01a12ef8bf08
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_atualizada.emissao_dia
+	toColumn: LocalDateTable_25ccd47f-c458-488c-9113-05e6f90724e9.Date
+
+relationship b901ecc7-ace9-4b80-993d-82469739387a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_atualizada.dh_recebimento_programacao
+	toColumn: LocalDateTable_f29a0897-4a28-4a71-87c7-215ac39cf56f.Date
+
+relationship b9257b4e-a379-4964-8c47-6ab370c324cd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_atualizada.dt_inicio_vigencia
+	toColumn: LocalDateTable_9d583504-0d81-448b-a727-e172d19a8a37.Date
+
+relationship 7bb64f38-b367-4c89-b724-53c345f43e47
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_atualizada.dt_fim_vigencia
+	toColumn: LocalDateTable_0f6bf1db-25b1-44e5-9bd6-9205a7f916a4.Date
+
+relationship 31fa4901-d223-4680-b796-3f1bcfbf60d4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pf_unificado_planos_acao_atualizada.dt_ingest
+	toColumn: LocalDateTable_15f965df-952e-4469-99e8-7f9ae42de3c8.Date
+
+relationship AutoDetected_9c24074a-e5b6-4e14-99a9-4d7bd1d5911d
+	fromColumn: pf_unificado_planos_acao_atualizada.id_plano_acao
+	toColumn: planos_acao_ted_atualizada.id_plano_acao
+
+relationship 0f0b6411-0cc6-438a-adc9-bcb5c008f0d0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted_atualizada.dt_recebimento_plano_beneficiario_inicio
+	toColumn: LocalDateTable_1cd35681-c71b-4074-ad25-aeaf94373b5b.Date
+
+relationship eb188ff7-45c1-48f5-a671-dd473579c6d3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted_atualizada.dt_recebimento_plano_beneficiario_fim
+	toColumn: LocalDateTable_e1d1bbbd-c928-405c-bd19-fe5f51b820de.Date
+
+relationship e935129b-1a0c-4e6a-a7a7-2da509fac00a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: programas_ted_atualizada.dt_ingest
+	toColumn: LocalDateTable_0b34e90b-af1d-4306-80e1-4cb63a3c20c4.Date
+
+relationship AutoDetected_61b2eb8e-8471-417d-9ea8-5da5a03bab3f
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: planos_acao_ted_atualizada.id_programa
+	toColumn: programas_ted_atualizada.id_programa
+
+relationship AutoDetected_fa1cd4f1-70b6-4ea0-989b-60ac7ba6b2a6
+	isActive: false
+	fromColumn: pf_unificado_planos_acao_atualizada.id_programa
+	toColumn: programas_ted_atualizada.id_programa
+
+relationship 5244ed32-4034-44ec-af66-0fdaa655c7c0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ted_empenhos_plano_acao_atualizada.dt_ingest
+	toColumn: LocalDateTable_853272be-457f-41a9-930b-d5d96e887ae3.Date
+
+relationship AutoDetected_8cbd1e09-6dcd-453b-b20c-34ca51073e03
+	fromColumn: ted_empenhos_plano_acao_atualizada.plano_acao
+	toColumn: planos_acao_ted_atualizada.id_plano_acao
+
+relationship a79eaa26-de4c-4357-9b09-dd99e43ef67d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ted_resumo_orcamentario_atualizada.dt_ingest
+	toColumn: LocalDateTable_aa52c846-274b-4167-afa9-24a991becafb.Date
+
+relationship AutoDetected_21187366-cbde-480e-ab51-43ab04ec729d
+	fromColumn: ted_resumo_orcamentario_atualizada.plano_acao
+	toColumn: planos_acao_ted_atualizada.id_plano_acao
+
+relationship b7ae00b2-a81c-46c7-99c8-4f1a814e0851
+	joinOnDateBehavior: datePartOnly
+	fromColumn: resumo_convenios.data_assinatura
+	toColumn: LocalDateTable_59a2cba2-0891-41ed-906c-5afc7195bd38.Date
+
+relationship 3995e514-d8b4-4bf5-ae3f-29632422b100
+	joinOnDateBehavior: datePartOnly
+	fromColumn: resumo_convenios.inicio_vigencia
+	toColumn: LocalDateTable_132f355c-4b3f-4e09-98d4-130bc2fae8bc.Date
+
+relationship 0225dc2e-3812-4cdc-a52f-7796f6bb6c76
+	joinOnDateBehavior: datePartOnly
+	fromColumn: resumo_convenios.fim_vigencia
+	toColumn: LocalDateTable_4d5c3e83-3b90-459c-b23b-38b314372e6a.Date
+
+relationship 776966e9-1b6e-494d-a738-06c1c72425e9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: resumo_convenios.data_ultimo_desembolso
+	toColumn: LocalDateTable_8d9f7b23-77da-46ef-907c-f216c54fad6f.Date
+
+relationship 9c598ba8-f09a-4bdb-b24f-6050e3b6911a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: resumo_convenios.data_ultimo_pagamento
+	toColumn: LocalDateTable_1c1753d3-8d78-4dca-a3ae-1c1de9bc0c9e.Date
+
+relationship 5a8d1a9a-6728-4e81-b398-1c38c8df2a97
+	joinOnDateBehavior: datePartOnly
+	fromColumn: resumo_convenios.novo_prazo_vigencia
+	toColumn: LocalDateTable_0c659c4b-0606-4603-b438-07840939b268.Date
+
+relationship AutoDetected_ef76c0d2-66e8-495b-a2ba-13db3716e9ff
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: gold_convenios.nr_convenio
+	toColumn: resumo_convenios.nr_convenio
+
+relationship 528b6091-3378-45e2-9b18-48bdc6921b2e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'planos_acao_ted (2)'.dt_inicio_vigencia
+	toColumn: LocalDateTable_5dcc8cd0-df60-484c-8717-c9979ec8a38a.Date
+
+relationship 84b85986-cd6d-460f-a29d-1566aa7195f8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'planos_acao_ted (2)'.dt_fim_vigencia
+	toColumn: LocalDateTable_5c46fbc2-2198-4b1d-bd02-d6f44af640cc.Date
+
+relationship a8ce6004-708a-443b-9bc7-1a198b8c2c97
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'planos_acao_ted (2)'.dt_ingest
+	toColumn: LocalDateTable_657a375c-0ce9-4707-9d5d-c94c1159c93a.Date
+
+relationship fa84fe90-76fd-4adb-ad8e-63557c9e8aa7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ted_resumo_orcamentario.dt_inicio_vigencia
+	toColumn: LocalDateTable_b3569c64-2cf3-4d56-8f0d-8c4ed5fcf602.Date
+
+relationship bfc943b4-b705-453f-a169-67fddee4f6a9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ted_resumo_orcamentario.dt_fim_vigencia
+	toColumn: LocalDateTable_1b041578-b9c0-465a-b249-aed0d999a1cb.Date
+
+relationship 96dea830-6886-4c07-8bc3-95ab5d15915b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ted_resumo_orcamentario.dt_ingest
+	toColumn: LocalDateTable_19191e30-1702-4071-9f18-d8c49bf1076e.Date
+
+relationship AutoDetected_b8bf9baa-b88d-4501-b4fd-891838eef5d2
+	fromColumn: ted_resumo_orcamentario.plano_acao
+	toColumn: 'planos_acao_ted (2)'.id_plano_acao
+
+relationship fa6ce590-09bd-2f00-1e45-bf6594631d32
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'planos_acao_ted (2)'.id_programa
+	toColumn: 'programas_ted (2)'.id_programa
+
+relationship aef71cdb-897d-4adb-93a7-f4f2ae507de7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: nc_plano_acao.dt_ingest
+	toColumn: LocalDateTable_f37d81c6-de01-4a29-9c38-4213c8ad2719.Date
+
+relationship c3027ccf-5b0f-48a5-87d4-543f619dec65
+	joinOnDateBehavior: datePartOnly
+	fromColumn: nc_plano_acao.emissao_dia
+	toColumn: LocalDateTable_f4ea357e-d492-4f91-be28-fc3b5b27048d.Date
+
+relationship AutoDetected_9e52859d-f2ef-4ef8-bb42-22bde38c816f
+	fromColumn: nc_plano_acao.id_plano_acao
+	toColumn: 'planos_acao_ted (2)'.id_plano_acao
+

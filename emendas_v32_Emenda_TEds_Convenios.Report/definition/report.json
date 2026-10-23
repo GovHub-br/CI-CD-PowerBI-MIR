@@ -1,0 +1,226 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU05",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Solar9602474264096905.json",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "barra-de-menu3656193629301011.png",
+          "path": "barra-de-menu3656193629301011.png",
+          "type": "Image"
+        },
+        {
+          "name": "barra-de-menu8468735134536858.png",
+          "path": "barra-de-menu8468735134536858.png",
+          "type": "Image"
+        },
+        {
+          "name": "botao-fechar019094519002252897.png",
+          "path": "botao-fechar019094519002252897.png",
+          "type": "Image"
+        },
+        {
+          "name": "botao-fechar7073334381992081.png",
+          "path": "botao-fechar7073334381992081.png",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_0103321481420569172.jpg",
+          "path": "MF_layout_0103321481420569172.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_027029381560360844.jpg",
+          "path": "MF_layout_027029381560360844.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_036096546804388272.jpg",
+          "path": "MF_layout_036096546804388272.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_0401458282715432302.jpg",
+          "path": "MF_layout_0401458282715432302.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_0537121007201339806.jpg",
+          "path": "MF_layout_0537121007201339806.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_068971455058816871.jpg",
+          "path": "MF_layout_068971455058816871.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_075596938869957147.jpg",
+          "path": "MF_layout_075596938869957147.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_081493702189381475.jpg",
+          "path": "MF_layout_081493702189381475.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_099701604490775204.jpg",
+          "path": "MF_layout_099701604490775204.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_10019863292854532144.jpg",
+          "path": "MF_layout_10019863292854532144.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_118699394397524083.jpg",
+          "path": "MF_layout_118699394397524083.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_1224383149714364005.jpg",
+          "path": "MF_layout_1224383149714364005.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_13575950672249948.jpg",
+          "path": "MF_layout_13575950672249948.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_142733100758780572.jpg",
+          "path": "MF_layout_142733100758780572.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_152662255724185446.jpg",
+          "path": "MF_layout_152662255724185446.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_168893656965612435.jpg",
+          "path": "MF_layout_168893656965612435.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_179742167354749491.jpg",
+          "path": "MF_layout_179742167354749491.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_188349635738034533.jpg",
+          "path": "MF_layout_188349635738034533.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_19388685875346399.jpg",
+          "path": "MF_layout_19388685875346399.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_2013182099782293677.jpg",
+          "path": "MF_layout_2013182099782293677.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_2164476541778982.jpg",
+          "path": "MF_layout_2164476541778982.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_22339440004406551.jpg",
+          "path": "MF_layout_22339440004406551.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_2310823161147896532.jpg",
+          "path": "MF_layout_2310823161147896532.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "MF_layout_2404927254766412237.jpg",
+          "path": "MF_layout_2404927254766412237.jpg",
+          "type": "Image"
+        },
+        {
+          "name": "Solar9602474264096905.json",
+          "path": "Solar9602474264096905.json",
+          "type": "Image"
+        }
+      ]
+    },
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU05",
+          "path": "BaseThemes/CY26SU05.json",
+          "type": "BaseTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true,
+    "queryLimitOption": "None",
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
+  }
+}

@@ -1,0 +1,683 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "NavegacaoOcultaTEDNC",
+  "name": "d056b70aee9fa1a3992a",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "beb125ce2efd9c6dccbb",
+    "sections": {
+      "beb125ce2efd9c6dccbb": {
+        "visualContainers": {
+          "9e45278c414b413b55ad": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "39a2f583e51b39f6bed7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd NC TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd NC TED"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dcff28a4f2fdf0adaca7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3f0f551fecb5be646693",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Total NC TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Total NC TED"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "206c801cbb761762f3b4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "43820918575cf2315d21",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Favorecidos NC TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Favorecidos NC TED"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "93e57f0a57cc869ffacb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5567fbb69da9d80ffbf4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "programa_governo_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "programa_governo_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d9da950792a4a43d9747": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "190b1f8c66f5dff01d7f",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "n",
+                        "Entity": "nc_plano_acao_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "n"
+                                        }
+                                      },
+                                      "Property": "favorecido_municipio_descricao"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "''"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "favorecido_municipio_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "favorecido_municipio_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e4bf46e7b6155d0588cf": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "69beb6a8bf6c28a8a026",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc_ug_responsavel_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc_ug_responsavel_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5f6bcc127ecfb12a3218": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a076a16958063001703e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "favorecido_doc_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "favorecido_doc_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5b317a9b968d2d86b0a6": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bb76d65e20e4d4e2704f",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc_natureza_despesa_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc_natureza_despesa_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "352035dacbf44ad17ec8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "be13c81bc061c1d34c73",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "acao_governo_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7aa37351317fd77df117",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc_ug_responsavel_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "919012f10727cbab23af",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "442db6adccf6593c865e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "favorecido_municipio_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "79fb187da8ca943fa237",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "favorecido_doc_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a4208a8fab52c48e0ea9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc_fonte_recursos_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "92f0f734f5754e947b41",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "nc_natureza_despesa_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3f66b10366c5da373e49",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "valor_celula"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao_ted"
+                        }
+                      },
+                      "Property": "valor_celula"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "8c1c5add8783a5a6785c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "bcf655f60ef07775562d": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "9b4686a7593eb8a837b2": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "d0b6708a6de98fab67b9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "a7fb379aa4507cc0434a": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "f7dd100ed677d6f6123a": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "1f6794eb36284ef3cfb3": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "a8cd19c7848eb147cd3b": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "69b42aa4c316fd383fc8": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "9eb472fc2be7200898eb": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "1d5df0317441e8280972": {
+            "isHidden": true
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

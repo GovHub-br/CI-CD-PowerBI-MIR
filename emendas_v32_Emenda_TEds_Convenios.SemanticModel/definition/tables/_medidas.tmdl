@@ -1,0 +1,487 @@
+table _medidas
+	lineageTag: 655d390d-d4d5-4079-a2aa-32963eae333e
+
+	measure 'Total Pago Partido' = SUM('emendas_execucao'[despesas_pagas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 9aaf480d-0d1b-4af1-ba91-f5b0075d7687
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Empenhado Emendas' = SUM(emendas_execucao[despesas_empenhadas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: fe2b31a4-9493-4fb6-941f-bb71a5e4a08c
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Percentual Pago' =
+			
+			DIVIDE(
+			    [Total Pago Partido],
+			    [Total Empenhado Emendas],
+			    0
+			)
+		formatString: #,0.00%;-#,0.00%;#,0.00%
+		lineageTag: 9afb1a45-6b15-4b29-a039-000bb5f91a6e
+
+	measure 'Total Empenhado Convenio' = SUM(emenda_convenio[despesas_empenhadas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 9d58aa7d-d089-40a2-8b67-723fce5a097b
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Liquidado Convenio' = SUM(emenda_convenio[despesas_liquidadas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 865efa94-9e8e-4e1d-bd17-c69284829b3f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total Pago Convenio' = SUM(emenda_convenio[despesas_pagas])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 8ee318a1-552b-4269-8617-c1a8b0bb5e02
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Execução Convenio' = ```
+			
+			DIVIDE(
+			    [Total Pago Convenio], 
+			    [Total Empenhado Convenio], 
+			    0
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 26529e95-d8e1-4120-b801-966449972687
+
+	measure 'Qtd Convenios' = DISTINCTCOUNT('emendas_convenio (2)'[nr_convenio])
+		formatString: 0
+		lineageTag: 5925d5fa-f1cf-4f76-9814-6d7c1f95d3ae
+
+	measure 'Valor Global Convenios' = SUM(emenda_convenio[vl_global_conv])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: afcb08f1-6d0f-4984-bed6-4348890fdc0b
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Repasse Convenios' = SUM(emenda_convenio[vl_repasse_conv])
+		lineageTag: 262efdbd-b526-412a-94bc-480b00f30349
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor Desembolsado Convenio' = SUM(emenda_convenio[vl_desembolsado_conv])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b66dd5be-7b73-4352-9283-30c07af014c6
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Saldo em Conta Convenio' = SUM(emenda_convenio[vl_saldo_conta])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 7fc998e1-7e7b-4d75-90e5-3ca7b932d6f2
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Desembolsado Convenio' = ```
+			
+			DIVIDE(
+			    [Valor Desembolsado Convenio], 
+			    [Valor Repasse Convenios], 
+			    0
+			)
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 7538fb84-48ac-45c3-a08a-a699aea9f4e4
+
+	measure 'Qtd Autores Convenio' = DISTINCTCOUNT(emenda_convenio[id_autor])
+		formatString: 0
+		lineageTag: 5f0e8be6-4d3c-4877-83f8-cc4961a02792
+
+	measure 'Média por Autor Convenio' = ```
+			
+			DIVIDE(
+			    [Total Empenhado Convenio], 
+			    [Qtd Autores Convenio], 
+			    0
+			)
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 51f492d5-ac9e-43fc-84f8-9fd9aad5916f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Total RAP Pago' = SUM(Emendas_Partidos[restos_a_pagar_pagos])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 8dba4699-2e0b-4d6f-92a2-7f51f249720f
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Empenhado TED' = SUM(ted_resumo_orcamentario[empenhado])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 2b06a08f-738c-4abf-b243-19265e7894ea
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Pago TED' =
+			SUM(ted_resumo_orcamentario[despesas_pagas_exercicio]) +
+			SUM(ted_resumo_orcamentario[despesas_pagas_rap])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: bf503201-1fac-4da4-b907-b1ba3d1be8b3
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Qtd TEDs' = DISTINCTCOUNT('planos_acao_ted (2)'[id_plano_acao])
+		formatString: 0
+		lineageTag: 80f9b4a5-7011-4d7e-b835-f416731c2211
+
+	measure 'Qtd PA com Empenho' = DISTINCTCOUNT(ted_empenhos_plano_acao[plano_acao])
+		formatString: 0
+		lineageTag: 9c8b040d-27c7-4c38-8cbe-153bb7a4b3a1
+
+	measure 'Qtd Registro de Empenhos TED' = COUNTROWS(ted_empenhos_plano_acao_ted)
+		formatString: 0
+		lineageTag: 551ccc5f-ac3c-47ab-b4d9-ed928eeb3538
+
+	measure 'TEDs Sem Empenho' = [Qtd TEDs] - [Qtd PA com Empenho]
+		formatString: 0
+		lineageTag: e9292296-2fd3-440a-8be4-46bc7844a5ee
+
+	measure 'Percentual Execucao TED' =
+			DIVIDE(
+			    SUM(ted_resumo_orcamentario_ted[empenhado]),
+			    SUM(ted_resumo_orcamentario_ted[valor_firmado]),
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 99f49ba7-5f1d-41c2-8763-a3946f32c2a2
+
+	measure 'Valor Firmado Plano de Acao' = SUM('planos_acao_ted (2)'[vl_total_plano_acao])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: a8003f44-920d-487a-8899-66bb1c838cc8
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Distribuicao Recurso TED' = SUM(ted_empenhos_plano_acao[despesas_empenhadas])
+		lineageTag: 148cc939-54c9-413d-b99d-344509c8aee4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Orcamento Recebido TED' = SUM(ted_resumo_orcamentario_ted[orcamento_recebido])
+		lineageTag: 93aa56c6-d360-4fb5-8b6f-1d648d2452cd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Liquidado TED' = SUM(ted_resumo_orcamentario[despesas_liquidada])
+		lineageTag: 502f10e6-c11a-4e3a-903c-d8d08c3a9898
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Programas TEDS' =
+			
+			DISTINCTCOUNT('programas_ted (2)'[id_programa])
+		formatString: 0
+		lineageTag: a2dbee55-479c-492e-b21b-e8ea4f818e7d
+
+	measure 'Programas Disponibilizados TED' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT('programas_ted (2)'[id_programa]),
+			    'programas_ted (2)'[tx_situacao_programa] = "DISPONIBILIZADO"
+			)
+		formatString: 0
+		lineageTag: 7dd91c09-a82f-4007-9311-baf7b3ca14bd
+
+	measure 'Total Unidades Programa TEDs' =
+			
+			DISTINCTCOUNT(
+			'programas_ted (2)'[unidade_responsavel_acompanhamento]
+			)
+		formatString: 0
+		lineageTag: fbb02ed5-86ba-49be-8742-713a2ddd06e4
+
+	measure 'Qtd Programas Obra' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(programas_ted[id_programa]),
+			    programas_ted[in_grupo_investimento_obra] = TRUE()
+			)
+		formatString: 0
+		lineageTag: df5826b9-1caa-4cc5-8d5c-e64bf356740e
+
+	measure 'Qtd Programas Serviço' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(programas_ted[id_programa]),
+			    programas_ted[in_grupo_investimento_servico] = TRUE()
+			)
+		formatString: 0
+		lineageTag: b3885eea-557e-4cb2-94d1-b2220da4af35
+
+	measure 'Qtd Programas Equipamento' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(programas_ted[id_programa]),
+			    programas_ted[in_grupo_investimento_equipamento] = TRUE()
+			)
+		formatString: 0
+		lineageTag: 9c58efd1-044b-414a-90c2-9ab334c9ea8c
+
+	measure 'Qtd Beneficiário Específico' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(programas_ted[id_programa]),
+			    programas_ted[in_beneficiario_especifico] = TRUE()
+			)
+		formatString: 0
+		lineageTag: 2e13d8bb-d226-40bb-b714-4aaf751edbd7
+
+	measure 'Qtd Planos de Ação' =
+			
+			DISTINCTCOUNT(
+			    'planos_acao_ted (2)'[id_plano_acao]
+			)
+		formatString: 0
+		lineageTag: 04b32b1f-8224-4d9f-ae1f-2019a2c1ee76
+
+	measure 'Valor Total Planos' =
+			
+			SUM(
+			    'planos_acao_ted (2)'[vl_total_plano_acao]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: e7940688-fb59-4d97-b75f-b764c83d7f49
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Qtd Planos com Aprovação' =
+			
+			CALCULATE(
+			    [Qtd Planos de Ação],
+			    'planos_acao_ted (2)'[tx_situacao_plano_acao]
+			        IN {
+			            "APROVADO",
+			            "ANALISE_APROVADA"
+			        }
+			)
+		formatString: 0
+		lineageTag: c4650238-5864-4711-a0d8-7a272f35806f
+
+	measure 'Qtd NC TED' =
+			
+			DISTINCTCOUNT(
+			    nc_plano_acao[nc]
+			)
+		formatString: 0
+		lineageTag: 28809c67-b950-4c40-9e16-88b8e1aace92
+
+	measure 'Valor Total NC TED' =
+			
+			SUM(
+			    nc_plano_acao[valor_celula]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ec0d7a1a-c68f-44a3-9204-f556a458f62e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Qtd Planos TED' =
+			
+			DISTINCTCOUNT(
+			    nc_plano_acao_ted[id_plano_acao]
+			)
+		formatString: 0
+		lineageTag: cc720cbe-d500-4228-b505-be6f1812f3c7
+
+	measure 'Qtd Favorecidos NC TED' =
+			
+			DISTINCTCOUNT(
+			    nc_plano_acao[favorecido_doc]
+			)
+		formatString: 0
+		lineageTag: e233123b-262a-41d7-81a3-b531e3b7629d
+
+	measure 'Valor Empenhado TED Execucao' =
+			
+			SUM(
+			    ted_empenhos_plano_acao[despesas_empenhadas]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 4204d4a0-e0ae-431a-843a-715b17d29dcd
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Liquidado TED Empenhado' =
+			
+			SUM(
+			    ted_empenhos_plano_acao[despesas_liquidadas]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: bbd8da20-286a-4f95-a333-9a6cd908fbc9
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Pago TED Empenhado' =
+			
+			SUM(
+			    ted_empenhos_plano_acao[despesas_pagas]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5027e25b-130d-425b-aa66-48b849815fae
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Saldo a Pagar TED Empenhado' =
+			
+			[Valor Empenhado TED Execucao]
+			    - [Valor Pago TED]
+		lineageTag: 169e108c-f341-425c-b386-4c0fb60617c2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Qtd Convênios' =
+			
+			DISTINCTCOUNT(resumo_convenios[nr_convenio])
+		formatString: 0
+		lineageTag: ad23d592-b72d-4e0a-b857-fd4f1219cac5
+
+	measure 'Valor Firmado Convenios' =
+			
+			SUM(resumo_convenios[valor_firmado_atualizado])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 0c2bf24a-73b8-4d3c-9950-95ee8e948926
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Repassado convenios' =
+			
+			SUM(resumo_convenios[valor_total_repassado])
+		lineageTag: 5aad5798-e65d-4293-a036-fcf58b4e02e7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor Pago Convenios' =
+			
+			SUM(resumo_convenios[valor_total_pago])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 0dbb2413-91f2-456e-a201-f7c3ff6c4855
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor Empenhado Convenios' =
+			
+			SUM(resumo_convenios[valor_empenhado])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 4121b694-c27c-45a8-81c2-343ed4a52b15
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure '% Execução Convenios Consolidado' =
+			
+			DIVIDE(
+			    [Valor_Total_Pago_Convenios],
+			    [Valor_Total_Firmado_Convenios],
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 2291bc15-1d73-48e0-ba81-a8e883693d53
+
+	measure 'Saldo Disponível Convenios' =
+			
+			SUM(resumo_convenios[saldo_disponivel])
+		formatString: 0
+		lineageTag: 7fa5f4eb-75c2-4f7c-8084-a7cec1affabc
+
+	measure 'Qtd Vigentes Plano de Acao' =
+			
+			CALCULATE(
+			    COUNTROWS('planos_acao_ted (2)'),
+			    'planos_acao_ted (2)'[Status Vigencia Plano de Acao] = "Vigente"
+			)
+		formatString: 0
+		lineageTag: 4aa031f4-7478-41ca-8d4c-3469fec77e8b
+
+	measure 'Qtd Nao Vigentes Plano de Acao' =
+			
+			CALCULATE(
+			    COUNTROWS('planos_acao_ted (2)'),
+			    'planos_acao_ted (2)'[Status Vigencia Plano de Acao] = "Não Vigente"
+			)
+		formatString: 0
+		lineageTag: da77ffb8-3535-4e4a-a229-94786377291d
+
+	measure Qtd_Convenios =
+			
+			CALCULATE(
+			    COUNTROWS('resumo_convenios'),
+			    'resumo_convenios'[modalidade_instrumento] = "CONVENIO"
+			)
+		formatString: 0
+		lineageTag: bee8d8d9-4002-4788-9cdd-73dc25572db2
+
+	measure 'Qtd_Convenios Gold' =
+			
+			CALCULATE(
+			    COUNTROWS('resumo_convenios'),
+			    'resumo_convenios'[modalidade_instrumento] = "CONVENIO"
+			)
+		formatString: 0
+		lineageTag: 9c38aad0-8922-492b-b355-b4bd36531c6a
+
+	measure Valor_Total_Firmado_Convenios =
+			
+			CALCULATE(
+			    SUM('resumo_convenios'[valor_firmado_atualizado]),
+			    'resumo_convenios'[modalidade_instrumento] = "CONVENIO"
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 69cfa58a-d00a-46d4-a3e1-3d989b2eca2d
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Valor_Total_Empenhado_Convenios =
+			
+			CALCULATE(
+			    SUM('resumo_convenios'[valor_empenhado]),
+			    'resumo_convenios'[modalidade_instrumento] = "CONVENIO"
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 41d678d2-1ef8-4c64-88c8-4f074c0f3c2d
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Valor_Total_Repassado_Convenios =
+			
+			CALCULATE(
+			    SUM('resumo_convenios'[valor_total_repassado]),
+			    'resumo_convenios'[modalidade_instrumento] = "CONVENIO"
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 7a201140-bffb-46c9-96a7-bd7f50a2ffcf
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Valor_Total_Pago_Convenios =
+			
+			CALCULATE(
+			    SUM('resumo_convenios'[valor_total_pago]),
+			    'resumo_convenios'[modalidade_instrumento] = "CONVENIO"
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 885d4cf3-7365-46fe-9ce4-81e026602c3e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column Column
+		formatString: 0
+		lineageTag: 04a3b09a-82e2-405f-b3bc-5388e761c5e8
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _medidas = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 955592bc28ea4eadb207eedea583cb4a
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

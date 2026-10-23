@@ -1,0 +1,240 @@
+table ted_empenhos_plano_acao_ted
+	lineageTag: e90e721b-751f-4bfc-a699-909bd9de91a8
+
+	column emissao_mes
+		dataType: string
+		lineageTag: e88e7cac-ffcf-4d9e-8e46-32ebc5074f27
+		summarizeBy: none
+		sourceColumn: emissao_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_dia
+		dataType: string
+		lineageTag: e2be7ad4-5416-4be5-a084-d85d70d1f57e
+		summarizeBy: none
+		sourceColumn: emissao_dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor
+		dataType: string
+		lineageTag: af33c0d5-8938-41ac-a44e-16d214556b83
+		summarizeBy: none
+		sourceColumn: ne_ccor
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_num_processo
+		dataType: string
+		lineageTag: 040a5e06-1b33-41f9-96a6-5973351800c5
+		summarizeBy: none
+		sourceColumn: ne_num_processo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_info_complementar
+		dataType: string
+		lineageTag: 84f5a87b-5f49-4aa8-b5b6-9f9548e42593
+		summarizeBy: none
+		sourceColumn: ne_info_complementar
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_descricao
+		dataType: string
+		lineageTag: 3527d087-6ea4-4ac8-af6f-038bf57d423d
+		summarizeBy: none
+		sourceColumn: ne_ccor_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column doc_observacao
+		dataType: string
+		lineageTag: 54e4820c-0df5-4c16-802b-ca0ebc115e50
+		summarizeBy: none
+		sourceColumn: doc_observacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_despesa
+		dataType: string
+		lineageTag: 80497f83-2112-44e5-8adb-598c4532c241
+		summarizeBy: none
+		sourceColumn: natureza_despesa
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_despesa_descricao
+		dataType: string
+		lineageTag: 5fe3b6d1-a2f2-46d0-8ee9-ac9076225ceb
+		summarizeBy: none
+		sourceColumn: natureza_despesa_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_favorecido
+		dataType: string
+		lineageTag: bcdab0ed-269c-4770-8452-413886031838
+		summarizeBy: none
+		sourceColumn: ne_ccor_favorecido
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_favorecido_descricao
+		dataType: string
+		lineageTag: d7583cf2-a95d-4a6a-acf5-d628aab46d8e
+		summarizeBy: none
+		sourceColumn: ne_ccor_favorecido_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_ano_emissao
+		dataType: string
+		lineageTag: 0bc271f5-a893-4c09-9ade-df1bea5f531b
+		summarizeBy: none
+		sourceColumn: ne_ccor_ano_emissao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ptres
+		dataType: string
+		lineageTag: 939e890a-bb94-4f40-a15a-f449f89fba32
+		summarizeBy: none
+		sourceColumn: ptres
+
+		annotation SummarizationSetBy = Automatic
+
+	column fonte_recursos_detalhada
+		dataType: string
+		lineageTag: af9b2c3e-49cb-4be2-8d0c-e03ab0c81914
+		summarizeBy: none
+		sourceColumn: fonte_recursos_detalhada
+
+		annotation SummarizationSetBy = Automatic
+
+	column fonte_recursos_detalhada_descricao
+		dataType: string
+		lineageTag: a4ee000f-244c-40f0-b9b6-932d64c43ded
+		summarizeBy: none
+		sourceColumn: fonte_recursos_detalhada_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_empenhadas
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 6d0237a2-75e4-4fb9-9959-be0f4c09dfda
+		summarizeBy: sum
+		sourceColumn: despesas_empenhadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column despesas_liquidadas
+		dataType: double
+		lineageTag: 023e88c8-1d78-4c20-a0a9-5fb0c703108c
+		summarizeBy: sum
+		sourceColumn: despesas_liquidadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column despesas_pagas
+		dataType: double
+		lineageTag: 90705b7b-d313-4489-ab13-fe69be4c7f5b
+		summarizeBy: sum
+		sourceColumn: despesas_pagas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column restos_a_pagar_inscritos
+		dataType: double
+		lineageTag: 7548ad18-07ce-4fa0-86d3-fc5ecc402a64
+		summarizeBy: sum
+		sourceColumn: restos_a_pagar_inscritos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column restos_a_pagar_pagos
+		dataType: double
+		lineageTag: 690ad163-4265-4031-9a0f-e7aad7a2ec0f
+		summarizeBy: sum
+		sourceColumn: restos_a_pagar_pagos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ne
+		dataType: string
+		lineageTag: 50493bf8-8708-4027-b6af-4b3c10a81156
+		summarizeBy: none
+		sourceColumn: ne
+
+		annotation SummarizationSetBy = Automatic
+
+	column orgao_id
+		dataType: string
+		lineageTag: fabdacf6-0f5b-4b8b-9241-7e65e75ca02e
+		summarizeBy: none
+		sourceColumn: orgao_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc
+		dataType: string
+		lineageTag: a308b5ed-6e9a-423b-9415-26e2f7ae5e88
+		summarizeBy: none
+		sourceColumn: nc
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_transf
+		dataType: string
+		lineageTag: 24b0213b-9989-495b-8192-9b3df34e2926
+		summarizeBy: none
+		sourceColumn: num_transf
+
+		annotation SummarizationSetBy = Automatic
+
+	column plano_acao
+		dataType: string
+		lineageTag: 1d8821a7-bf61-49a9-9f33-61610c1053a6
+		summarizeBy: none
+		sourceColumn: plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ingest
+		dataType: string
+		lineageTag: f28195eb-9801-4a2b-a947-808300768529
+		summarizeBy: none
+		sourceColumn: dt_ingest
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ted_empenhos_plano_acao_ted = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Aline\Desktop\MIR\base de dados\Teds\ted_empenhos_plano_acao_ted.csv"),[Delimiter=",", Columns=26, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos", {{"despesas_empenhadas", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade1" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade", {{"despesas_liquidadas", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade2" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade1", {{"despesas_pagas", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade3" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade2", {{"restos_a_pagar_inscritos", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade4" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade3", {{"restos_a_pagar_pagos", type number}}, "en-US")
+				in
+				    #"Tipo Alterado com Localidade4"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

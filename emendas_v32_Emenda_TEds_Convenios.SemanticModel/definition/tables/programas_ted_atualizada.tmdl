@@ -1,0 +1,246 @@
+table programas_ted_atualizada
+	lineageTag: 15e8dd2d-3864-4b11-9269-e393be4a75eb
+
+	column id_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: ef829f83-99f6-4e1a-8e02-df0357115670
+		summarizeBy: none
+		sourceColumn: id_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_codigo_programa
+		dataType: string
+		lineageTag: 17597ca0-2a5d-481a-a645-0c8b9f0fdc9a
+		summarizeBy: none
+		sourceColumn: tx_codigo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column aa_ano_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: fed700f4-3921-4a73-b667-c3e3a08a436e
+		summarizeBy: sum
+		sourceColumn: aa_ano_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_situacao_programa
+		dataType: string
+		lineageTag: 8a5c18c9-aad4-43aa-ab22-2c8b190dc05d
+		summarizeBy: none
+		sourceColumn: tx_situacao_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_nome_programa
+		dataType: string
+		lineageTag: af8ac65d-a267-4a66-b8cc-bdd2a5a9213d
+		summarizeBy: none
+		sourceColumn: tx_nome_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_descentralizadora
+		dataType: string
+		lineageTag: 16b08a83-4e2d-4623-b0eb-f8e95bf8eec3
+		summarizeBy: none
+		sourceColumn: sigla_unidade_descentralizadora
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidade_descentralizadora
+		dataType: string
+		lineageTag: 9909c111-19a8-4aba-8bac-6705f37df96f
+		summarizeBy: none
+		sourceColumn: unidade_descentralizadora
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_responsavel_acompanhamento
+		dataType: string
+		lineageTag: f58965b1-d747-413f-9543-66803c54acc7
+		summarizeBy: none
+		sourceColumn: sigla_unidade_responsavel_acompanhamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidade_responsavel_acompanhamento
+		dataType: string
+		lineageTag: d4c8914e-a38a-4300-8c0a-b82bc7e25f8b
+		summarizeBy: none
+		sourceColumn: unidade_responsavel_acompanhamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_nome_institucional_programa
+		dataType: string
+		lineageTag: d2cfdfe7-ec84-4b3f-9122-c1a9019cb493
+		summarizeBy: none
+		sourceColumn: tx_nome_institucional_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_objetivo_programa
+		dataType: string
+		lineageTag: 7d28cc80-aeca-4d9d-a47b-bd37f6c0a2c7
+		summarizeBy: none
+		sourceColumn: tx_objetivo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_descricao_programa
+		dataType: string
+		lineageTag: d370c796-222b-4b00-9e21-62dca1758344
+		summarizeBy: none
+		sourceColumn: tx_descricao_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_grupo_investimento_obra
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 30da2a8b-67fb-4f00-ab85-079b6def6d84
+		summarizeBy: none
+		sourceColumn: in_grupo_investimento_obra
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_grupo_investimento_servico
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9952822c-e048-44f3-aa25-ab86b850b820
+		summarizeBy: none
+		sourceColumn: in_grupo_investimento_servico
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_grupo_investimento_equipamento
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 99eb4239-d1f2-4b83-ac0a-cabd60f682a8
+		summarizeBy: none
+		sourceColumn: in_grupo_investimento_equipamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_autoriza_subdescentralizacao_outro
+		dataType: string
+		lineageTag: 2aedafee-18b0-443e-916f-81465c562854
+		summarizeBy: none
+		sourceColumn: in_autoriza_subdescentralizacao_outro
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_autoriza_realizacao_despesas
+		dataType: string
+		lineageTag: 060f99ce-cd46-4dac-920c-2e3b158555a3
+		summarizeBy: none
+		sourceColumn: in_autoriza_realizacao_despesas
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_autoriza_execucao_creditos_descentralizada
+		dataType: string
+		lineageTag: 2f15c087-aaf1-402d-9e1f-dc570f49bae9
+		summarizeBy: none
+		sourceColumn: in_autoriza_execucao_creditos_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_beneficiario_especifico
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ee2f5378-b896-449d-9f70-c220db88bcea
+		summarizeBy: none
+		sourceColumn: in_beneficiario_especifico
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_recebimento_plano_beneficiario_inicio
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6df8488e-1c7f-4704-a344-b8aabe466119
+		summarizeBy: none
+		sourceColumn: dt_recebimento_plano_beneficiario_inicio
+
+		variation Variation
+			isDefault
+			relationship: 0f0b6411-0cc6-438a-adc9-bcb5c008f0d0
+			defaultHierarchy: LocalDateTable_1cd35681-c71b-4074-ad25-aeaf94373b5b.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dt_recebimento_plano_beneficiario_fim
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 79707d99-42d4-4b51-b5f5-e031be2a00aa
+		summarizeBy: none
+		sourceColumn: dt_recebimento_plano_beneficiario_fim
+
+		variation Variation
+			isDefault
+			relationship: eb188ff7-45c1-48f5-a671-dd473579c6d3
+			defaultHierarchy: LocalDateTable_e1d1bbbd-c928-405c-bd19-fe5f51b820de.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column in_chamamento_publico
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4bfed363-c328-4a6d-a7ee-44949ee56dad
+		summarizeBy: none
+		sourceColumn: in_chamamento_publico
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_recebimento_plano_chamamento_inicio
+		dataType: string
+		lineageTag: 1eae72e5-0060-44c8-8f2e-a27125c7ea03
+		summarizeBy: none
+		sourceColumn: dt_recebimento_plano_chamamento_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_recebimento_plano_chamamento_fim
+		dataType: string
+		lineageTag: dd133f02-b0f6-46f9-a782-25365a038d66
+		summarizeBy: none
+		sourceColumn: dt_recebimento_plano_chamamento_fim
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ingest
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e84689da-b115-44db-8072-ca95e9cf4b53
+		summarizeBy: none
+		sourceColumn: dt_ingest
+
+		variation Variation
+			isDefault
+			relationship: e935129b-1a0c-4e6a-a7a7-2da509fac00a
+			defaultHierarchy: LocalDateTable_0b34e90b-af1d-4306-80e1-4cb63a3c20c4.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition programas_ted_atualizada = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Aline\Desktop\MIR\base de dados\Teds\Bases Atualizadas\programas_ted_atualizada.csv"),[Delimiter=",", Columns=25, Encoding=1252, QuoteStyle=QuoteStyle.Csv]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id_programa", Int64.Type}, {"tx_codigo_programa", type text}, {"aa_ano_programa", Int64.Type}, {"tx_situacao_programa", type text}, {"tx_nome_programa", type text}, {"sigla_unidade_descentralizadora", type text}, {"unidade_descentralizadora", type text}, {"sigla_unidade_responsavel_acompanhamento", type text}, {"unidade_responsavel_acompanhamento", type text}, {"tx_nome_institucional_programa", type text}, {"tx_objetivo_programa", type text}, {"tx_descricao_programa", type text}, {"in_grupo_investimento_obra", type logical}, {"in_grupo_investimento_servico", type logical}, {"in_grupo_investimento_equipamento", type logical}, {"in_autoriza_subdescentralizacao_outro", type text}, {"in_autoriza_realizacao_despesas", type text}, {"in_autoriza_execucao_creditos_descentralizada", type text}, {"in_beneficiario_especifico", type logical}, {"dt_recebimento_plano_beneficiario_inicio", type date}, {"dt_recebimento_plano_beneficiario_fim", type date}, {"in_chamamento_publico", type logical}, {"dt_recebimento_plano_chamamento_inicio", type text}, {"dt_recebimento_plano_chamamento_fim", type text}, {"dt_ingest", type datetime}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

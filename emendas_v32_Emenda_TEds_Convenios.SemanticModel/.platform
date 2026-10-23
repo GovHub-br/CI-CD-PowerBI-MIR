@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "emendas_v32_Emenda_TEds_Convenios"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3eb41ab0-52e3-4893-b818-678ae7e1168a"
+  }
+}
