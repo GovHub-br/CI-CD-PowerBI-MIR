@@ -1,0 +1,305 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "8de2cb255dc553a6b08b",
+  "position": {
+    "x": 50.9233166462222,
+    "y": 664.04004906673742,
+    "z": 10000,
+    "height": 314.28571428571428,
+    "width": 1815.7142857142858,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "sq_instrumento"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).sq_instrumento",
+              "nativeQueryRef": "N. Instrumento1",
+              "displayName": "N. Instrumento"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted (2)"
+                        }
+                      },
+                      "Property": "aa_ano_plano_acao"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(planos_acao_ted (2).aa_ano_plano_acao)",
+              "nativeQueryRef": "Ano1",
+              "displayName": "Ano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "id_plano_acao"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).id_plano_acao",
+              "nativeQueryRef": "ID Plano1",
+              "displayName": "ID Plano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "tx_situacao_plano_acao"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).tx_situacao_plano_acao",
+              "nativeQueryRef": "Situação1",
+              "displayName": "Situação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "sigla_unidade_descentralizada"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).sigla_unidade_descentralizada",
+              "nativeQueryRef": "Un. Descentralizada1",
+              "displayName": "Un. Descentralizada"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "tx_objeto_plano_acao"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).tx_objeto_plano_acao",
+              "nativeQueryRef": "Objetivo Plano1",
+              "displayName": "Objetivo Plano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "Status Vigencia Plano de Acao"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).Status Vigencia Plano de Acao",
+              "nativeQueryRef": "Status Vigencia Plano de Acao"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "dt_inicio_vigencia"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).dt_inicio_vigencia",
+              "nativeQueryRef": "Inicio Vigência1",
+              "displayName": "Inicio Vigência"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "dt_fim_vigencia"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).dt_fim_vigencia",
+              "nativeQueryRef": "Fim Vigência1",
+              "displayName": "Fim Vigência"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "planos_acao_ted (2)"
+                    }
+                  },
+                  "Property": "tx_justificativa_plano_acao"
+                }
+              },
+              "queryRef": "planos_acao_ted (2).tx_justificativa_plano_acao",
+              "nativeQueryRef": "Justificativa1",
+              "displayName": "Justificativa"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted (2)"
+                        }
+                      },
+                      "Property": "vl_total_plano_acao"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(planos_acao_ted (2).vl_total_plano_acao)",
+              "nativeQueryRef": "Total Plano Ação1",
+              "displayName": "Total Plano Ação"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "105.8160467027869D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "planos_acao_ted_atualizada.dt_fim_vigencia.Variation.Hierarquia de datas.Ano"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "112.48294770700687D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "planos_acao_ted (2).tx_situacao_plano_acao"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "593.1836981662991D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "planos_acao_ted (2).tx_objeto_plano_acao"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "1204.2895405416657D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "planos_acao_ted (2).tx_justificativa_plano_acao"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

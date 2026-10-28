@@ -1,0 +1,228 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "352035dacbf44ad17ec8",
+  "position": {
+    "x": 55.714285714285715,
+    "y": 410,
+    "z": 8000,
+    "height": 567.14285714285722,
+    "width": 1812.8571428571429,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "emissao_ano"
+                }
+              },
+              "queryRef": "Sum(nc_plano_acao.emissao_ano)",
+              "nativeQueryRef": "Ano",
+              "displayName": "Ano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "nc"
+                }
+              },
+              "queryRef": "nc_plano_acao.nc",
+              "nativeQueryRef": "Nota de Crédito",
+              "displayName": "Nota de Crédito"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "nc_transferencia"
+                }
+              },
+              "queryRef": "Sum(nc_plano_acao.nc_transferencia)",
+              "nativeQueryRef": "N. TED",
+              "displayName": "N. TED"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "acao_governo_descricao"
+                }
+              },
+              "queryRef": "nc_plano_acao.acao_governo_descricao",
+              "nativeQueryRef": "Programa PPA",
+              "displayName": "Programa PPA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "nc_ug_responsavel_descricao"
+                }
+              },
+              "queryRef": "nc_plano_acao.nc_ug_responsavel_descricao",
+              "nativeQueryRef": "UG Responsável",
+              "displayName": "UG Responsável"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "favorecido_municipio_descricao"
+                }
+              },
+              "queryRef": "nc_plano_acao.favorecido_municipio_descricao",
+              "nativeQueryRef": "Município do Favorecido",
+              "displayName": "Município do Favorecido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "favorecido_doc_descricao"
+                }
+              },
+              "queryRef": "nc_plano_acao.favorecido_doc_descricao",
+              "nativeQueryRef": "Favorecido",
+              "displayName": "Favorecido"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "nc_fonte_recursos_descricao"
+                }
+              },
+              "queryRef": "nc_plano_acao.nc_fonte_recursos_descricao",
+              "nativeQueryRef": "Fonte do Recurso",
+              "displayName": "Fonte do Recurso"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "nc_plano_acao"
+                    }
+                  },
+                  "Property": "nc_natureza_despesa_descricao"
+                }
+              },
+              "queryRef": "nc_plano_acao.nc_natureza_despesa_descricao",
+              "nativeQueryRef": "Natureza Despesa",
+              "displayName": "Natureza Despesa"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "nc_plano_acao"
+                        }
+                      },
+                      "Property": "valor_celula"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(nc_plano_acao.valor_celula)",
+              "nativeQueryRef": "Valor1",
+              "displayName": "Valor"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

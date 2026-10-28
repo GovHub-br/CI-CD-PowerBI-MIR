@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "b0f21f55d309a9015884",
+  "position": {
+    "x": 640,
+    "y": 281.42857142857144,
+    "z": 0,
+    "height": 130,
+    "width": 278.57142857142861,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'WebUrl'"
+                }
+              }
+            },
+            "webUrl": {
+              "expr": {
+                "Literal": {
+                  "Value": "'https://unbbr-my.sharepoint.com/:b:/g/personal/cmorais_unb_br/IQDVpxKnFSq_Q4uLRdfs75QoAQYmmO6SKcTpHLadsJWTymo?e=lsIvqb'"
+                }
+              }
+            },
+            "showDefaultTooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "howCreated": "InsertVisualButton"
+}

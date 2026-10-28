@@ -1,0 +1,218 @@
+table 'planos_acao_ted (3)'
+	lineageTag: 19338e32-1291-4c95-8841-fe7cadbf4663
+
+	column id_plano_acao
+		dataType: int64
+		formatString: 0
+		lineageTag: b1971b46-65ac-430c-af05-7cd6d4b9e4bd
+		summarizeBy: sum
+		sourceColumn: id_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: 007e54eb-7cbc-4a50-b284-a8065f923a57
+		summarizeBy: sum
+		sourceColumn: id_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_descentralizada
+		dataType: string
+		lineageTag: aa2877c2-722a-4c1d-9606-df972298d823
+		summarizeBy: none
+		sourceColumn: sigla_unidade_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidade_descentralizada
+		dataType: string
+		lineageTag: 2e8e3dae-3c6d-4b78-b530-852a5ff062cb
+		summarizeBy: none
+		sourceColumn: unidade_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_responsavel_execucao
+		dataType: string
+		lineageTag: 8d037b40-fa33-428f-9283-04fca031afc6
+		summarizeBy: none
+		sourceColumn: sigla_unidade_responsavel_execucao
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidade_responsavel_execucao
+		dataType: string
+		lineageTag: a7a3afc1-51a2-4aa9-b5da-dea71fbb31fe
+		summarizeBy: none
+		sourceColumn: unidade_responsavel_execucao
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_total_plano_acao
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 7a51dfc3-59cf-47bc-b79b-75f6b9c7963d
+		summarizeBy: sum
+		sourceColumn: vl_total_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column dt_inicio_vigencia
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7a386dd5-263a-44e3-bcdb-53bccfa6fe4a
+		summarizeBy: none
+		sourceColumn: dt_inicio_vigencia
+
+		variation Variation
+			isDefault
+			relationship: 4b6f5995-476f-4874-89cf-f8aef79be863
+			defaultHierarchy: LocalDateTable_c9a37c12-2296-4c6b-95c7-fa060817ac2c.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dt_fim_vigencia
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 86058c2e-8195-4cb3-a00b-b8d70a249d30
+		summarizeBy: none
+		sourceColumn: dt_fim_vigencia
+
+		variation Variation
+			isDefault
+			relationship: c49b146e-3bf8-4b6f-8c7a-76f9729ab10c
+			defaultHierarchy: LocalDateTable_8a3dc40f-06d1-44dc-88c6-7c5602e2d0a6.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column tx_objeto_plano_acao
+		dataType: string
+		lineageTag: 8a605279-682d-47b5-a18b-d875179b3e95
+		summarizeBy: none
+		sourceColumn: tx_objeto_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_justificativa_plano_acao
+		dataType: string
+		lineageTag: 7a51802a-3543-43d2-8d46-1d5f43fbebbb
+		summarizeBy: none
+		sourceColumn: tx_justificativa_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_forma_execucao_direta
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: aa4f796a-bf06-4ff3-9cbe-5ace37da572d
+		summarizeBy: none
+		sourceColumn: in_forma_execucao_direta
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_forma_execucao_particulares
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7aee8df2-7dfc-435a-ac3e-02949fb85c6e
+		summarizeBy: none
+		sourceColumn: in_forma_execucao_particulares
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_forma_execucao_descentralizada
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 50302234-34c0-44c5-9e26-39ebb7e3a2d9
+		summarizeBy: none
+		sourceColumn: in_forma_execucao_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_situacao_plano_acao
+		dataType: string
+		lineageTag: 6ec8f6d2-d94e-4d17-b511-c65f3466a17b
+		summarizeBy: none
+		sourceColumn: tx_situacao_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column aa_ano_plano_acao
+		dataType: int64
+		formatString: 0
+		lineageTag: 5157f0c7-4945-475c-bcfc-22f9aa154084
+		summarizeBy: sum
+		sourceColumn: aa_ano_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_beneficiario_especifico
+		dataType: double
+		lineageTag: 07752273-ce0a-483f-be66-c4872cdd687b
+		summarizeBy: sum
+		sourceColumn: vl_beneficiario_especifico
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_chamamento_publico
+		dataType: int64
+		formatString: 0
+		lineageTag: b2285400-fefc-4e94-962c-2cdf861c6096
+		summarizeBy: sum
+		sourceColumn: vl_chamamento_publico
+
+		annotation SummarizationSetBy = Automatic
+
+	column sq_instrumento
+		dataType: string
+		lineageTag: 98f9ea56-cc0f-4863-ae0a-dc2e9c774df7
+		summarizeBy: none
+		sourceColumn: sq_instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column aa_instrumento
+		dataType: int64
+		formatString: 0
+		lineageTag: 6c7bfff0-cada-4562-83a0-84298190e4ef
+		summarizeBy: sum
+		sourceColumn: aa_instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ingest
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7b487875-81b8-4074-ac9b-86da10639454
+		summarizeBy: none
+		sourceColumn: dt_ingest
+
+		variation Variation
+			isDefault
+			relationship: 78f16d52-0cef-4638-a29e-2ee9ae9453c9
+			defaultHierarchy: LocalDateTable_563ad4fd-5da5-4c28-96a2-30b4a2ae3c5a.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'planos_acao_ted (3)' = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(Web.Contents("https://sdhgovbr-my.sharepoint.com/personal/sinapir_igualdaderacial_gov_br/Documents/DAMGI/Plaforma%20Maria%20Firmina/teste/planos_acao_ted.csv"),[Delimiter=",", Columns=21, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"id_plano_acao", Int64.Type}, {"id_programa", Int64.Type}, {"sigla_unidade_descentralizada", type text}, {"unidade_descentralizada", type text}, {"sigla_unidade_responsavel_execucao", type text}, {"unidade_responsavel_execucao", type text}, {"vl_total_plano_acao", type number}, {"dt_inicio_vigencia", type date}, {"dt_fim_vigencia", type date}, {"tx_objeto_plano_acao", type text}, {"tx_justificativa_plano_acao", type text}, {"in_forma_execucao_direta", type logical}, {"in_forma_execucao_particulares", type logical}, {"in_forma_execucao_descentralizada", type logical}, {"tx_situacao_plano_acao", type text}, {"aa_ano_plano_acao", Int64.Type}, {"vl_beneficiario_especifico", type number}, {"vl_chamamento_publico", Int64.Type}, {"sq_instrumento", type text}, {"aa_instrumento", Int64.Type}, {"dt_ingest", type datetimezone}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

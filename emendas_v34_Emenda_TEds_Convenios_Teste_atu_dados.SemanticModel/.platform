@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "emendas_v34_Emenda_TEds_Convenios_Teste_atu_dados"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e8be7812-1083-41fa-a282-1d574a7f1e9b"
+  }
+}

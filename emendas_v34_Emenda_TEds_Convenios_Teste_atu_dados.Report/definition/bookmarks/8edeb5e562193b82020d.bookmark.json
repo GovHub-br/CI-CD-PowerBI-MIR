@@ -1,0 +1,743 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "NavegacaoExibidaParlePartido",
+  "name": "8edeb5e562193b82020d",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "9cc3c1ac60f98a6360d3",
+    "sections": {
+      "9cc3c1ac60f98a6360d3": {
+        "visualContainers": {
+          "2ed2043428fc547e72d2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9805e6f5f018af574997",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6f8c47d412108710decc": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "cbd06232878c57d20a14",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "cargo_autor"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "cargo_autor"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "aab5e9a4d49176980ee7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "fd026fa84417b4cd8423",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "Emenda_Convenio",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "e"
+                                        }
+                                      },
+                                      "Property": "uf_autor"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "uf_autor"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "uf_autor"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7706f103058e05b56243": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d6b3f4d8206552938a0d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Autores Convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Autores Convenio"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "62ab7aab2447a99416b0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a1b7a6256aa9425fb4d6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Convenio"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "8bdd816cecbead01ca3a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2f049688326a011fb2bb",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Média por Autor Convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Média por Autor Convenio"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "48073e0ad0eead83ef35": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bd3890a0b1ffe3b90cc0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "% Execução Convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "% Execução Convenio"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "3b4ba6171b28e34a8077": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a5af141cfb338c58e9f3",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7287f46e5fec0ab555b3",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Convenio"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "9cdd8cb59768de2ebeba": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f7d3a22de8ca067f5e97",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "Emenda_Convenio",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "e"
+                                        }
+                                      },
+                                      "Property": "url_foto_autor"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "url_foto_autor"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "36c43a598e249d1b1db5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "autor"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "553c079ecbc717193558",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "371af1f8e12b344e7bb0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Emenda_Convenio"
+                        }
+                      },
+                      "Property": "uf_autor"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f390e91c10ca73768a7d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Convenio"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "29bdd3a5ab9e1c17971e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Convenio"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "dab890ffa0514338665a": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "db4c6993b2f80c500495": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "3983d04647f96f1f0cd7": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "340409b312e17b3dc95d": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "a2e1db630681c1fd9c33": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "355dad8005298ceb5829": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "60e6126b5bc428e452cf": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "54859ab9a02a88b271d9": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "dc2cd2d58338ccce8a4c": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6b0cb8ad1d5df146e668": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "e223506b492a3297a96c": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "e3b7edf96aeec2f71d2c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "4ab40f48f1977e735635": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "10e429535dd12890b99a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3a2f85b965dd8e74cb67": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "487733fed8495c902726": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "fca762e9a1b8b31431d1": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "f5129872680432b58dfd": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "9a63b701db5aa95f5a11": {
+            "isHidden": false
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

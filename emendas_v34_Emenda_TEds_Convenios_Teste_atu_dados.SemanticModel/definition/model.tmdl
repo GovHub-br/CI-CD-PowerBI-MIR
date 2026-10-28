@@ -1,0 +1,137 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+/// Erros nas consultas que foram carregadas em 15/07/2026 11:42:35.
+queryGroup 'Erros na Consulta - 15/07/2026 11:42:35'
+
+	annotation PBI_QueryGroupOrder = 0
+
+/// Erros nas consultas que foram carregadas em 15/07/2026 12:04:29.
+queryGroup 'Erros na Consulta - 15/07/2026 12:04:29'
+
+	annotation PBI_QueryGroupOrder = 1
+
+/// Erros nas consultas que foram carregadas em 16/07/2026 11:39:33.
+queryGroup 'Erros na Consulta - 16/07/2026 11:39:33'
+
+	annotation PBI_QueryGroupOrder = 2
+
+/// Erros nas consultas que foram carregadas em 13/08/2026 18:49:14.
+queryGroup 'Erros na Consulta - 13/08/2026 18:49:14'
+
+	annotation PBI_QueryGroupOrder = 3
+
+/// Erros nas consultas que foram carregadas em 13/08/2026 18:50:50.
+queryGroup 'Erros na Consulta - 13/08/2026 18:50:50'
+
+	annotation PBI_QueryGroupOrder = 4
+
+/// Erros nas consultas que foram carregadas em 20/08/2026 15:48:33.
+queryGroup 'Erros na Consulta - 20/08/2026 15:48:33'
+
+	annotation PBI_QueryGroupOrder = 5
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["emendas_convenios","Erros em emendas_convenios","emendas_partidos","emendas_convenio","Erros em emendas_convenio","Emenda_Convenio","Erros em Emenda_Convenio","planos_acao_ted","nc_plano_acao_ted","pf_unificado_planos_acao_ted","programas_ted","ted_empenhos_plano_acao_ted","ted_resumo_orcamentario_ted","gold_convenios","Erros em Emenda_Convenio (2)","Erros em Emenda_Convenio (3)","emendas_instrumentos_execucao","Erros em emendas_instrumentos_execucao","emendas","planos_acao_ted_atualizada","nc_plano_acao_atualizada","pf_unificado_planos_acao_atualizada","programas_ted_atualizada","ted_empenhos_plano_acao_atualizada","ted_resumo_orcamentario_atualizada","resumo_convenios","emendas_execucao","emendas_convenio (2)","planos_acao_ted (2)","ted_resumo_orcamentario","ted_empenhos_plano_acao","programas_ted (2)","nc_plano_acao","planos_acao_ted (3)","ted_execucao_por_instrumento"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table emendas_partidos
+ref table DateTableTemplate_b2afd2ff-8a6c-4cd6-90c7-dbce381f52d0
+ref table LocalDateTable_8fd6022a-1c7d-48bc-b7ef-0a7e871326ff
+ref table LocalDateTable_fe4f3b28-dc1b-49e5-aeef-667ae343fcc8
+ref table LocalDateTable_e61aba57-ed9a-4624-9ba7-f9e30eb3ec13
+ref table _medidas
+ref table dCalendario
+ref table Emenda_Convenio
+ref table LocalDateTable_3e10c903-8ad4-400c-8667-d8df4471d6c3
+ref table LocalDateTable_70d009b5-baa2-4b23-b425-ea834f000837
+ref table LocalDateTable_5f3f1e27-588a-415b-82ca-c9f65b746b90
+ref table LocalDateTable_1feec611-6349-49c3-a868-4c86c83c80e0
+ref table LocalDateTable_919e98fc-5dc4-4b43-a0b4-09a0a6ce7848
+ref table LocalDateTable_ef598de5-d1f0-45b9-8112-e727b7efa477
+ref table LocalDateTable_6d6fe3c7-2962-4d0d-976b-0f9853c57492
+ref table LocalDateTable_c42533be-936e-483b-8c7e-e45f439a21cd
+ref table LocalDateTable_5e42ec21-d5ca-4892-8336-b302e09d5309
+ref table planos_acao_ted
+ref table nc_plano_acao_ted
+ref table pf_unificado_planos_acao_ted
+ref table LocalDateTable_cea201d6-7672-47b5-8107-e84f8b366f29
+ref table LocalDateTable_a526be22-0876-467a-8087-98e1c801bcb0
+ref table LocalDateTable_91fbdff2-7b73-4691-82a3-0459ed28c200
+ref table LocalDateTable_8f7890e4-91df-47df-bca9-e4410110df8b
+ref table LocalDateTable_5bfd0216-5d0c-473b-880b-e89fe4f11e43
+ref table LocalDateTable_ca3c3475-d20b-4a22-84d7-0389bed4b5ad
+ref table programas_ted
+ref table LocalDateTable_e2d246db-54a1-4547-b2b5-6471a8de08f1
+ref table LocalDateTable_3e2e4feb-4943-407d-85d3-90fb8f6d53f3
+ref table LocalDateTable_d3d80d70-fdea-443e-8acf-2b36b1f7bb82
+ref table ted_empenhos_plano_acao_ted
+ref table ted_resumo_orcamentario_ted
+ref table gold_convenios
+ref table LocalDateTable_8af829ae-5279-4263-90b8-c4672549d5dd
+ref table LocalDateTable_ff827c63-6ed4-4a38-96b6-c9ca7897b389
+ref table LocalDateTable_ce753fab-ca7d-4f83-a65e-c5f00ff32fed
+ref table LocalDateTable_f6c6e399-f797-4b61-95c5-0fa06461903c
+ref table LocalDateTable_bc470a89-ad2e-4bb5-874c-734a21d06d91
+ref table LocalDateTable_14fe42f9-a60d-4e34-95ac-a529fd94cbb9
+ref table emendas
+ref table LocalDateTable_35eb6361-1738-42fe-abcf-5adaa94d974c
+ref table LocalDateTable_4b9763a4-315b-468c-aef4-692921dfe8a7
+ref table planos_acao_ted_atualizada
+ref table LocalDateTable_8b44017d-5738-4821-b9c3-7ef010e50868
+ref table LocalDateTable_afa48a16-b07e-4272-88de-cd630c290a94
+ref table LocalDateTable_17f2f81d-adec-4c34-b130-4bbae1600dcb
+ref table nc_plano_acao_atualizada
+ref table LocalDateTable_13621b2c-1d98-4efe-8dec-60d86e0be6c3
+ref table pf_unificado_planos_acao_atualizada
+ref table LocalDateTable_969368b3-d93b-4669-a1c5-963db020e93d
+ref table LocalDateTable_25ccd47f-c458-488c-9113-05e6f90724e9
+ref table LocalDateTable_f29a0897-4a28-4a71-87c7-215ac39cf56f
+ref table LocalDateTable_9d583504-0d81-448b-a727-e172d19a8a37
+ref table LocalDateTable_0f6bf1db-25b1-44e5-9bd6-9205a7f916a4
+ref table LocalDateTable_15f965df-952e-4469-99e8-7f9ae42de3c8
+ref table programas_ted_atualizada
+ref table LocalDateTable_1cd35681-c71b-4074-ad25-aeaf94373b5b
+ref table LocalDateTable_e1d1bbbd-c928-405c-bd19-fe5f51b820de
+ref table LocalDateTable_0b34e90b-af1d-4306-80e1-4cb63a3c20c4
+ref table ted_empenhos_plano_acao_atualizada
+ref table LocalDateTable_853272be-457f-41a9-930b-d5d96e887ae3
+ref table ted_resumo_orcamentario_atualizada
+ref table LocalDateTable_aa52c846-274b-4167-afa9-24a991becafb
+ref table resumo_convenios
+ref table LocalDateTable_59a2cba2-0891-41ed-906c-5afc7195bd38
+ref table LocalDateTable_132f355c-4b3f-4e09-98d4-130bc2fae8bc
+ref table LocalDateTable_4d5c3e83-3b90-459c-b23b-38b314372e6a
+ref table LocalDateTable_8d9f7b23-77da-46ef-907c-f216c54fad6f
+ref table LocalDateTable_1c1753d3-8d78-4dca-a3ae-1c1de9bc0c9e
+ref table LocalDateTable_0c659c4b-0606-4603-b438-07840939b268
+ref table emendas_execucao
+ref table 'emendas_convenio (2)'
+ref table 'planos_acao_ted (2)'
+ref table LocalDateTable_5dcc8cd0-df60-484c-8717-c9979ec8a38a
+ref table LocalDateTable_5c46fbc2-2198-4b1d-bd02-d6f44af640cc
+ref table LocalDateTable_657a375c-0ce9-4707-9d5d-c94c1159c93a
+ref table ted_resumo_orcamentario
+ref table LocalDateTable_b3569c64-2cf3-4d56-8f0d-8c4ed5fcf602
+ref table LocalDateTable_1b041578-b9c0-465a-b249-aed0d999a1cb
+ref table LocalDateTable_19191e30-1702-4071-9f18-d8c49bf1076e
+ref table ted_empenhos_plano_acao
+ref table 'programas_ted (2)'
+ref table nc_plano_acao
+ref table LocalDateTable_f37d81c6-de01-4a29-9c38-4213c8ad2719
+ref table LocalDateTable_f4ea357e-d492-4f91-be28-fc3b5b27048d
+ref table 'planos_acao_ted (3)'
+ref table LocalDateTable_c9a37c12-2296-4c6b-95c7-fa060817ac2c
+ref table LocalDateTable_8a3dc40f-06d1-44dc-88c6-7c5602e2d0a6
+ref table LocalDateTable_563ad4fd-5da5-4c28-96a2-30b4a2ae3c5a
+ref table ted_execucao_por_instrumento
+
+ref cultureInfo pt-BR
+

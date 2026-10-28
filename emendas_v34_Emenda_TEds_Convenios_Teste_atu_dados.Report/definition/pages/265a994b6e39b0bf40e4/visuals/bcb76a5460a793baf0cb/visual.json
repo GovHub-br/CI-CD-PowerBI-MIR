@@ -1,0 +1,152 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "bcb76a5460a793baf0cb",
+  "position": {
+    "x": 1643.1492268553095,
+    "y": 25.459754997792832,
+    "z": 2,
+    "height": 71.822660098522164,
+    "width": 167.58620689655172,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Exercício: 2024, 2025 e 2026",
+                    "textStyle": {
+                      "fontFamily": "DIN",
+                      "fontSize": "9pt",
+                      "color": "#fde6d9"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "right"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fonte de dados: ",
+                    "textStyle": {
+                      "fontFamily": "DIN",
+                      "fontSize": "9pt",
+                      "color": "#fde6d9"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "right"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "SIAFI e TransfereGOV",
+                    "textStyle": {
+                      "fontFamily": "DIN",
+                      "fontSize": "9pt",
+                      "color": "#fde6d9"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "right"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Atualizado: 05/10/2026",
+                    "textStyle": {
+                      "fontFamily": "DIN",
+                      "fontSize": "9pt",
+                      "color": "#fde6d9"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "right"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

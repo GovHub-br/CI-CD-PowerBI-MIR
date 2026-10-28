@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "e3b7edf96aeec2f71d2c",
+  "position": {
+    "x": 8.20081560285885,
+    "y": 90.295705055112137,
+    "z": 5000,
+    "height": 56.045610034207527,
+    "width": 307.83831912101471,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "shape",
+    "objects": {
+      "shape": [
+        {
+          "properties": {
+            "tileShape": {
+              "expr": {
+                "Literal": {
+                  "Value": "'line'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rotation": [
+        {
+          "properties": {
+            "shapeAngle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "9a63b701db5aa95f5a11",
+  "howCreated": "InsertVisualButton"
+}

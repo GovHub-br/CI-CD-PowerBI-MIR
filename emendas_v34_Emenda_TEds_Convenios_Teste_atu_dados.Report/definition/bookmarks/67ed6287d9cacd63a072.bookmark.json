@@ -1,0 +1,827 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "limparFiltrosTedsPrincipal",
+  "name": "67ed6287d9cacd63a072",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "14b4903abb964b9deb5c",
+    "sections": {
+      "14b4903abb964b9deb5c": {
+        "visualContainers": {
+          "5fe7ff604b9aafac403f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "aab8bbe8052f8222d02d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Empenhado TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Empenhado TED"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "1c4315dd28a413428b11": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d7b93d66997f9716265c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Pago TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Pago TED"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "0fdad2da1ce79d7baad4": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0c8a5a3a440cc436f666",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd TEDs"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd TEDs"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e2435a73cdb4aac8c95f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "18a3d9b95935043b5b23",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd PA com Empenho"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd PA com Empenho"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "5f269ba21b16ceb059bb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "facedd226afd23ad3f7a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "TEDs Sem Empenho"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "TEDs Sem Empenho"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "261f4657458c8e5b9971": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "05fe518d6191ebe9558a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Percentual Execucao TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Percentual Execucao TED"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "5619ffb7000be4a29cde": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bf97fcbf4ec8fff16322",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "p",
+                                  "Entity": "programas_ted",
+                                  "Type": 0
+                                },
+                                {
+                                  "Name": "_",
+                                  "Entity": "_medidas",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "p"
+                                      }
+                                    },
+                                    "Property": "tx_nome_programa"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "_"
+                                        }
+                                      },
+                                      "Property": "Valor Firmado Plano de Acao"
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 5
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "p",
+                        "Entity": "programas_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "p"
+                                    }
+                                  },
+                                  "Property": "tx_nome_programa"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "programas_ted"
+                        }
+                      },
+                      "Property": "tx_nome_programa"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e11de3eb5242d2e7409c",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Firmado Plano de Acao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Firmado Plano de Acao"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "programas_ted"
+                        }
+                      },
+                      "Property": "tx_nome_programa"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c045be7917e8db81b855": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "83eebe1a2914ae1559ae",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "t",
+                                  "Entity": "ted_empenhos_plano_acao_ted",
+                                  "Type": 0
+                                },
+                                {
+                                  "Name": "_",
+                                  "Entity": "_medidas",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "t"
+                                      }
+                                    },
+                                    "Property": "fonte_recursos_detalhada_descricao"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "_"
+                                        }
+                                      },
+                                      "Property": "Distribuicao Recurso TED"
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 5
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "t",
+                        "Entity": "ted_empenhos_plano_acao_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "t"
+                                    }
+                                  },
+                                  "Property": "fonte_recursos_detalhada_descricao"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_empenhos_plano_acao_ted"
+                        }
+                      },
+                      "Property": "fonte_recursos_detalhada_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "b46eb1a472fb41be9337",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Distribuicao Recurso TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pieChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Distribuicao Recurso TED"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_empenhos_plano_acao_ted"
+                        }
+                      },
+                      "Property": "fonte_recursos_detalhada_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "59b12f4706736d2ed35b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "fa02da5637ca4d966ba0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd TEDs"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "47352133509a79d15da2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "tx_situacao_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "donutChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd TEDs"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "tx_situacao_plano_acao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c33d4f970724e6d3cfc2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "cdc759b18312faeaf07e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Orcamento Recebido TED"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7bba7fd78c518d43db58",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Firmado Plano de Acao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0991f1a66f3229ad580a",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Empenhado TED"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2b7d1215442a1531dfc5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Liquidado TED"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "97c26b6d7b6b93b98dc8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Pago TED"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "funnel",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Orcamento Recebido TED"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "246ffd164540fd72071f": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "5f4b7e62d5f1ecf3e18c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "18e608311b5217338b21": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "2f28ed264053700747e2": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "5c427273799ad7d6e9f0": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "c9a1928733e7b517bc37": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6977be8e52f095b9323f": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "80a938b3d0d5580d1308": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "72cf32e6651aa668b7ce": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "c18a4b37117a28bb9a5c": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "fa82f2d23107373e7d5c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "062a801fbf07ca9f604a": {
+            "isHidden": true
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

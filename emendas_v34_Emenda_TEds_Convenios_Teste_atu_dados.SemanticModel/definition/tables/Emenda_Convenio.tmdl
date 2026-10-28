@@ -1,0 +1,1017 @@
+table Emenda_Convenio
+	lineageTag: 92ff57f1-f223-4c87-93f9-b0efc6fed40e
+
+	column emissao_mes
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1b7a0088-da4e-4f57-9c3f-ab1bbd101384
+		summarizeBy: none
+		sourceColumn: emissao_mes
+
+		variation Variation
+			isDefault
+			relationship: c0225511-269f-4152-95f2-aa19d787c529
+			defaultHierarchy: LocalDateTable_3e10c903-8ad4-400c-8667-d8df4471d6c3.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column emissao_dia
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: af6b9928-7273-4659-90bc-59a8a26babdc
+		summarizeBy: none
+		sourceColumn: emissao_dia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column codigo_programa
+		dataType: int64
+		formatString: 0
+		lineageTag: 5ee3f4c1-a449-49d4-b3d8-778a406ac58f
+		summarizeBy: sum
+		sourceColumn: codigo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa
+		dataType: string
+		lineageTag: 1d87f2ff-3625-4994-aacc-4240980b0919
+		summarizeBy: none
+		sourceColumn: programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_acao_ajustada
+		dataType: string
+		lineageTag: 458f7c50-8228-4020-8075-919b05d1fff2
+		summarizeBy: none
+		sourceColumn: codigo_acao_ajustada
+
+		annotation SummarizationSetBy = Automatic
+
+	column acao_ajustada
+		dataType: string
+		lineageTag: d9ee6562-fe75-49e4-9b1a-a76d1ca0be70
+		summarizeBy: none
+		sourceColumn: acao_ajustada
+
+		annotation SummarizationSetBy = Automatic
+
+	column autor_emendas_orcamento_descricao
+		dataType: string
+		lineageTag: a9ce5512-fd8a-412d-b2ce-3a5741dd1a29
+		summarizeBy: none
+		sourceColumn: autor_emendas_orcamento_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column autor_emendas_orcamento_nome
+		dataType: string
+		lineageTag: 4b5d1fa6-27ce-4bc9-88f8-755062fb2d65
+		summarizeBy: none
+		sourceColumn: autor_emendas_orcamento_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column localizador_gasto
+		dataType: string
+		lineageTag: d4aaaeef-1b73-48b4-80a0-12799a7d7c43
+		summarizeBy: none
+		sourceColumn: localizador_gasto
+
+		annotation SummarizationSetBy = Automatic
+
+	column localizador_gasto_descricao
+		dataType: string
+		lineageTag: d1df6247-cf15-4545-b85d-627ccf717560
+		summarizeBy: none
+		sourceColumn: localizador_gasto_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column regiao_pt
+		dataType: string
+		lineageTag: 3fa5aa51-8b8c-43cf-8e5f-e541d423b4b1
+		summarizeBy: none
+		sourceColumn: regiao_pt
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf
+		dataType: string
+		lineageTag: 5651cbd9-e052-49e2-9bc2-b50e2ab7286b
+		summarizeBy: none
+		sourceColumn: uf
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf_descricao
+		dataType: string
+		lineageTag: 6bafd243-afd7-4cfd-9c32-5740625ab1cc
+		summarizeBy: none
+		sourceColumn: uf_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column municipio
+		dataType: string
+		lineageTag: e62499df-9398-4442-ab62-14ba5348530c
+		summarizeBy: none
+		sourceColumn: municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column pais
+		dataType: string
+		lineageTag: d9aea6e1-cf4e-4dd6-89fe-ddd0ef6bd060
+		summarizeBy: none
+		sourceColumn: pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor
+		dataType: string
+		lineageTag: 5480d42b-6f23-4527-928b-1c5667ff6cd4
+		summarizeBy: none
+		sourceColumn: ne_ccor
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_num_processo
+		dataType: string
+		lineageTag: 3d842b38-672d-4eb9-b304-f63bf1842ee1
+		summarizeBy: none
+		sourceColumn: ne_num_processo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_info_complementar
+		dataType: string
+		lineageTag: b75701f3-4840-4e30-bd94-8e7d7d914dfd
+		summarizeBy: none
+		sourceColumn: ne_info_complementar
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_descricao
+		dataType: string
+		lineageTag: da6056f1-7e98-46f7-8102-d7aa3db30c92
+		summarizeBy: none
+		sourceColumn: ne_ccor_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column doc_observacao
+		dataType: string
+		lineageTag: 9611514f-bbb7-47fd-997b-cd2eca95efbc
+		summarizeBy: none
+		sourceColumn: doc_observacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_gnd
+		dataType: int64
+		formatString: 0
+		lineageTag: 50e483a4-80d3-41f6-8d32-3bad97f7a3f8
+		summarizeBy: sum
+		sourceColumn: codigo_gnd
+
+		annotation SummarizationSetBy = Automatic
+
+	column gnd
+		dataType: string
+		lineageTag: 76ad26a8-72f2-411a-85ff-9507f8238f5d
+		summarizeBy: none
+		sourceColumn: gnd
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_despesa
+		dataType: int64
+		formatString: 0
+		lineageTag: fb79b2d3-992b-4f3e-b0f8-42ce9429772b
+		summarizeBy: sum
+		sourceColumn: natureza_despesa
+
+		annotation SummarizationSetBy = Automatic
+
+	column natureza_despesa_descricao
+		dataType: string
+		lineageTag: 7879d315-97f2-4ed5-94ad-6d8e1d738f38
+		summarizeBy: none
+		sourceColumn: natureza_despesa_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_modalidade
+		dataType: int64
+		formatString: 0
+		lineageTag: 44468b0b-4025-42cd-8cd4-d5d440e73bdd
+		summarizeBy: sum
+		sourceColumn: codigo_modalidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column modalidade
+		dataType: string
+		lineageTag: 0f069a4f-f8cf-435e-b060-eee3696fce73
+		summarizeBy: none
+		sourceColumn: modalidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_favorecido
+		dataType: string
+		lineageTag: 5a80881c-1572-4924-be86-2a0851dcfd5a
+		summarizeBy: none
+		sourceColumn: ne_ccor_favorecido
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_favorecido_descricao
+		dataType: string
+		lineageTag: 2d04d02c-1453-48a9-9a8d-077bd422fa98
+		summarizeBy: none
+		sourceColumn: ne_ccor_favorecido_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ne_ccor_ano_emissao
+		dataType: int64
+		formatString: 0
+		lineageTag: 11b283aa-b05d-458d-ba91-7f695f4b40a9
+		summarizeBy: sum
+		sourceColumn: ne_ccor_ano_emissao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ptres
+		dataType: int64
+		formatString: 0
+		lineageTag: 9c7e435a-b423-41ce-baec-1ebcc7e07bab
+		summarizeBy: sum
+		sourceColumn: ptres
+
+		annotation SummarizationSetBy = Automatic
+
+	column fonte_recursos_detalhada
+		dataType: int64
+		formatString: 0
+		lineageTag: 628cbf75-9075-4432-bd41-1b6457cccac9
+		summarizeBy: sum
+		sourceColumn: fonte_recursos_detalhada
+
+		annotation SummarizationSetBy = Automatic
+
+	column fonte_recursos_detalhada_descricao
+		dataType: string
+		lineageTag: c96d5f9a-eb5b-4e11-a300-8c913aee3d30
+		summarizeBy: none
+		sourceColumn: fonte_recursos_detalhada_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column despesas_empenhadas
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 719050c8-9994-4c79-a2b6-fc34c093f75f
+		summarizeBy: sum
+		sourceColumn: despesas_empenhadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column despesas_liquidadas
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: a77de218-6115-4731-aa2d-596f9ce0b7ff
+		summarizeBy: sum
+		sourceColumn: despesas_liquidadas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column despesas_pagas
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b244e68c-32e7-486f-b1d7-61732360e540
+		summarizeBy: sum
+		sourceColumn: despesas_pagas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column restos_a_pagar_inscritos
+		dataType: double
+		lineageTag: 9375aee8-be03-4ff4-bd92-43182100eb60
+		summarizeBy: sum
+		sourceColumn: restos_a_pagar_inscritos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column restos_a_pagar_pagos
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ee88616e-db7d-40fd-afff-95ea67d1defc
+		summarizeBy: sum
+		sourceColumn: restos_a_pagar_pagos
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column id_autor
+		dataType: int64
+		formatString: 0
+		lineageTag: 8674502f-b1b1-4b1a-9a51-bcb143d08157
+		summarizeBy: sum
+		sourceColumn: id_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column cargo_autor
+		dataType: string
+		lineageTag: fa3fe917-47fc-4f7b-9416-668537a26a0b
+		summarizeBy: none
+		sourceColumn: cargo_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column autor
+		dataType: string
+		lineageTag: 9a51e7ee-ad87-4fc9-bd1c-a367e47ddc01
+		summarizeBy: none
+		sourceColumn: autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column partido
+		dataType: string
+		lineageTag: 52777264-28f3-4c71-ad75-5f3e8f800e9b
+		summarizeBy: none
+		sourceColumn: partido
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf_autor
+		dataType: string
+		lineageTag: be9d7984-edbf-4251-a343-07eb4bdf38e3
+		summarizeBy: none
+		sourceColumn: uf_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column url_foto_autor
+		dataType: string
+		lineageTag: 16bb1876-0cca-417b-96b3-504abeee309e
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: url_foto_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column email_autor
+		dataType: string
+		lineageTag: 663ca3cf-df68-4174-8717-1ef7f04f6140
+		summarizeBy: none
+		sourceColumn: email_autor
+
+		annotation SummarizationSetBy = Automatic
+
+	column url_foto_partido
+		dataType: string
+		lineageTag: a9b597ed-e7f2-494a-bb61-6f174936372e
+		dataCategory: ImageUrl
+		summarizeBy: none
+		sourceColumn: url_foto_partido
+
+		annotation SummarizationSetBy = Automatic
+
+	column numero_transferencia
+		dataType: int64
+		formatString: 0
+		lineageTag: 721dfd7d-5b22-455d-93c6-1997f9caf244
+		summarizeBy: sum
+		sourceColumn: numero_transferencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ingest
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 035b3452-5947-4b8c-b4f7-16911be708ab
+		summarizeBy: none
+		sourceColumn: dt_ingest
+
+		variation Variation
+			isDefault
+			relationship: 58ae1fb2-423a-46ec-9ac0-99d64f9f83eb
+			defaultHierarchy: LocalDateTable_70d009b5-baa2-4b23-b425-ea834f000837.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column autor_emendas_orcamento
+		dataType: string
+		lineageTag: 58713c9f-fa7c-482b-85e3-b67e3668cd4d
+		summarizeBy: none
+		sourceColumn: autor_emendas_orcamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_convenio
+		dataType: int64
+		formatString: 0
+		lineageTag: 02423ef1-7bae-4f22-97f0-bfdab89166cf
+		summarizeBy: none
+		sourceColumn: nr_convenio
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_proposta
+		dataType: int64
+		formatString: 0
+		lineageTag: 6118e76e-8d69-48af-b08c-571dcdb68c21
+		summarizeBy: sum
+		sourceColumn: id_proposta
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia
+		dataType: int64
+		formatString: 0
+		lineageTag: 5dbc8af6-a197-4e1f-9692-ce9ddf11097c
+		summarizeBy: sum
+		sourceColumn: dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: c6a2ea86-0c2b-48c6-bf28-03927808e4f0
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: e4fd5b7a-c949-4c56-aaed-0fee9d8bd779
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_assin_conv
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 23e87b6f-0c11-41a9-b245-409c725198d9
+		summarizeBy: none
+		sourceColumn: dia_assin_conv
+
+		variation Variation
+			isDefault
+			relationship: 7d22556b-7811-477f-91b2-8f6b338960b9
+			defaultHierarchy: LocalDateTable_5f3f1e27-588a-415b-82ca-c9f65b746b90.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column sit_convenio
+		dataType: string
+		lineageTag: 90e941c0-8a8a-4516-92eb-d4939203738b
+		summarizeBy: none
+		sourceColumn: sit_convenio
+
+		annotation SummarizationSetBy = Automatic
+
+	column subsituacao_conv
+		dataType: string
+		lineageTag: 893dfb74-cc73-4728-bc24-5c4e272a069d
+		summarizeBy: none
+		sourceColumn: subsituacao_conv
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacao_publicacao
+		dataType: string
+		lineageTag: 8a951f2a-5b90-4083-9f5c-8aa62d16a006
+		summarizeBy: none
+		sourceColumn: situacao_publicacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column instrumento_ativo
+		dataType: string
+		lineageTag: 78636f23-36ce-4c69-bc72-858e98eddc3a
+		summarizeBy: none
+		sourceColumn: instrumento_ativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_opera_obtv
+		dataType: string
+		lineageTag: 770d520a-c043-4a67-ba5a-ddaeb75ce1e8
+		summarizeBy: none
+		sourceColumn: ind_opera_obtv
+
+		annotation SummarizationSetBy = Automatic
+
+	column nr_processo
+		dataType: int64
+		formatString: 0
+		lineageTag: a91caa56-9cef-46ec-bf38-e1be1c4e1f16
+		summarizeBy: sum
+		sourceColumn: nr_processo
+
+		annotation SummarizationSetBy = Automatic
+
+	column ug_emitente
+		dataType: int64
+		formatString: 0
+		lineageTag: 5863b610-49fe-43c7-af57-ded9496c969b
+		summarizeBy: sum
+		sourceColumn: ug_emitente
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_publ_conv
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5bc2e490-156e-464e-8f4b-7127958540ab
+		summarizeBy: none
+		sourceColumn: dia_publ_conv
+
+		variation Variation
+			isDefault
+			relationship: 2b3097cc-642a-4f2f-bf3d-c54ba95393a2
+			defaultHierarchy: LocalDateTable_1feec611-6349-49c3-a868-4c86c83c80e0.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dia_inic_vigenc_conv
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1e5a97e5-2fba-46a9-af20-cf5f2ab9d28d
+		summarizeBy: none
+		sourceColumn: dia_inic_vigenc_conv
+
+		variation Variation
+			isDefault
+			relationship: 101d5a68-5420-492c-af78-0221680ec8a6
+			defaultHierarchy: LocalDateTable_919e98fc-5dc4-4b43-a0b4-09a0a6ce7848.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dia_fim_vigenc_conv
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1deb0e07-e348-4cc0-b52a-d000c6d20f40
+		summarizeBy: none
+		sourceColumn: dia_fim_vigenc_conv
+
+		variation Variation
+			isDefault
+			relationship: ad281971-469b-495d-b77d-8f5b47a1b293
+			defaultHierarchy: LocalDateTable_ef598de5-d1f0-45b9-8112-e727b7efa477.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dia_fim_vigenc_original_conv
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 281ff1a3-d8e8-4c3c-9eb4-adfe8fff6b73
+		summarizeBy: none
+		sourceColumn: dia_fim_vigenc_original_conv
+
+		variation Variation
+			isDefault
+			relationship: fa3f5a60-adf0-40e5-99ca-86d078f2f72d
+			defaultHierarchy: LocalDateTable_6d6fe3c7-2962-4d0d-976b-0f9853c57492.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column dias_prest_contas
+		dataType: int64
+		formatString: 0
+		lineageTag: 4bff79a2-0164-4a81-ade7-32d9028f4ed0
+		summarizeBy: sum
+		sourceColumn: dias_prest_contas
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_limite_prest_contas
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c7904b05-9071-47c1-8116-18a082dd9abc
+		summarizeBy: none
+		sourceColumn: dia_limite_prest_contas
+
+		variation Variation
+			isDefault
+			relationship: f9b14e7f-3b3c-42a7-b846-02fc2aaabf50
+			defaultHierarchy: LocalDateTable_c42533be-936e-483b-8c7e-e45f439a21cd.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column data_suspensiva
+		dataType: string
+		lineageTag: b26ec218-82b9-40ee-a2f8-819a1e9cb060
+		summarizeBy: none
+		sourceColumn: data_suspensiva
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_retirada_suspensiva
+		dataType: string
+		lineageTag: 62438af4-2230-46b3-88e7-f7e93b1c7f7f
+		summarizeBy: none
+		sourceColumn: data_retirada_suspensiva
+
+		annotation SummarizationSetBy = Automatic
+
+	column dias_clausula_suspensiva
+		dataType: string
+		lineageTag: 840579a5-6e82-4d4f-83ba-85eac39368ac
+		summarizeBy: none
+		sourceColumn: dias_clausula_suspensiva
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacao_contratacao
+		dataType: string
+		lineageTag: 4e9ba8a9-ceca-446f-ac91-7d3265db4403
+		summarizeBy: none
+		sourceColumn: situacao_contratacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_assinado
+		dataType: string
+		lineageTag: c6941159-5b84-4b7f-be57-21e488d381d1
+		summarizeBy: none
+		sourceColumn: ind_assinado
+
+		annotation SummarizationSetBy = Automatic
+
+	column motivo_suspensao
+		dataType: string
+		lineageTag: f70bdcc7-83d5-4974-a2c0-79826769e379
+		summarizeBy: none
+		sourceColumn: motivo_suspensao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ind_foto
+		dataType: string
+		lineageTag: 54b0ac77-37bc-48b7-b4e2-fc6a5d7af455
+		summarizeBy: none
+		sourceColumn: ind_foto
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtde_convenios
+		dataType: int64
+		formatString: 0
+		lineageTag: bf96e63f-f080-4a95-9ddf-82f62434ad17
+		summarizeBy: sum
+		sourceColumn: qtde_convenios
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtd_ta
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d70af07-29d4-4110-931d-804a65829814
+		summarizeBy: sum
+		sourceColumn: qtd_ta
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtd_prorroga
+		dataType: int64
+		formatString: 0
+		lineageTag: 78e3a746-82c5-4ef8-becc-84475ea762cb
+		summarizeBy: sum
+		sourceColumn: qtd_prorroga
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_global_conv
+		dataType: double
+		lineageTag: 42459706-27b4-4422-9491-432dab759810
+		summarizeBy: sum
+		sourceColumn: vl_global_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_repasse_conv
+		dataType: double
+		lineageTag: f6982018-0f81-406c-b5f3-f4727e1f6d43
+		summarizeBy: sum
+		sourceColumn: vl_repasse_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_contrapartida_conv
+		dataType: double
+		lineageTag: baeec967-9840-491c-9250-dc06ecb527a1
+		summarizeBy: sum
+		sourceColumn: vl_contrapartida_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_empenhado_conv
+		dataType: double
+		lineageTag: 92b4cb79-4d5f-4666-bcda-40efb049ac8c
+		summarizeBy: sum
+		sourceColumn: vl_empenhado_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_desembolsado_conv
+		dataType: double
+		lineageTag: 98ea2f61-93af-4a16-8d55-dedeeb39c9a8
+		summarizeBy: sum
+		sourceColumn: vl_desembolsado_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_saldo_reman_tesouro
+		dataType: double
+		lineageTag: 2bc14827-585a-402b-9233-f1526706cdc3
+		summarizeBy: sum
+		sourceColumn: vl_saldo_reman_tesouro
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_saldo_reman_convenente
+		dataType: string
+		lineageTag: 206215cd-0dc7-43de-81fb-88259967de5a
+		summarizeBy: none
+		sourceColumn: vl_saldo_reman_convenente
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_rendimento_aplicacao
+		dataType: double
+		lineageTag: 437ebeac-e8a4-4eae-9830-6ce0ce492590
+		summarizeBy: sum
+		sourceColumn: vl_rendimento_aplicacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_ingresso_contrapartida
+		dataType: double
+		lineageTag: 2b082252-1e40-44cb-8548-c4ffe982d4e4
+		summarizeBy: sum
+		sourceColumn: vl_ingresso_contrapartida
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vl_saldo_conta
+		dataType: double
+		lineageTag: 53df92d3-c813-4aaf-90c5-5ef745a5423c
+		summarizeBy: sum
+		sourceColumn: vl_saldo_conta
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column valor_global_original_conv
+		dataType: double
+		lineageTag: ab3e99c1-c362-4ec6-b4ad-b0f6fb8488eb
+		summarizeBy: sum
+		sourceColumn: valor_global_original_conv
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column id_plano_acao
+		dataType: string
+		lineageTag: 920521cf-afa7-4d85-acc6-93ba0974fc14
+		summarizeBy: none
+		sourceColumn: id_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_programa
+		dataType: string
+		lineageTag: 168d7101-9e72-4403-b257-30236967dabc
+		summarizeBy: none
+		sourceColumn: id_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_descentralizada
+		dataType: string
+		lineageTag: 8ccf2241-9faf-4dfd-9f6c-1998782cd348
+		summarizeBy: none
+		sourceColumn: sigla_unidade_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidade_descentralizada
+		dataType: string
+		lineageTag: 1ba0db4e-1dc8-4a37-a2e4-3cc57f347bda
+		summarizeBy: none
+		sourceColumn: unidade_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_responsavel_execucao
+		dataType: string
+		lineageTag: 5ca6a156-5afa-4f04-b429-18f74485cd3b
+		summarizeBy: none
+		sourceColumn: sigla_unidade_responsavel_execucao
+
+		annotation SummarizationSetBy = Automatic
+
+	column unidade_responsavel_execucao
+		dataType: string
+		lineageTag: 5d0ab42a-a67a-461e-a9c7-24a9a2e926de
+		summarizeBy: none
+		sourceColumn: unidade_responsavel_execucao
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_total_plano_acao
+		dataType: string
+		lineageTag: f203786e-a449-4683-939b-502d32367e7a
+		summarizeBy: none
+		sourceColumn: vl_total_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_inicio_vigencia
+		dataType: string
+		lineageTag: db0c91fb-3ba4-481e-abde-1e45087fc0f0
+		summarizeBy: none
+		sourceColumn: dt_inicio_vigencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_fim_vigencia
+		dataType: string
+		lineageTag: 3815cc05-be9c-4735-a524-9595fd9aee86
+		summarizeBy: none
+		sourceColumn: dt_fim_vigencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_objeto_plano_acao
+		dataType: string
+		lineageTag: 5d73363d-f3ef-40f1-ad8a-341aa8f8c4d7
+		summarizeBy: none
+		sourceColumn: tx_objeto_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_justificativa_plano_acao
+		dataType: string
+		lineageTag: f4c8fc1a-b429-4611-a788-3370da2fad17
+		summarizeBy: none
+		sourceColumn: tx_justificativa_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_forma_execucao_direta
+		dataType: string
+		lineageTag: f64b1a62-7a09-4ab5-94e6-e8aa40f7986b
+		summarizeBy: none
+		sourceColumn: in_forma_execucao_direta
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_forma_execucao_particulares
+		dataType: string
+		lineageTag: ab7cb975-dbfd-4d4c-bbb6-47450e606414
+		summarizeBy: none
+		sourceColumn: in_forma_execucao_particulares
+
+		annotation SummarizationSetBy = Automatic
+
+	column in_forma_execucao_descentralizada
+		dataType: string
+		lineageTag: cf74fae1-31d5-40e0-9e80-10fc63c100a5
+		summarizeBy: none
+		sourceColumn: in_forma_execucao_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_situacao_plano_acao
+		dataType: string
+		lineageTag: fb16fba7-59cd-4c0d-8734-a37d1c1b9329
+		summarizeBy: none
+		sourceColumn: tx_situacao_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column aa_ano_plano_acao
+		dataType: string
+		lineageTag: f48f1946-ff22-4a1a-b657-81b261e9e7c4
+		summarizeBy: none
+		sourceColumn: aa_ano_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_beneficiario_especifico
+		dataType: string
+		lineageTag: c31a7d86-30ee-4eed-994e-144d90298053
+		summarizeBy: none
+		sourceColumn: vl_beneficiario_especifico
+
+		annotation SummarizationSetBy = Automatic
+
+	column vl_chamamento_publico
+		dataType: string
+		lineageTag: 4a9b3bff-3120-41a6-84ca-4352980aab61
+		summarizeBy: none
+		sourceColumn: vl_chamamento_publico
+
+		annotation SummarizationSetBy = Automatic
+
+	column sq_instrumento
+		dataType: string
+		lineageTag: f5be6edb-5726-47f1-a624-0dc4ad8b0956
+		summarizeBy: none
+		sourceColumn: sq_instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column aa_instrumento
+		dataType: string
+		lineageTag: b30a8901-3d3a-4aa2-aa8e-745e21ba1b23
+		summarizeBy: none
+		sourceColumn: aa_instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Status Vigencia' =
+			
+			VAR _Hoje = TODAY()
+			RETURN
+			    IF(
+			        'SuaTabela'[dt_inicio_vigencia] <= _Hoje && 'SuaTabela'[dt_fim_vigencia] >= _Hoje,
+			        "Vigente",
+			        "Não Vigente"
+			    )
+		lineageTag: 9b95732f-7cd7-4656-85bb-56699ff0496c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Emenda_Convenio = m
+		mode: import
+		source =
+				let
+				    Fonte = Excel.Workbook(File.Contents("C:\Users\Aline\Desktop\MIR\base de dados\Emendas\emenda_convenio_tratada.xlsx"), null, true),
+				    Emenda_Convenio_Sheet = Fonte{[Item="Emenda_Convenio",Kind="Sheet"]}[Data],
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Emenda_Convenio_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"emissao_mes", type date}, {"emissao_dia", type date}, {"codigo_programa", Int64.Type}, {"programa", type text}, {"codigo_acao_ajustada", type text}, {"acao_ajustada", type text}, {"autor_emendas_orcamento_descricao", type text}, {"autor_emendas_orcamento_nome", type text}, {"localizador_gasto", type text}, {"localizador_gasto_descricao", type text}, {"regiao_pt", type text}, {"uf", type text}, {"uf_descricao", type text}, {"municipio", type text}, {"pais", type text}, {"ne_ccor", type text}, {"ne_num_processo", type text}, {"ne_info_complementar", type any}, {"ne_ccor_descricao", type text}, {"doc_observacao", type text}, {"codigo_gnd", Int64.Type}, {"gnd", type text}, {"natureza_despesa", Int64.Type}, {"natureza_despesa_descricao", type text}, {"codigo_modalidade", Int64.Type}, {"modalidade", type text}, {"ne_ccor_favorecido", type text}, {"ne_ccor_favorecido_descricao", type text}, {"ne_ccor_ano_emissao", Int64.Type}, {"ptres", Int64.Type}, {"fonte_recursos_detalhada", Int64.Type}, {"fonte_recursos_detalhada_descricao", type text}, {"despesas_empenhadas", type number}, {"despesas_liquidadas", type number}, {"despesas_pagas", type number}, {"restos_a_pagar_inscritos", type number}, {"restos_a_pagar_pagos", type number}, {"id_autor", Int64.Type}, {"cargo_autor", type text}, {"autor", type text}, {"partido", type text}, {"uf_autor", type text}, {"url_foto_autor", type text}, {"email_autor", type text}, {"url_foto_partido", type text}, {"numero_transferencia", Int64.Type}, {"dt_ingest", type datetimezone}, {"autor_emendas_orcamento", type text}, {"nr_convenio", Int64.Type}, {"id_proposta", Int64.Type}, {"dia", Int64.Type}, {"mes", Int64.Type}, {"ano", Int64.Type}, {"dia_assin_conv", type date}, {"sit_convenio", type text}, {"subsituacao_conv", type any}, {"situacao_publicacao", type text}, {"instrumento_ativo", type text}, {"ind_opera_obtv", type text}, {"nr_processo", Int64.Type}, {"ug_emitente", Int64.Type}, {"dia_publ_conv", type date}, {"dia_inic_vigenc_conv", type date}, {"dia_fim_vigenc_conv", type date}, {"dia_fim_vigenc_original_conv", type date}, {"dias_prest_contas", Int64.Type}, {"dia_limite_prest_contas", type date}, {"data_suspensiva", type any}, {"data_retirada_suspensiva", type any}, {"dias_clausula_suspensiva", type any}, {"situacao_contratacao", type text}, {"ind_assinado", type text}, {"motivo_suspensao", type any}, {"ind_foto", type text}, {"qtde_convenios", Int64.Type}, {"qtd_ta", Int64.Type}, {"qtd_prorroga", Int64.Type}, {"vl_global_conv", type number}, {"vl_repasse_conv", type number}, {"vl_contrapartida_conv", type number}, {"vl_empenhado_conv", type number}, {"vl_desembolsado_conv", type number}, {"vl_saldo_reman_tesouro", type number}, {"vl_saldo_reman_convenente", type any}, {"vl_rendimento_aplicacao", type number}, {"vl_ingresso_contrapartida", type number}, {"vl_saldo_conta", type number}, {"valor_global_original_conv", type number}, {"id_plano_acao", type any}, {"id_programa", type any}, {"sigla_unidade_descentralizada", type any}, {"unidade_descentralizada", type any}, {"sigla_unidade_responsavel_execucao", type any}, {"unidade_responsavel_execucao", type any}, {"vl_total_plano_acao", type any}, {"dt_inicio_vigencia", type any}, {"dt_fim_vigencia", type any}, {"tx_objeto_plano_acao", type any}, {"tx_justificativa_plano_acao", type any}, {"in_forma_execucao_direta", type any}, {"in_forma_execucao_particulares", type any}, {"in_forma_execucao_descentralizada", type any}, {"tx_situacao_plano_acao", type any}, {"aa_ano_plano_acao", type any}, {"vl_beneficiario_especifico", type any}, {"vl_chamamento_publico", type any}, {"sq_instrumento", type any}, {"aa_instrumento", type any}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

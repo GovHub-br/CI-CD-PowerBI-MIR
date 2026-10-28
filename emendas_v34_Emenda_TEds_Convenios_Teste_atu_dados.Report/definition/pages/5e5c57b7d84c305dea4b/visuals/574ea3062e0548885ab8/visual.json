@@ -1,0 +1,422 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "574ea3062e0548885ab8",
+  "position": {
+    "x": 54.285714285714292,
+    "y": 392.85714285714289,
+    "z": 0,
+    "height": 585.71428571428578,
+    "width": 1817.1428571428573,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "resumo_convenios"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "data_assinatura"
+                        }
+                      },
+                      "Hierarchy": "Hierarquia de datas"
+                    }
+                  },
+                  "Level": "Ano"
+                }
+              },
+              "queryRef": "resumo_convenios.data_assinatura.Variation.Hierarquia de datas.Ano",
+              "nativeQueryRef": "data_assinatura Ano1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "nr_convenio"
+                }
+              },
+              "queryRef": "resumo_convenios.nr_convenio",
+              "nativeQueryRef": "N. convênio1",
+              "displayName": "N. convênio"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "situacao_atual"
+                }
+              },
+              "queryRef": "resumo_convenios.situacao_atual",
+              "nativeQueryRef": "Situação1",
+              "displayName": "Situação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "modalidade_instrumento"
+                }
+              },
+              "queryRef": "resumo_convenios.modalidade_instrumento",
+              "nativeQueryRef": "Instrumento1",
+              "displayName": "Instrumento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "parlamentares"
+                }
+              },
+              "queryRef": "resumo_convenios.parlamentares",
+              "nativeQueryRef": "Parlamentares1",
+              "displayName": "Parlamentares"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "uf_execucao"
+                }
+              },
+              "queryRef": "resumo_convenios.uf_execucao",
+              "nativeQueryRef": "UF Execução1",
+              "displayName": "UF Execução"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "categoria_convenente"
+                }
+              },
+              "queryRef": "resumo_convenios.categoria_convenente",
+              "nativeQueryRef": "Categoria Convenente1",
+              "displayName": "Categoria Convenente"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "nome_convenente"
+                }
+              },
+              "queryRef": "resumo_convenios.nome_convenente",
+              "nativeQueryRef": "Participante1",
+              "displayName": "Participante"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "objeto"
+                }
+              },
+              "queryRef": "resumo_convenios.objeto",
+              "nativeQueryRef": "Objeto",
+              "displayName": "Objeto"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "data_assinatura"
+                }
+              },
+              "queryRef": "resumo_convenios.data_assinatura",
+              "nativeQueryRef": "Data Assinatura",
+              "displayName": "Data Assinatura"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "inicio_vigencia"
+                }
+              },
+              "queryRef": "resumo_convenios.inicio_vigencia",
+              "nativeQueryRef": "Início Vigência",
+              "displayName": "Início Vigência"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "fim_vigencia"
+                }
+              },
+              "queryRef": "resumo_convenios.fim_vigencia",
+              "nativeQueryRef": "Fim Vigência",
+              "displayName": "Fim Vigência"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "resumo_convenios"
+                        }
+                      },
+                      "Property": "valor_firmado_atualizado"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(resumo_convenios.valor_firmado_atualizado)",
+              "nativeQueryRef": "Firmado",
+              "displayName": "Firmado"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "resumo_convenios"
+                        }
+                      },
+                      "Property": "valor_empenhado"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(resumo_convenios.valor_empenhado)",
+              "nativeQueryRef": "Empenhado",
+              "displayName": "Empenhado"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "resumo_convenios"
+                        }
+                      },
+                      "Property": "valor_total_pago"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(resumo_convenios.valor_total_pago)",
+              "nativeQueryRef": "Pago1",
+              "displayName": "Pago"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "resumo_convenios"
+                    }
+                  },
+                  "Property": "data_ultimo_pagamento"
+                }
+              },
+              "queryRef": "resumo_convenios.data_ultimo_pagamento",
+              "nativeQueryRef": "Dt. último pagamento1",
+              "displayName": "Dt. último pagamento"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "resumo_convenios"
+                        }
+                      },
+                      "Property": "saldo_disponivel"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(resumo_convenios.saldo_disponivel)",
+              "nativeQueryRef": "Saldo Disponível",
+              "displayName": "Saldo Disponível"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "resumo_convenios"
+                        }
+                      },
+                      "Property": "valor_total_aditivado"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(resumo_convenios.valor_total_aditivado)",
+              "nativeQueryRef": "Total Aditivado",
+              "displayName": "Total Aditivado"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "PropertyVariationSource": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "resumo_convenios"
+                          }
+                        },
+                        "Name": "Variation",
+                        "Property": "data_assinatura"
+                      }
+                    },
+                    "Hierarchy": "Hierarquia de datas"
+                  }
+                },
+                "Level": "Ano"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "415.76840202616734D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "resumo_convenios.nome_convenente"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

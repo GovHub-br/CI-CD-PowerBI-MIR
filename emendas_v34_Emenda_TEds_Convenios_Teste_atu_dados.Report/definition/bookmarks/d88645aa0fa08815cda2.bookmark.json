@@ -1,0 +1,1166 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "NavegacaoOculto",
+  "name": "d88645aa0fa08815cda2",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "357ad7df7400ae5192a7",
+    "sections": {
+      "357ad7df7400ae5192a7": {
+        "visualContainers": {
+          "42145679883cdb4b69ca": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "412ef2b8945aa611cf53",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "ne_ccor_ano_emissao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "ne_ccor_ano_emissao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "87ef9e53841720911506": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2f9728f666f700118c92",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "autor_emendas_orcamento_nome"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "autor_emendas_orcamento_nome"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "7f9d8d580b220f48034d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a8555d8c17e7a6ad2370",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "cargo_autor"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "cargo_autor"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "493f91e3c14e048e469d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a845548f3f46a8f630a5",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "acao_ajustada"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "acao_ajustada"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c53518d2b733f43b00be": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "c7423f67b1dab067f7a2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "uf"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9b4c96174d6a99947a41",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Partido"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "filledMap",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "uf"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "21a6ab4013d7cce7f8b3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9ccbfa30cec272aea16d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "regiao_pt"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9c6a905004c478560903",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Partido"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "columnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Partido"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "regiao_pt"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "24b467614899dd9274c2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "27063eee943a424f0534",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Percentual Pago"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Percentual Pago"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7bcdb1e8434deb4facc9": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f7c0a8b3f44dbfd8978d",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "l",
+                        "Entity": "LocalDateTable_8fd6022a-1c7d-48bc-b7ef-0a7e871326ff",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "l"
+                                        }
+                                      },
+                                      "Property": "Mês"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "emendas_partidos"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "emissao_mes"
+                            }
+                          },
+                          "Hierarchy": "Hierarquia de datas"
+                        }
+                      },
+                      "Level": "Mês"
+                    }
+                  },
+                  "howCreated": 0,
+                  "cachedDisplayNames": [
+                    {
+                      "id": {
+                        "scopeId": {
+                          "Comparison": {
+                            "ComparisonKind": 0,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Entity": "LocalDateTable_8fd6022a-1c7d-48bc-b7ef-0a7e871326ff"
+                                  }
+                                },
+                                "Property": "Mês"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "null"
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "displayName": "(Em branco)"
+                    }
+                  ]
+                },
+                {
+                  "name": "f494f830a1728e6d6d53",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Emendas"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fea7daf4afe5ea1c7bf0",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Partido"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "473d8c4aaec87096825f",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "ne_ccor_ano_emissao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "ne_ccor_ano_emissao"
+                    }
+                  },
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "emendas_partidos"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "emissao_mes"
+                            }
+                          },
+                          "Hierarchy": "Hierarquia de datas"
+                        }
+                      },
+                      "Level": "Mês"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "f83939a49d66baa4f8db": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "273dc350f9aa5eba1b7c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "acao_ajustada"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "84be79588f6279e54581",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Emendas"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Empenhado Emendas"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "acao_ajustada"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "e386488b8c555d162042": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "76261382798189895fbe",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "programa"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "programa"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "621b67ac845829e35c29": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "01a21269dfa658f6f27c",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "e",
+                        "Entity": "emendas_partidos",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "e"
+                                        }
+                                      },
+                                      "Property": "uf_autor"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "uf_autor"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "uf_autor"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a31ce290d5c395090b01": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b815ac6f91c36ff7f1d0",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "partido"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cff26caa654a53a61a6f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e3dee96fdbdcf4ad9709",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "e",
+                                  "Entity": "emendas_partidos",
+                                  "Type": 0
+                                },
+                                {
+                                  "Name": "_",
+                                  "Entity": "_medidas",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "e"
+                                      }
+                                    },
+                                    "Property": "ne_ccor_favorecido_descricao"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "_"
+                                        }
+                                      },
+                                      "Property": "Total Pago Partido"
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 5
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "e",
+                        "Entity": "emendas_partidos",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "e"
+                                    }
+                                  },
+                                  "Property": "ne_ccor_favorecido_descricao"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "ne_ccor_favorecido_descricao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c180122ade7a3daf5724",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Partido"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Total Pago Partido"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "emendas_partidos"
+                        }
+                      },
+                      "Property": "ne_ccor_favorecido_descricao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6cf44aead17b3c7e12b8": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
+          "567684804376fbb847c4": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "31c974b1982288558950": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "f6d5b330707c095d1af6": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "4481f14bf0f515cdfbbe": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "33802d5a6d7f91146aca": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "0cb3db2b28a37231ddad": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "eb54b1f8edd747a265a0": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "1f1063668b287b5ab533": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "de7f4226153cbf32b7dc": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "44ad4dd851fcbfc075dc": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "a60e36d939b37f40e00c": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "2e36ee66bfe57fda475a": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "c5d9ebbe3c531a7409f9": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "4557bba730d80db153eb": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "aa3899ec35080268c8ba": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "dfd35eab04ef513a48cc": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "315ff3866d33c2a7ad15": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "86d9198ba5b7a14e66d8": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "31ea8ccdf85fec7a2317": {
+            "isHidden": true
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

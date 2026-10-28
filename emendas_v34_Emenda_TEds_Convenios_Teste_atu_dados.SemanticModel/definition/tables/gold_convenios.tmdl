@@ -1,0 +1,539 @@
+table gold_convenios
+	lineageTag: 114ed4a8-5e19-4a2c-9218-53e8e61b0f8f
+
+	column nr_convenio
+		dataType: string
+		lineageTag: 94e38f2e-5fef-42a8-acd2-594d48f74eb0
+		summarizeBy: none
+		sourceColumn: nr_convenio
+
+		annotation SummarizationSetBy = Automatic
+
+	column modalidade_instrumento
+		dataType: string
+		lineageTag: 905e412c-c5c6-41b3-afe7-4ddb1e02df26
+		summarizeBy: none
+		sourceColumn: modalidade_instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column uf_execucao
+		dataType: string
+		lineageTag: c453c7b4-ddb2-46ba-9a4c-330fa9a46d1d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: uf_execucao
+
+		annotation SummarizationSetBy = Automatic
+
+	column municipio_execucao
+		dataType: string
+		lineageTag: e783c41c-0f4e-4a50-a745-cdd86980474f
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: municipio_execucao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_convenente
+		dataType: string
+		lineageTag: 4839f1d7-f893-4591-b50a-7af3cc023ec5
+		summarizeBy: none
+		sourceColumn: nome_convenente
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria_convenente
+		dataType: string
+		lineageTag: 7516afb7-ee3f-484f-95d3-19bfe1c208e1
+		summarizeBy: none
+		sourceColumn: categoria_convenente
+
+		annotation SummarizationSetBy = Automatic
+
+	column objeto
+		dataType: string
+		lineageTag: 1f6c6ac1-ca2f-43e9-b21f-42120dcbab16
+		summarizeBy: none
+		sourceColumn: objeto
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_firmado_atualizado
+		dataType: double
+		lineageTag: 04030a94-d8a3-49f7-bac8-39476e5a48e7
+		summarizeBy: sum
+		sourceColumn: valor_firmado_atualizado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column valor_firmado_inicial
+		dataType: string
+		lineageTag: 74625946-fc1d-4586-9c28-ee3c1396a4f0
+		summarizeBy: none
+		sourceColumn: valor_firmado_inicial
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_repasse_previsto
+		dataType: string
+		lineageTag: 3a898a25-386c-4893-9b26-3dd5ae82d407
+		summarizeBy: none
+		sourceColumn: valor_repasse_previsto
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_repassado
+		dataType: string
+		lineageTag: c7f67e18-9452-427d-a08b-9a5fe056a769
+		summarizeBy: none
+		sourceColumn: valor_repassado
+
+		annotation SummarizationSetBy = Automatic
+
+	column saldo_disponivel
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: fa0ea7ba-7715-441b-9790-c75bf332d071
+		summarizeBy: sum
+		sourceColumn: saldo_disponivel
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column valor_contrapartida_previsto
+		dataType: string
+		lineageTag: b2d8f6f3-eb02-4471-85fb-fc13ff0d0dd2
+		summarizeBy: none
+		sourceColumn: valor_contrapartida_previsto
+
+		annotation SummarizationSetBy = Automatic
+
+	column situacao_atual
+		dataType: string
+		lineageTag: 96cbf5c9-5285-444a-a5f7-56d9660b4e9a
+		summarizeBy: none
+		sourceColumn: situacao_atual
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_assinatura
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: f3a5a9f4-21ef-460b-bb46-3727a2dea56f
+		summarizeBy: none
+		sourceColumn: data_assinatura
+
+		variation Variation
+			isDefault
+			relationship: 4e2d1259-1c30-4fe4-8fe4-ee4b3b4d610e
+			defaultHierarchy: LocalDateTable_ce753fab-ca7d-4f83-a65e-c5f00ff32fed.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column inicio_vigencia
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: cf5930e3-2972-4aad-8ce9-4dd8d0bc374e
+		summarizeBy: none
+		sourceColumn: inicio_vigencia
+
+		variation Variation
+			isDefault
+			relationship: cb1514ed-8a8a-4103-a419-0a46d031e6a8
+			defaultHierarchy: LocalDateTable_f6c6e399-f797-4b61-95c5-0fa06461903c.'Hierarquia de datas'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column fim_vigencia
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 993280ca-2848-4a18-ae43-26ca54cd5105
+		summarizeBy: none
+		sourceColumn: fim_vigencia
+
+		variation Variation
+			isDefault
+			relationship: af6d5635-e813-4cc5-b336-24091dcfd295
+			defaultHierarchy: LocalDateTable_bc470a89-ad2e-4bb5-874c-734a21d06d91.'Hierarquia de datas'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column prazo_vigente
+		dataType: string
+		lineageTag: 97798abd-6339-44c2-9ed4-37b59e4d31b3
+		summarizeBy: none
+		sourceColumn: prazo_vigente
+
+		annotation SummarizationSetBy = Automatic
+
+	column inadimplente
+		dataType: string
+		lineageTag: 22b1d54e-bd2e-4722-917e-99215c1966a9
+		summarizeBy: none
+		sourceColumn: inadimplente
+
+		annotation SummarizationSetBy = Automatic
+
+	column rescindido
+		dataType: string
+		lineageTag: bde06437-2217-484c-854c-cf91025611c8
+		summarizeBy: none
+		sourceColumn: rescindido
+
+		annotation SummarizationSetBy = Automatic
+
+	column anulado
+		dataType: string
+		lineageTag: e981521f-72b2-45d2-beee-f7a8969b155e
+		summarizeBy: none
+		sourceColumn: anulado
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_mudancas_situacao
+		dataType: string
+		lineageTag: 4d97213c-34f0-4809-903d-af6296f58b88
+		summarizeBy: none
+		sourceColumn: quantidade_mudancas_situacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_total_repassado
+		dataType: double
+		lineageTag: 5d97c31e-d414-4f1f-867f-f43ddfe2f46d
+		summarizeBy: sum
+		sourceColumn: valor_total_repassado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column quantidade_desembolsos
+		dataType: string
+		lineageTag: b160647e-70da-4b9c-818f-4311fcb6e949
+		summarizeBy: none
+		sourceColumn: quantidade_desembolsos
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_ultimo_desembolso
+		dataType: string
+		lineageTag: 2c9737d2-7f21-4e90-b86f-8c28843faaf9
+		summarizeBy: none
+		sourceColumn: data_ultimo_desembolso
+
+		annotation SummarizationSetBy = Automatic
+
+	column max_dias_sem_repasse
+		dataType: string
+		lineageTag: 61611e5b-62fe-437b-93b0-7e5a0f997c3c
+		summarizeBy: none
+		sourceColumn: max_dias_sem_repasse
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_empenhado
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 706b5061-99be-41eb-b3bb-f8b0a4e0a4f9
+		summarizeBy: sum
+		sourceColumn: valor_empenhado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column quantidade_empenhos
+		dataType: string
+		lineageTag: 5b46396d-49f1-4d90-81d0-45b36863581a
+		summarizeBy: none
+		sourceColumn: quantidade_empenhos
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_total_pago
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 22811cf0-f8a7-4c6e-9662-172056f7d5d6
+		summarizeBy: sum
+		sourceColumn: valor_total_pago
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column quantidade_pagamentos
+		dataType: string
+		lineageTag: 77d2e43c-f72e-4e05-afae-39ebde7542d0
+		summarizeBy: none
+		sourceColumn: quantidade_pagamentos
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_ultimo_pagamento
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: dc9edf06-c07e-4d97-9e93-eec50db32f62
+		summarizeBy: none
+		sourceColumn: data_ultimo_pagamento
+
+		variation Variation
+			isDefault
+			relationship: d4a624fc-e96c-4e9b-a733-7f9b61663b57
+			defaultHierarchy: LocalDateTable_14fe42f9-a60d-4e34-95ac-a529fd94cbb9.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column valor_desbloqueado
+		dataType: string
+		lineageTag: eabf2f44-70ea-482d-9a90-7c2bcea36a24
+		summarizeBy: none
+		sourceColumn: valor_desbloqueado
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_bloqueado
+		dataType: string
+		lineageTag: 28584bf9-93c2-4484-90d8-763c18995ff1
+		summarizeBy: none
+		sourceColumn: valor_bloqueado
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_ultimo_desbloqueio
+		dataType: string
+		lineageTag: 7ad42884-0e98-4594-96b9-ff7629600b42
+		summarizeBy: none
+		sourceColumn: data_ultimo_desbloqueio
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_total_tributos
+		dataType: string
+		lineageTag: 47f7d623-b35e-45fd-bd71-227073980644
+		summarizeBy: none
+		sourceColumn: valor_total_tributos
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_pagamentos_tributo
+		dataType: string
+		lineageTag: 775e6cfb-2a7d-44b7-93a4-26cf8b273db4
+		summarizeBy: none
+		sourceColumn: quantidade_pagamentos_tributo
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_contrapartida_depositado
+		dataType: string
+		lineageTag: c5f07d89-8f4c-44a9-a0de-7e4bfb5c0e74
+		summarizeBy: none
+		sourceColumn: valor_contrapartida_depositado
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_licitacoes
+		dataType: string
+		lineageTag: 0a54c853-a9ac-4aff-9904-e2625b91c597
+		summarizeBy: none
+		sourceColumn: quantidade_licitacoes
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_total_contratado
+		dataType: string
+		lineageTag: 6f78247d-1a31-470f-a967-4c50780d000d
+		summarizeBy: none
+		sourceColumn: valor_total_contratado
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_metas
+		dataType: string
+		lineageTag: 3d5df2af-26c0-4a2a-b4cd-d2d64ab10491
+		summarizeBy: none
+		sourceColumn: quantidade_metas
+
+		annotation SummarizationSetBy = Automatic
+
+	column prazo_meta_expirado
+		dataType: string
+		lineageTag: aa425829-16e0-4e06-9737-f9792d8ebc7b
+		summarizeBy: none
+		sourceColumn: prazo_meta_expirado
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_aditivos
+		dataType: string
+		lineageTag: 7ae68c3a-a6b1-421d-9d55-b68c0bebaea8
+		summarizeBy: none
+		sourceColumn: quantidade_aditivos
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_total_aditivado
+		dataType: string
+		lineageTag: 75a615f9-7e88-4a81-a127-cda5bdb47381
+		summarizeBy: none
+		sourceColumn: valor_total_aditivado
+
+		annotation SummarizationSetBy = Automatic
+
+	column novo_prazo_vigencia
+		dataType: string
+		lineageTag: da21cee1-3186-47cf-a33f-71fc74ff6125
+		summarizeBy: none
+		sourceColumn: novo_prazo_vigencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_prorrogacoes
+		dataType: string
+		lineageTag: 2851c124-f50f-4c58-b6d5-9ac28a92bf0c
+		summarizeBy: none
+		sourceColumn: quantidade_prorrogacoes
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_dias_prorrogado
+		dataType: string
+		lineageTag: fb6ed745-0ed0-4fec-8414-46f972464d1a
+		summarizeBy: none
+		sourceColumn: total_dias_prorrogado
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_solicitacoes_alteracao
+		dataType: string
+		lineageTag: b2b3f69d-b418-4202-90cc-8bf92f4c2d83
+		summarizeBy: none
+		sourceColumn: quantidade_solicitacoes_alteracao
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_solicitado_rendimento_aplicacao
+		dataType: string
+		lineageTag: a537dea9-aa38-4692-997a-bca7001f7c91
+		summarizeBy: none
+		sourceColumn: valor_solicitado_rendimento_aplicacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_aprovado_rendimento_aplicacao
+		dataType: string
+		lineageTag: e6910d86-bae8-444b-bae3-071a14b40cd9
+		summarizeBy: none
+		sourceColumn: valor_aprovado_rendimento_aplicacao
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_total_previsto
+		dataType: string
+		lineageTag: e00e1ac3-41d1-4cde-be25-1a5dec95bd92
+		summarizeBy: none
+		sourceColumn: valor_total_previsto
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_previsto_concedente
+		dataType: string
+		lineageTag: 74ba75ba-fa87-425d-8a46-8c2608da5366
+		summarizeBy: none
+		sourceColumn: valor_previsto_concedente
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_previsto_convenente
+		dataType: string
+		lineageTag: 49d20e79-2964-44d6-9f31-d78bd6fd231e
+		summarizeBy: none
+		sourceColumn: valor_previsto_convenente
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_previsto_rendimento
+		dataType: string
+		lineageTag: 91cdd42c-b52a-4bcf-885a-07635d8ae000
+		summarizeBy: none
+		sourceColumn: valor_previsto_rendimento
+
+		annotation SummarizationSetBy = Automatic
+
+	column quantidade_parcelas
+		dataType: string
+		lineageTag: 75063085-ee99-404b-8932-fd7ca31b9f98
+		summarizeBy: none
+		sourceColumn: quantidade_parcelas
+
+		annotation SummarizationSetBy = Automatic
+
+	column parlamentares
+		dataType: string
+		lineageTag: 01d36715-f397-49be-84cf-a0de3eed3f55
+		summarizeBy: none
+		sourceColumn: parlamentares
+
+		annotation SummarizationSetBy = Automatic
+
+	column partidos
+		dataType: string
+		lineageTag: b4b26a30-6909-434a-9dce-043e43063114
+		summarizeBy: none
+		sourceColumn: partidos
+
+		annotation SummarizationSetBy = Automatic
+
+	column ufs_parlamentares
+		dataType: string
+		lineageTag: 2f526336-9c16-426b-a96c-69ccd8b1b1c3
+		summarizeBy: none
+		sourceColumn: ufs_parlamentares
+
+		annotation SummarizationSetBy = Automatic
+
+	partition gold_convenios = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Aline\Desktop\MIR\base de dados\Convênios\gold_convenios.csv"),[Delimiter=",", Columns=57, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos", {{"valor_firmado_atualizado", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade1" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade", {{"valor_total_repassado", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade2" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade1", {{"valor_total_pago", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade3" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade2", {{"valor_empenhado", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade4" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade3", {{"saldo_disponivel", type number}}, "en-US"),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade4",{{"data_assinatura", type date}, {"data_ultimo_pagamento", type date}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Tipo Alterado", each true),
+				    #"Valor Substituído" = Table.ReplaceValue(#"Linhas Filtradas","( INSTITUTO NACIONAL DE EDUCAO, CULTURA E ATIVIDADES SICOPEDAGOGICAS)","INSTITUTO NACIONAL DE EDUCAO, CULTURA E ATIVIDADES SICOPEDAGOGICAS",Replacer.ReplaceText,{"nome_convenente"})
+				in
+				    #"Valor Substituído"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

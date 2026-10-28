@@ -1,0 +1,213 @@
+table ted_resumo_orcamentario_ted
+	lineageTag: c650775b-7689-4116-a646-f20df7e6cbc7
+
+	column plano_acao
+		dataType: string
+		lineageTag: 25a3b82c-e694-4140-9de9-4799895814f5
+		summarizeBy: none
+		sourceColumn: plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_transf
+		dataType: string
+		lineageTag: bdcd9d82-9781-4358-942a-675281cdf553
+		summarizeBy: none
+		sourceColumn: num_transf
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_descentralizada
+		dataType: string
+		lineageTag: b8c211e8-f2ca-4a36-a8cc-244cef4d329b
+		summarizeBy: none
+		sourceColumn: sigla_unidade_descentralizada
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_firmado
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 2c2c66fe-45d5-4b37-bee4-eb4c904eca65
+		summarizeBy: sum
+		sourceColumn: valor_firmado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column orcamento_recebido
+		dataType: double
+		lineageTag: 45ff9e44-7168-4b22-a177-c95b25164b59
+		summarizeBy: sum
+		sourceColumn: orcamento_recebido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column orcamento_devolvido
+		dataType: double
+		lineageTag: 3fedc4eb-e3ec-49b6-bfd9-7c71a36294e8
+		summarizeBy: sum
+		sourceColumn: orcamento_devolvido
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column empenhado
+		dataType: double
+		lineageTag: a7f61d71-ccdf-4d4d-821b-ee4d1fd81764
+		summarizeBy: sum
+		sourceColumn: empenhado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column empenho_anulado
+		dataType: double
+		lineageTag: 6d4e7cbe-5b51-40df-872f-1464aa349f13
+		summarizeBy: sum
+		sourceColumn: empenho_anulado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column despesas_pagas_exercicio
+		dataType: double
+		lineageTag: 2c01c6d0-eed9-49a8-a239-d561c8e13524
+		summarizeBy: sum
+		sourceColumn: despesas_pagas_exercicio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column despesas_pagas_rap
+		dataType: double
+		lineageTag: 823848c1-9721-4576-b8ea-379f384c9d74
+		summarizeBy: sum
+		sourceColumn: despesas_pagas_rap
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column restos_a_pagar
+		dataType: double
+		lineageTag: 895905ba-312c-4b73-8e22-b937da7ee8bc
+		summarizeBy: sum
+		sourceColumn: restos_a_pagar
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column despesas_liquidada
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b8f32ef4-6aa5-4ea6-8a43-8ca5ee0916bd
+		summarizeBy: sum
+		sourceColumn: despesas_liquidada
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column financeiro_recebido
+		dataType: string
+		lineageTag: 54890d3c-0fc8-437f-908f-1f333e66193e
+		summarizeBy: none
+		sourceColumn: financeiro_recebido
+
+		annotation SummarizationSetBy = Automatic
+
+	column financeiro_devolvido
+		dataType: string
+		lineageTag: 5deb1b9f-3968-40fe-88a6-69bdcd3dff03
+		summarizeBy: none
+		sourceColumn: financeiro_devolvido
+
+		annotation SummarizationSetBy = Automatic
+
+	column financeiro_cancelado
+		dataType: string
+		lineageTag: 41a9b405-4195-41dd-a6dc-66227b11de69
+		summarizeBy: none
+		sourceColumn: financeiro_cancelado
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ingest
+		dataType: string
+		lineageTag: a7541409-1b84-44bf-9e47-fd3f78a17a51
+		summarizeBy: none
+		sourceColumn: dt_ingest
+
+		annotation SummarizationSetBy = Automatic
+
+	column sigla_unidade_responsavel_acompanhamento
+		dataType: string
+		lineageTag: 6298e00d-2076-448a-9999-7d0f5010b0d4
+		summarizeBy: none
+		sourceColumn: sigla_unidade_responsavel_acompanhamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_nome_institucional_programa
+		dataType: string
+		lineageTag: 7f2330a1-67f3-4ac3-be0f-01f3ef07ad45
+		summarizeBy: none
+		sourceColumn: tx_nome_institucional_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column tx_objetivo_programa
+		dataType: string
+		lineageTag: dc1b2fce-3834-4bcd-9e8a-1dd5865e6736
+		summarizeBy: none
+		sourceColumn: tx_objetivo_programa
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa_governo
+		dataType: string
+		lineageTag: 431201e1-8d5a-4256-84ba-5e1785b6dcd6
+		summarizeBy: none
+		sourceColumn: programa_governo
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa_governo_descricao
+		dataType: string
+		lineageTag: 991e3431-af3e-44ec-a936-6000a15ea255
+		summarizeBy: none
+		sourceColumn: programa_governo_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ted_resumo_orcamentario_ted = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Aline\Desktop\MIR\base de dados\Teds\ted_resumo_orcamentario_ted.csv"),[Delimiter=",", Columns=21, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos", {{"valor_firmado", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade1" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade", {{"orcamento_recebido", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade2" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade1", {{"empenhado", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade3" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade2", {{"orcamento_devolvido", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade4" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade3", {{"empenho_anulado", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade5" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade4", {{"despesas_pagas_exercicio", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade6" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade5", {{"despesas_pagas_rap", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade7" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade6", {{"restos_a_pagar", type number}}, "en-US"),
+				    #"Tipo Alterado com Localidade8" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade7", {{"despesas_liquidada", type number}}, "en-US")
+				in
+				    #"Tipo Alterado com Localidade8"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

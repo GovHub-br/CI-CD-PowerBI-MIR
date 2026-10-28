@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "a16940c5ac8e1cc56cdf",
+  "position": {
+    "x": 971.07954545454538,
+    "y": 570.68181818181813,
+    "z": 7001,
+    "height": 111.98863636363636,
+    "width": 518.52272727272725,
+    "tabOrder": 7001
+  },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'WebUrl'"
+                }
+              }
+            },
+            "webUrl": {
+              "expr": {
+                "Literal": {
+                  "Value": "'https://unbbr-my.sharepoint.com/:b:/g/personal/cmorais_unb_br/IQAxze1dmy_9SZE_UUd2u3loAVPO88Pxl-oINNx0lriHoPQ?e=Rvafq6'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "howCreated": "InsertVisualButton"
+}

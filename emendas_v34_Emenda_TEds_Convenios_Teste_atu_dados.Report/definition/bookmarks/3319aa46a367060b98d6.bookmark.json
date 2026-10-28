@@ -1,0 +1,1094 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "NavegacaoExibidaTEDPlanoAcao",
+  "name": "3319aa46a367060b98d6",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "70e76f040c14c23d4fac",
+    "sections": {
+      "70e76f040c14c23d4fac": {
+        "visualContainers": {
+          "66129471a72c28f69341": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "f23dbb8ab2e45aac59d0",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "planos_acao_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "aa_ano_plano_acao"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "aa_ano_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "aa_ano_plano_acao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "505b93febe9ec4a4fd3f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "321aeaf2e613c3efdf41",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "planos_acao_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "tx_situacao_plano_acao"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "tx_situacao_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "tx_situacao_plano_acao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "4a11ac49e0c31bbba514": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b0a236836e9074139e97",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "planos_acao_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "sigla_unidade_responsavel_execucao"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "''"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "sigla_unidade_responsavel_execucao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "sigla_unidade_responsavel_execucao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "454118809fcdcf9aa1c7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "96279060beb7b2d36cac",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "programas_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "tx_nome_programa"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "programas_ted"
+                        }
+                      },
+                      "Property": "tx_nome_programa"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "programas_ted"
+                        }
+                      },
+                      "Property": "tx_nome_programa"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "00418bc364299edd2c6c": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b4013f88d1cec425a120",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Planos de Ação"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Planos de Ação"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "058be40161e7026cff6f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ed97b2e180e5c89e5a6d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Total Planos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Total Planos"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "6d1aefcc4452901a8d75": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "82b3b1ac67364a9881e1",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Planos com Aprovação"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Planos com Aprovação"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f9769ba36df7b134bbb3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "db3388bb162bfd7c9b19",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "planos_acao_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "sigla_unidade_descentralizada"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "''"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "sigla_unidade_descentralizada"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "sigla_unidade_descentralizada"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c45078215840d456b8d7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "37b696269f82ebda9028",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "aa_ano_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "483dd0284159c52b6ad6",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Planos de Ação"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1ead60267ac20ddd5fb8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Total Planos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineStackedColumnComboChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Qtd Planos de Ação"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "aa_ano_plano_acao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "395a452b447d80a5f37f": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ce362afe0023ff8b381b",
+                  "type": "TopN",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "subquery",
+                        "Expression": {
+                          "Subquery": {
+                            "Query": {
+                              "Version": 2,
+                              "From": [
+                                {
+                                  "Name": "p",
+                                  "Entity": "planos_acao_ted",
+                                  "Type": 0
+                                },
+                                {
+                                  "Name": "_",
+                                  "Entity": "_medidas",
+                                  "Type": 0
+                                }
+                              ],
+                              "Select": [
+                                {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "p"
+                                      }
+                                    },
+                                    "Property": "sigla_unidade_descentralizada"
+                                  },
+                                  "Name": "field"
+                                }
+                              ],
+                              "OrderBy": [
+                                {
+                                  "Direction": 2,
+                                  "Expression": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "_"
+                                        }
+                                      },
+                                      "Property": "Valor Total Planos"
+                                    }
+                                  }
+                                }
+                              ],
+                              "Top": 5
+                            }
+                          }
+                        },
+                        "Type": 2
+                      },
+                      {
+                        "Name": "p",
+                        "Entity": "planos_acao_ted",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "p"
+                                    }
+                                  },
+                                  "Property": "sigla_unidade_descentralizada"
+                                }
+                              }
+                            ],
+                            "Table": {
+                              "SourceRef": {
+                                "Source": "subquery"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "sigla_unidade_descentralizada"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d07acbb3dae779cc8bca",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Total Planos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "barChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_medidas"
+                        }
+                      },
+                      "Property": "Valor Total Planos"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "sigla_unidade_descentralizada"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8de2cb255dc553a6b08b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "18e571340aa8efda2708",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "aa_ano_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "445f81f18584b746e3c4",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "id_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f093b891e1ddf60be066",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "tx_situacao_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "fad2427b358a68e67916",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "sigla_unidade_descentralizada"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3c9920f2dcb5536dc6c6",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "tx_objeto_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0d8ab37535ff88049b99",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "dt_inicio_vigencia"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "7ff61ea66d43fcbc5acf",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "dt_fim_vigencia"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "cd52617d04c976b4d51a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "planos_acao_ted"
+                        }
+                      },
+                      "Property": "tx_justificativa_plano_acao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {}
+            }
+          },
+          "f5e748acde299b73b266": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "4b8fe5f215d538e3df8f": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "3d25a44c374aabfb04a0": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "417a117fe8540d9a01e2": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "6907687043bd0582f7c6": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "973de6c383ba50235982": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "83c5a6d3d2364a3e2795": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "3961fccb47cb7895c891": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "b1ccbea6becb22eba124": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "aa7803d27615d91e8129": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "e66a1606cdb6652aa2c1": {
+            "isHidden": false
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

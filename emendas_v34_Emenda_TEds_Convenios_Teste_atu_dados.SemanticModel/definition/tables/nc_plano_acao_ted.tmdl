@@ -1,0 +1,314 @@
+table nc_plano_acao_ted
+	lineageTag: be23c222-a67c-488b-a679-d18c9b7db481
+
+	column programa_governo
+		dataType: string
+		lineageTag: 518ee6cb-1305-40dc-8ba1-7280f91d4156
+		summarizeBy: none
+		sourceColumn: programa_governo
+
+		annotation SummarizationSetBy = Automatic
+
+	column programa_governo_descricao
+		dataType: string
+		lineageTag: 32420d02-81f3-444f-a187-21c0950f35b9
+		summarizeBy: none
+		sourceColumn: programa_governo_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column acao_governo
+		dataType: string
+		lineageTag: 30109904-85f4-4d23-86df-fe38a191c069
+		summarizeBy: none
+		sourceColumn: acao_governo
+
+		annotation SummarizationSetBy = Automatic
+
+	column acao_governo_descricao
+		dataType: string
+		lineageTag: 8f7af46f-53c1-487c-8e28-189b3b0b91cc
+		summarizeBy: none
+		sourceColumn: acao_governo_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc
+		dataType: string
+		lineageTag: a53214cb-bf3d-4196-904c-cc4ac7c5a4c8
+		summarizeBy: none
+		sourceColumn: nc
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_transferencia
+		dataType: string
+		lineageTag: d804740c-3c6b-421d-bac2-c5fb8a2a656d
+		summarizeBy: none
+		sourceColumn: nc_transferencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_fonte_recursos
+		dataType: string
+		lineageTag: 7346002a-4112-4c71-92cd-649451f91b95
+		summarizeBy: none
+		sourceColumn: nc_fonte_recursos
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_fonte_recursos_descricao
+		dataType: string
+		lineageTag: 9e9310a7-9ac7-4cac-aac5-cdc4fcf17d16
+		summarizeBy: none
+		sourceColumn: nc_fonte_recursos_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column ptres
+		dataType: string
+		lineageTag: 0806c867-4503-4a2a-8971-a28d7b86c8d5
+		summarizeBy: none
+		sourceColumn: ptres
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_evento_descricao
+		dataType: string
+		lineageTag: b028c0bd-5bc6-46a9-9ca0-ed25b45448b1
+		summarizeBy: none
+		sourceColumn: nc_evento_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_ug_responsavel
+		dataType: string
+		lineageTag: 8cb22a73-9e8f-4a3f-ad06-5fa626acfcd3
+		summarizeBy: none
+		sourceColumn: nc_ug_responsavel
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_ug_responsavel_descricao
+		dataType: string
+		lineageTag: e20cc618-df0f-4ef8-9d58-7758379a2d54
+		summarizeBy: none
+		sourceColumn: nc_ug_responsavel_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_natureza_despesa
+		dataType: string
+		lineageTag: 34fd2a6e-54b5-450b-893e-d99df0ef38fd
+		summarizeBy: none
+		sourceColumn: nc_natureza_despesa
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_natureza_despesa_descricao
+		dataType: string
+		lineageTag: 8669e978-b453-44b7-be51-e5fa4cfae496
+		summarizeBy: none
+		sourceColumn: nc_natureza_despesa_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_plano_interno
+		dataType: string
+		lineageTag: 3ec4d0d4-2d09-4c04-b177-f7304ab27fbe
+		summarizeBy: none
+		sourceColumn: nc_plano_interno
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_plano_interno_descricao1
+		dataType: string
+		lineageTag: 59f3e76d-d8b1-47c7-8a27-027ee09b9770
+		summarizeBy: none
+		sourceColumn: nc_plano_interno_descricao1
+
+		annotation SummarizationSetBy = Automatic
+
+	column favorecido_doc
+		dataType: string
+		lineageTag: 4ccb6ba5-06c5-4317-9740-3a31b73c9294
+		summarizeBy: none
+		sourceColumn: favorecido_doc
+
+		annotation SummarizationSetBy = Automatic
+
+	column favorecido_doc_descricao
+		dataType: string
+		lineageTag: 565570d1-1103-4b5f-a576-4ceb38a64600
+		summarizeBy: none
+		sourceColumn: favorecido_doc_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column favorecido_municipio
+		dataType: string
+		lineageTag: b4ab6670-001c-4dee-a998-e2ecff1791de
+		summarizeBy: none
+		sourceColumn: favorecido_municipio
+
+		annotation SummarizationSetBy = Automatic
+
+	column favorecido_municipio_descricao
+		dataType: string
+		lineageTag: 1e851c36-86ef-413b-97e1-204f4b07699a
+		summarizeBy: none
+		sourceColumn: favorecido_municipio_descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column valor_celula
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ca867aeb-287e-4302-9a68-64fe184a1aac
+		summarizeBy: sum
+		sourceColumn: valor_celula
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column movimento_liquido_moeda_origem
+		dataType: string
+		lineageTag: ebb21f92-3951-4010-a815-1460a5d4ffbe
+		summarizeBy: none
+		sourceColumn: movimento_liquido_moeda_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column dt_ingest
+		dataType: string
+		lineageTag: 8b7394d8-b715-4bc9-a696-928125d314d4
+		summarizeBy: none
+		sourceColumn: dt_ingest
+
+		annotation SummarizationSetBy = Automatic
+
+	column descricao
+		dataType: string
+		lineageTag: e428014c-7068-4fa8-a1fc-b206c54a6901
+		summarizeBy: none
+		sourceColumn: descricao
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_plano_interno_descricao2
+		dataType: string
+		lineageTag: 63d7edcb-f550-4e4e-9ddc-7ff6268780b8
+		summarizeBy: none
+		sourceColumn: nc_plano_interno_descricao2
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_evento
+		dataType: string
+		lineageTag: 6287a9ec-01be-4ad3-a307-2e4927f0971e
+		summarizeBy: none
+		sourceColumn: nc_evento
+
+		annotation SummarizationSetBy = Automatic
+
+	column nc_item_detalhamento
+		dataType: string
+		lineageTag: 37e5f6d1-58f0-491e-b871-195a509dc4e0
+		summarizeBy: none
+		sourceColumn: nc_item_detalhamento
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_dia
+		dataType: string
+		lineageTag: bc4d4bc1-60ed-4393-9d50-a1f2f760ca56
+		summarizeBy: none
+		sourceColumn: emissao_dia
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_mes
+		dataType: string
+		lineageTag: ed23f1ea-a48c-42de-a94a-9a0dc99e1498
+		summarizeBy: none
+		sourceColumn: emissao_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column emissao_ano
+		dataType: string
+		lineageTag: 6d32cf0f-75a7-465f-b51c-ac6298741086
+		summarizeBy: none
+		sourceColumn: emissao_ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column ro
+		dataType: string
+		lineageTag: 8aa0a7a9-6dfb-40a8-9015-172ee5b5b58c
+		summarizeBy: none
+		sourceColumn: ro
+
+		annotation SummarizationSetBy = Automatic
+
+	column dc
+		dataType: string
+		lineageTag: cbb0cc93-1780-459e-9b4a-5c260cf56ddb
+		summarizeBy: none
+		sourceColumn: dc
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_lista
+		dataType: string
+		lineageTag: cbba9771-148f-4bdf-bec1-cfc951fd6adf
+		summarizeBy: none
+		sourceColumn: total_lista
+
+		annotation SummarizationSetBy = Automatic
+
+	column esfera_orcamentaria_codigo
+		dataType: string
+		lineageTag: de2387e5-8ccd-4580-a5f0-463317785cc2
+		summarizeBy: none
+		sourceColumn: esfera_orcamentaria_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column esfera_orcamentaria_nome
+		dataType: string
+		lineageTag: 6eaed825-9866-4d4a-9ba0-e6d8172dd377
+		summarizeBy: none
+		sourceColumn: esfera_orcamentaria_nome
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_plano_acao
+		dataType: string
+		lineageTag: e48d652a-d136-4e79-962f-54459d7c9d4b
+		summarizeBy: none
+		sourceColumn: id_plano_acao
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo+programaGoverno = nc_plano_acao_ted[programa_governo] & " - " & nc_plano_acao_ted[programa_governo_descricao]
+		lineageTag: dd2d8db2-ce5e-473a-b39e-a768bd99f341
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition nc_plano_acao_ted = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Aline\Desktop\MIR\base de dados\Teds\nc_plano_acao_ted.csv"),[Delimiter=",", Columns=36, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos", {{"valor_celula", type number}}, "en-US")
+				in
+				    #"Tipo Alterado com Localidade"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

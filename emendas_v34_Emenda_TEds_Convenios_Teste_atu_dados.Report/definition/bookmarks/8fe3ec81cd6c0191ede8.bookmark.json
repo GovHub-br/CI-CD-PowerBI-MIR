@@ -1,0 +1,1041 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "NavegacaoOcultaConvDetalhamento",
+  "name": "8fe3ec81cd6c0191ede8",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "5e5c57b7d84c305dea4b",
+    "sections": {
+      "5e5c57b7d84c305dea4b": {
+        "visualContainers": {
+          "574ea3062e0548885ab8": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "106d08febf69c02f73d9",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "nr_convenio"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "952d1ea348665be13e79",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "nome_convenente"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "d28e1679ea57fe96bedc",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "objeto"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "578de469cd2bb6d8f18a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "data_assinatura"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e8f0b429f99f47e9683f",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "inicio_vigencia"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "91cef8121f1f76895619",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "fim_vigencia"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "070c1049d798cda0a11e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "uf_execucao"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c29984d317549cdfc376",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "valor_empenhado"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f1fe8dd85a55c36cc9eb",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "modalidade_instrumento"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c8a634a4978fa462deaa",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "valor_total_pago"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "f1d861126cfca179c2f2",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "situacao_atual"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2f6613dc6320b342ad80",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "saldo_disponivel"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "288f7490e8b24ffc05ec",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "data_ultimo_pagamento"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6796a4717a9e7422b70f",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "parlamentares"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1a06de60d3bdeb0d5dcd",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "partidos"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3de8725f55931a136648",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "categoria_convenente"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "data_assinatura"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "b445688be731d0e885eb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "d7efd0d560bceaa4000c",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "gold_convenios",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "g"
+                                        }
+                                      },
+                                      "Property": "nr_convenio"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "nr_convenio"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "nr_convenio"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "c398095562c0baa80615": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "782462b9e09ddd26d8ed",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "gold_convenios",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "g"
+                                        }
+                                      },
+                                      "Property": "situacao_atual"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "situacao_atual"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "situacao_atual"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "df89c9b43450ee05e2da": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "16b389b314d84ae68783",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "gold_convenios",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "g"
+                                        }
+                                      },
+                                      "Property": "uf_execucao"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "uf_execucao"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "uf_execucao"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5be6f1402daae592b2ba": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "ad2c0580e80c8b3ac00a",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "gold_convenios",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "g"
+                                        }
+                                      },
+                                      "Property": "nome_convenente"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "nome_convenente"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "nome_convenente"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6a2099827916c70478a1": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "8fbfd5336c80c73747eb",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "gold_convenios",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "g"
+                                        }
+                                      },
+                                      "Property": "parlamentares"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "''"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "parlamentares"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "parlamentares"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "27ad690952dd5517a020": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "bb7a5726512a45960d7c",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "gold_convenios",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "g"
+                                        }
+                                      },
+                                      "Property": "partidos"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "''"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "partidos"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "partidos"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "9c58ef6088803960d964": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3b8442317432278b9a03",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "gold_convenios",
+                        "Type": 0
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "Not": {
+                            "Expression": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "g"
+                                        }
+                                      },
+                                      "Property": "categoria_convenente"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "null"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "categoria_convenente"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "gold_convenios"
+                        }
+                      },
+                      "Property": "categoria_convenente"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "d0944755a7c217e02149": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "4c5e81aee07194a40e10": {
+            "singleVisual": {
+              "visualType": "image",
+              "objects": {}
+            }
+          },
+          "1e9b3310a71c30602871": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "610cb916066518a5e854": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "4f7a38f00c720e563bb0": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "fc2b2ee2a626cc23d608": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          }
+        },
+        "visualContainerGroups": {
+          "edc878eeae1744a2b506": {
+            "isHidden": true
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

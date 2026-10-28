@@ -1,0 +1,51 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "75f9653653364101d6ec",
+  "position": {
+    "x": 44.285714285714292,
+    "y": 991.42857142857144,
+    "z": 10000,
+    "height": 27.444345801437208,
+    "width": 773.58749727801137,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Ano * se refere ao período antes da criação do MIR (2008 até 2021) ao período de Ministério (2022 até 2026)",
+                    "textStyle": {
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

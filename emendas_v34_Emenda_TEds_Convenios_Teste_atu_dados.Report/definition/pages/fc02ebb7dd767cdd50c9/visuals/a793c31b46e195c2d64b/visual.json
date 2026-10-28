@@ -1,0 +1,380 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "a793c31b46e195c2d64b",
+  "position": {
+    "x": 467.32974506075351,
+    "y": 574.26112740516328,
+    "z": 8000,
+    "height": 405.94321075192573,
+    "width": 1405.9496567505721,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_execucao_por_instrumento"
+                    }
+                  },
+                  "Property": "ano"
+                }
+              },
+              "queryRef": "Sum(ted_execucao_por_instrumento.ano)",
+              "nativeQueryRef": "ano"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_execucao_por_instrumento"
+                    }
+                  },
+                  "Property": "tipo_instrumento"
+                }
+              },
+              "queryRef": "ted_execucao_por_instrumento.tipo_instrumento",
+              "nativeQueryRef": "Tipo Instrumento",
+              "displayName": "Tipo Instrumento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_execucao_por_instrumento"
+                    }
+                  },
+                  "Property": "instrumento"
+                }
+              },
+              "queryRef": "ted_execucao_por_instrumento.instrumento",
+              "nativeQueryRef": "instrumento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_execucao_por_instrumento"
+                    }
+                  },
+                  "Property": "parceiro"
+                }
+              },
+              "queryRef": "ted_execucao_por_instrumento.parceiro",
+              "nativeQueryRef": "Parceiro",
+              "displayName": "Parceiro"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_execucao_por_instrumento"
+                    }
+                  },
+                  "Property": "objeto"
+                }
+              },
+              "queryRef": "ted_execucao_por_instrumento.objeto",
+              "nativeQueryRef": "Objeto",
+              "displayName": "Objeto"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ted_execucao_por_instrumento"
+                    }
+                  },
+                  "Property": "processo_gov_br"
+                }
+              },
+              "queryRef": "ted_execucao_por_instrumento.processo_gov_br",
+              "nativeQueryRef": "Processo gov.br",
+              "displayName": "Processo gov.br"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_execucao_por_instrumento"
+                        }
+                      },
+                      "Property": "empenhado"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_execucao_por_instrumento.empenhado)",
+              "nativeQueryRef": "Empenhado",
+              "displayName": "Empenhado"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_execucao_por_instrumento"
+                        }
+                      },
+                      "Property": "empenhado_credito_ug"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_execucao_por_instrumento.empenhado_credito_ug)",
+              "nativeQueryRef": "Empenhado UG",
+              "displayName": "Empenhado UG"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_execucao_por_instrumento"
+                        }
+                      },
+                      "Property": "empenhado_tedinho_subdescentralizacao"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_execucao_por_instrumento.empenhado_tedinho_subdescentralizacao)",
+              "nativeQueryRef": "Empenhado Tedinho",
+              "displayName": "Empenhado Tedinho"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_execucao_por_instrumento"
+                        }
+                      },
+                      "Property": "liquidado"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_execucao_por_instrumento.liquidado)",
+              "nativeQueryRef": "Liquidado",
+              "displayName": "Liquidado"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_execucao_por_instrumento"
+                        }
+                      },
+                      "Property": "pago"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_execucao_por_instrumento.pago)",
+              "nativeQueryRef": "Pago",
+              "displayName": "Pago"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridHorizontalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "gridVerticalWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "722.0963647620968D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ted_execucao_por_instrumento.objeto"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "100.21767903653775D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ted_execucao_por_instrumento.tipo_instrumento"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "108.00924222114018D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ted_execucao_por_instrumento.instrumento"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Default'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

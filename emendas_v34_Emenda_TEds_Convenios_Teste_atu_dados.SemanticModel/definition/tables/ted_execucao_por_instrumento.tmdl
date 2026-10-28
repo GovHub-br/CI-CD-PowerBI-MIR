@@ -1,0 +1,154 @@
+table ted_execucao_por_instrumento
+	lineageTag: 7dc762e0-ac0d-4179-a7a3-d095eb594580
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: c0fe18d9-0f79-4b00-9784-ec2cdc2479d5
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column instrumento
+		dataType: string
+		lineageTag: 7b619e22-86dc-4339-a54a-a4cfcb9299ba
+		summarizeBy: none
+		sourceColumn: instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_instrumento
+		dataType: string
+		lineageTag: f89ae235-bb7a-4577-9843-ad0c3c2e376a
+		summarizeBy: none
+		sourceColumn: tipo_instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column empenhado
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ea08ad3f-c5b5-45bb-b003-8883c3d15b92
+		summarizeBy: sum
+		sourceColumn: empenhado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column liquidado
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ae6dbc1d-479c-4d20-a9e8-3e77e94eb7b1
+		summarizeBy: sum
+		sourceColumn: liquidado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column pago
+		dataType: double
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 39bb18b2-9436-4995-9253-f56352c07423
+		summarizeBy: sum
+		sourceColumn: pago
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	column empenhado_cascata_dbt
+		dataType: double
+		lineageTag: db49d7db-5ecf-4662-bfa0-de5cf815ece0
+		summarizeBy: sum
+		sourceColumn: empenhado_cascata_dbt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column empenhado_regras_deterministicas
+		dataType: double
+		lineageTag: fe2a5fc9-5139-4ef6-8f77-f137f9b8760e
+		summarizeBy: sum
+		sourceColumn: empenhado_regras_deterministicas
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column empenhado_credito_ug
+		dataType: double
+		lineageTag: 7681d247-1906-4a96-9e51-f26e3f35ccd2
+		summarizeBy: sum
+		sourceColumn: empenhado_credito_ug
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column empenhado_tedinho_subdescentralizacao
+		dataType: double
+		lineageTag: a2aed92b-872e-4ff7-bd1f-b496aabedffc
+		summarizeBy: sum
+		sourceColumn: empenhado_tedinho_subdescentralizacao
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column empenhado_nao_identificado
+		dataType: int64
+		formatString: 0
+		lineageTag: 832e18e1-1a7b-4db8-8c31-edc06a8717d0
+		summarizeBy: sum
+		sourceColumn: empenhado_nao_identificado
+
+		annotation SummarizationSetBy = Automatic
+
+	column parceiro
+		dataType: string
+		lineageTag: 6aab3394-0eb2-4c23-9a06-254866770e6e
+		summarizeBy: none
+		sourceColumn: parceiro
+
+		annotation SummarizationSetBy = Automatic
+
+	column objeto
+		dataType: string
+		lineageTag: cf2068df-d039-4e36-8c3e-2933a521a196
+		summarizeBy: none
+		sourceColumn: objeto
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_instrumento
+		dataType: string
+		lineageTag: e1c61ebd-4868-41d7-87f3-c5609b437e3a
+		summarizeBy: none
+		sourceColumn: nome_instrumento
+
+		annotation SummarizationSetBy = Automatic
+
+	column processo_gov_br
+		dataType: string
+		lineageTag: 6b1fc5ed-434c-4885-9a4b-6569f5299148
+		summarizeBy: none
+		sourceColumn: processo_gov_br
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ted_execucao_por_instrumento = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(Web.Contents("https://sdhgovbr-my.sharepoint.com/personal/sinapir_igualdaderacial_gov_br/Documents/DAMGI/Plaforma%20Maria%20Firmina/TEDs/ted_execucao_por_instrumento.csv"),[Delimiter=",", Columns=15, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"ano", Int64.Type}, {"instrumento", type text}, {"tipo_instrumento", type text}, {"empenhado", type number}, {"liquidado", type number}, {"pago", type number}, {"empenhado_cascata_dbt", type number}, {"empenhado_regras_deterministicas", type number}, {"empenhado_credito_ug", type number}, {"empenhado_tedinho_subdescentralizacao", type number}, {"empenhado_nao_identificado", Int64.Type}, {"parceiro", type text}, {"objeto", type text}, {"nome_instrumento", type text}, {"processo_gov_br", type text}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+

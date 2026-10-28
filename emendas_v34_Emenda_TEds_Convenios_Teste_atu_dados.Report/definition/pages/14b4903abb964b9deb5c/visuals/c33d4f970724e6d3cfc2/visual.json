@@ -1,0 +1,162 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "c33d4f970724e6d3cfc2",
+  "position": {
+    "x": 1122.8571428571429,
+    "y": 647.14285714285722,
+    "z": 9000,
+    "height": 330,
+    "width": 748.57142857142867,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "funnel",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ted_resumo_orcamentario"
+                        }
+                      },
+                      "Property": "orcamento_recebido"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(ted_resumo_orcamentario.orcamento_recebido)",
+              "nativeQueryRef": "Orçamento Recebido",
+              "displayName": "Orçamento Recebido"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Valor Firmado Plano de Acao"
+                }
+              },
+              "queryRef": "_medidas.Valor Firmado TED",
+              "nativeQueryRef": "Firmado",
+              "displayName": "Firmado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Valor Empenhado TED"
+                }
+              },
+              "queryRef": "_medidas.Valor Empenhado TED",
+              "nativeQueryRef": "Empenhado",
+              "displayName": "Empenhado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Liquidado TED"
+                }
+              },
+              "queryRef": "_medidas.Liquidado TED",
+              "nativeQueryRef": "Liquidado",
+              "displayName": "Liquidado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_medidas"
+                    }
+                  },
+                  "Property": "Valor Pago TED"
+                }
+              },
+              "queryRef": "_medidas.Valor Pago TED",
+              "nativeQueryRef": "Valor Pago",
+              "displayName": "Valor Pago"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "ted_resumo_orcamentario"
+                      }
+                    },
+                    "Property": "orcamento_recebido"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Orcamento Recebido, Firmado, Empenhado, Liquidado e Pago '"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

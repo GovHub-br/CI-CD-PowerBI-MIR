@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "10ad72f019afa6c00c34",
+  "position": {
+    "x": 0,
+    "y": 1917.1428571428573,
+    "z": 10000,
+    "height": 82.857142857142861,
+    "width": 1420,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Plataforma Maria Firmina - MIR",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fonte de dados: SIAFI - TransfereGOV",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Atualizado em: 15 de julho de 2026",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
